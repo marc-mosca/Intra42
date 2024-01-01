@@ -10,10 +10,6 @@ import SwiftUI
 struct OnBoardingView: View
 {
     
-    // MARK: - Private properties
-    
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
-    
     // MARK: - Body
     
     var body: some View
@@ -21,7 +17,9 @@ struct OnBoardingView: View
         VStack(alignment: .leading, spacing: 50)
         {
             WelcomeTitle()
+            Paragraph()
         }
+        .padding()
     }
 }
 
