@@ -16,6 +16,8 @@
 		9C1F1F432B42C0E000695C3E /* Intra42UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F422B42C0E000695C3E /* Intra42UITestsLaunchTests.swift */; };
 		9C1F1F542B42C45800695C3E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F1F532B42C45800695C3E /* Localizable.xcstrings */; };
 		9C1F1F572B42C52100695C3E /* Api.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F1F562B42C52100695C3E /* Api.plist */; };
+		9C1F1F5A2B42C61500695C3E /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F592B42C61500695C3E /* Api.swift */; };
+		9C1F1F612B42C6E500695C3E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F602B42C6E500695C3E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		9C1F1F532B42C45800695C3E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9C1F1F552B42C49B00695C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9C1F1F562B42C52100695C3E /* Api.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Api.plist; sourceTree = "<group>"; };
+		9C1F1F592B42C61500695C3E /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		9C1F1F602B42C6E500695C3E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		9C1F1F242B42C0DF00695C3E /* Intra42 */ = {
 			isa = PBXGroup;
 			children = (
+				9C1F1F582B42C60F00695C3E /* Api */,
 				9C1F1F512B42C2D800695C3E /* Navigation */,
 				9C1F1F2B2B42C0E000695C3E /* Preview Content */,
 				9C1F1F522B42C2DE00695C3E /* Ressources */,
@@ -153,6 +158,23 @@
 				9C1F1F532B42C45800695C3E /* Localizable.xcstrings */,
 			);
 			path = Ressources;
+			sourceTree = "<group>";
+		};
+		9C1F1F582B42C60F00695C3E /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				9C1F1F5B2B42C66000695C3E /* Types */,
+				9C1F1F592B42C61500695C3E /* Api.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		9C1F1F5B2B42C66000695C3E /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				9C1F1F602B42C6E500695C3E /* User.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1F1F612B42C6E500695C3E /* User.swift in Sources */,
+				9C1F1F5A2B42C61500695C3E /* Api.swift in Sources */,
 				9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */,
 				9C1F1F262B42C0DF00695C3E /* Intra42App.swift in Sources */,
 			);
