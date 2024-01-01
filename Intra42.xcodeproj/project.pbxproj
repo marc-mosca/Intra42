@@ -11,6 +11,7 @@
 		9C1743552B42E30A00A707C4 /* Api+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1743542B42E30A00A707C4 /* Api+Errors.swift */; };
 		9C1743582B42E58F00A707C4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1743572B42E58F00A707C4 /* Endpoint.swift */; };
 		9C17435A2B42E5E100A707C4 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1743592B42E5E100A707C4 /* Authorization.swift */; };
+		9C17435C2B42E65E00A707C4 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C17435B2B42E65E00A707C4 /* Method.swift */; };
 		9C1F1F262B42C0DF00695C3E /* Intra42App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F252B42C0DF00695C3E /* Intra42App.swift */; };
 		9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F272B42C0DF00695C3E /* ContentView.swift */; };
 		9C1F1F2A2B42C0E000695C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F1F292B42C0E000695C3E /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		9C1743542B42E30A00A707C4 /* Api+Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Errors.swift"; sourceTree = "<group>"; };
 		9C1743572B42E58F00A707C4 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		9C1743592B42E5E100A707C4 /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		9C17435B2B42E65E00A707C4 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		9C1F1F222B42C0DF00695C3E /* Intra42.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intra42.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1F1F252B42C0DF00695C3E /* Intra42App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intra42App.swift; sourceTree = "<group>"; };
 		9C1F1F272B42C0DF00695C3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				9C1743592B42E5E100A707C4 /* Authorization.swift */,
 				9C1743572B42E58F00A707C4 /* Endpoint.swift */,
+				9C17435B2B42E65E00A707C4 /* Method.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				9C1F1F6B2B42C87300695C3E /* OAuth.swift in Sources */,
 				9C1F1F852B42CBBF00695C3E /* EventRow.swift in Sources */,
 				9C1F1F672B42C81500695C3E /* Exam.swift in Sources */,
+				9C17435C2B42E65E00A707C4 /* Method.swift in Sources */,
 				9C1F1F7C2B42CA9A00695C3E /* OAuth+Samples.swift in Sources */,
 				9C1F1F692B42C84100695C3E /* Logtime.swift in Sources */,
 				9C1F1F612B42C6E500695C3E /* User.swift in Sources */,
