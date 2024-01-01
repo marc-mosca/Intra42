@@ -36,6 +36,7 @@
 		9C1F1F822B42CAE200695C3E /* User+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F812B42CAE200695C3E /* User+Samples.swift */; };
 		9C1F1F852B42CBBF00695C3E /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F842B42CBBF00695C3E /* EventRow.swift */; };
 		9C1F1F892B42CE5C00695C3E /* Api+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F882B42CE5C00695C3E /* Api+Types.swift */; };
+		9C1F1F8D2B42CF7E00695C3E /* ExamRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F8C2B42CF7E00695C3E /* ExamRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		9C1F1F812B42CAE200695C3E /* User+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Samples.swift"; sourceTree = "<group>"; };
 		9C1F1F842B42CBBF00695C3E /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
 		9C1F1F882B42CE5C00695C3E /* Api+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Types.swift"; sourceTree = "<group>"; };
+		9C1F1F8C2B42CF7E00695C3E /* ExamRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				9C1F1F842B42CBBF00695C3E /* EventRow.swift */,
+				9C1F1F8C2B42CF7E00695C3E /* ExamRow.swift */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				9C1F1F612B42C6E500695C3E /* User.swift in Sources */,
 				9C1F1F822B42CAE200695C3E /* User+Samples.swift in Sources */,
 				9C1F1F5A2B42C61500695C3E /* Api.swift in Sources */,
+				9C1F1F8D2B42CF7E00695C3E /* ExamRow.swift in Sources */,
 				9C1F1F7E2B42CAB000695C3E /* Scale+Samples.swift in Sources */,
 				9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */,
 				9C1F1F632B42C77500695C3E /* CorrectionPointHistorics.swift in Sources */,
