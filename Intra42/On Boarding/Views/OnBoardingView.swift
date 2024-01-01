@@ -18,6 +18,9 @@ struct OnBoardingView: View
         {
             WelcomeTitle()
             Paragraph()
+            SignInButton(placeholder: "Sign In")
+            {
+            }
         }
         .padding()
     }

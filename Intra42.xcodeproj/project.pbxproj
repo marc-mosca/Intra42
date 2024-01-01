@@ -51,6 +51,7 @@
 		9CFEFFAC2B42FDAE0054859E /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFAB2B42FDAE0054859E /* OnBoardingView.swift */; };
 		9CFEFFB22B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */; };
 		9CFEFFB42B42FF9D0054859E /* OnBoarding+Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */; };
+		9CFEFFB82B4301620054859E /* OnBoarding+SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB72B4301620054859E /* OnBoarding+SignInButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		9CFEFFAB2B42FDAE0054859E /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+WelcomeTitle.swift"; sourceTree = "<group>"; };
 		9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+Paragraph.swift"; sourceTree = "<group>"; };
+		9CFEFFB72B4301620054859E /* OnBoarding+SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+SignInButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */,
+				9CFEFFB72B4301620054859E /* OnBoarding+SignInButton.swift */,
 				9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */,
 				9CFEFFAB2B42FDAE0054859E /* OnBoardingView.swift */,
 			);
@@ -495,6 +498,7 @@
 				9C1F1F802B42CAC800695C3E /* Slot+Samples.swift in Sources */,
 				9C1743672B42ED0600A707C4 /* AppError.swift in Sources */,
 				9C1743622B42EA2400A707C4 /* Api+Tokens.swift in Sources */,
+				9CFEFFB82B4301620054859E /* OnBoarding+SignInButton.swift in Sources */,
 				9C1F1F6B2B42C87300695C3E /* OAuth.swift in Sources */,
 				9C1F1F852B42CBBF00695C3E /* EventRow.swift in Sources */,
 				9C1743602B42E81500A707C4 /* Api+Keychain.swift in Sources */,
