@@ -197,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				9C1F1F5B2B42C66000695C3E /* Types */,
+				9C1F1F832B42CB4F00695C3E /* UI Components */,
 				9C1F1F592B42C61500695C3E /* Api.swift */,
 			);
 			path = Api;
@@ -231,6 +232,13 @@
 				9C1F1F812B42CAE200695C3E /* User+Samples.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		9C1F1F832B42CB4F00695C3E /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UI Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
