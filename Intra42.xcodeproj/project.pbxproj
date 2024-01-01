@@ -48,6 +48,9 @@
 		9C1F1F892B42CE5C00695C3E /* Api+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F882B42CE5C00695C3E /* Api+Types.swift */; };
 		9C1F1F8D2B42CF7E00695C3E /* ExamRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F8C2B42CF7E00695C3E /* ExamRow.swift */; };
 		9C1F1F8F2B42D03400695C3E /* ScaleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F8E2B42D03400695C3E /* ScaleRow.swift */; };
+		9CFEFFAC2B42FDAE0054859E /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFAB2B42FDAE0054859E /* OnBoardingView.swift */; };
+		9CFEFFB22B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */; };
+		9CFEFFB42B42FF9D0054859E /* OnBoarding+Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +118,9 @@
 		9C1F1F882B42CE5C00695C3E /* Api+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Types.swift"; sourceTree = "<group>"; };
 		9C1F1F8C2B42CF7E00695C3E /* ExamRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamRow.swift; sourceTree = "<group>"; };
 		9C1F1F8E2B42D03400695C3E /* ScaleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleRow.swift; sourceTree = "<group>"; };
+		9CFEFFAB2B42FDAE0054859E /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+WelcomeTitle.swift"; sourceTree = "<group>"; };
+		9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+Paragraph.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,7 @@
 		9C1743652B42ECFE00A707C4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9CFEFFA72B42FD890054859E /* View Modifiers */,
 				9C1743662B42ED0600A707C4 /* AppError.swift */,
 			);
 			path = Shared;
@@ -187,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				9C1F1F582B42C60F00695C3E /* Api */,
+				9CFEFFA82B42FD940054859E /* On Boarding */,
 				9C1F1F512B42C2D800695C3E /* Navigation */,
 				9C1F1F2B2B42C0E000695C3E /* Preview Content */,
 				9C1F1F522B42C2DE00695C3E /* Ressources */,
@@ -313,6 +321,39 @@
 				9C1743612B42EA2400A707C4 /* Api+Tokens.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9CFEFFA72B42FD890054859E /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Modifiers";
+			sourceTree = "<group>";
+		};
+		9CFEFFA82B42FD940054859E /* On Boarding */ = {
+			isa = PBXGroup;
+			children = (
+				9CFEFFAA2B42FDA20054859E /* ViewModels */,
+				9CFEFFA92B42FDA00054859E /* Views */,
+			);
+			path = "On Boarding";
+			sourceTree = "<group>";
+		};
+		9CFEFFA92B42FDA00054859E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */,
+				9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */,
+				9CFEFFAB2B42FDAE0054859E /* OnBoardingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9CFEFFAA2B42FDA20054859E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,16 +506,19 @@
 				9C1F1F8F2B42D03400695C3E /* ScaleRow.swift in Sources */,
 				9C1F1F822B42CAE200695C3E /* User+Samples.swift in Sources */,
 				9C1F1F5A2B42C61500695C3E /* Api.swift in Sources */,
+				9CFEFFB22B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift in Sources */,
 				9C1F1F8D2B42CF7E00695C3E /* ExamRow.swift in Sources */,
 				9C1743532B42E18E00A707C4 /* Api+Keys.swift in Sources */,
 				9C1F1F7E2B42CAB000695C3E /* Scale+Samples.swift in Sources */,
 				9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */,
 				9C1F1F632B42C77500695C3E /* CorrectionPointHistorics.swift in Sources */,
 				9C17435E2B42E6E000A707C4 /* Url.swift in Sources */,
+				9CFEFFAC2B42FDAE0054859E /* OnBoardingView.swift in Sources */,
 				9C1F1F712B42C93500695C3E /* Slot.swift in Sources */,
 				9C17435A2B42E5E100A707C4 /* Authorization.swift in Sources */,
 				9C1F1F782B42CA5600695C3E /* Exam+Samples.swift in Sources */,
 				9C1F1F652B42C7BD00695C3E /* Event.swift in Sources */,
+				9CFEFFB42B42FF9D0054859E /* OnBoarding+Paragraph.swift in Sources */,
 				9C1743642B42EB1F00A707C4 /* Client.swift in Sources */,
 				9C1F1F762B42CA3A00695C3E /* Event+Samples.swift in Sources */,
 				9C1F1F892B42CE5C00695C3E /* Api+Types.swift in Sources */,
