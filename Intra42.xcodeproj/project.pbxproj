@@ -34,6 +34,7 @@
 		9C1F1F7E2B42CAB000695C3E /* Scale+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F7D2B42CAB000695C3E /* Scale+Samples.swift */; };
 		9C1F1F802B42CAC800695C3E /* Slot+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F7F2B42CAC800695C3E /* Slot+Samples.swift */; };
 		9C1F1F822B42CAE200695C3E /* User+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F812B42CAE200695C3E /* User+Samples.swift */; };
+		9C1F1F852B42CBBF00695C3E /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F842B42CBBF00695C3E /* EventRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		9C1F1F7D2B42CAB000695C3E /* Scale+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scale+Samples.swift"; sourceTree = "<group>"; };
 		9C1F1F7F2B42CAC800695C3E /* Slot+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Slot+Samples.swift"; sourceTree = "<group>"; };
 		9C1F1F812B42CAE200695C3E /* User+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Samples.swift"; sourceTree = "<group>"; };
+		9C1F1F842B42CBBF00695C3E /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,8 +239,17 @@
 		9C1F1F832B42CB4F00695C3E /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				9C1F1F862B42CD7A00695C3E /* Rows */,
 			);
 			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		9C1F1F862B42CD7A00695C3E /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				9C1F1F842B42CBBF00695C3E /* EventRow.swift */,
+			);
+			path = Rows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +389,7 @@
 				9C1F1F7A2B42CA7600695C3E /* Logtime+Samples.swift in Sources */,
 				9C1F1F802B42CAC800695C3E /* Slot+Samples.swift in Sources */,
 				9C1F1F6B2B42C87300695C3E /* OAuth.swift in Sources */,
+				9C1F1F852B42CBBF00695C3E /* EventRow.swift in Sources */,
 				9C1F1F672B42C81500695C3E /* Exam.swift in Sources */,
 				9C1F1F7C2B42CA9A00695C3E /* OAuth+Samples.swift in Sources */,
 				9C1F1F692B42C84100695C3E /* Logtime.swift in Sources */,
