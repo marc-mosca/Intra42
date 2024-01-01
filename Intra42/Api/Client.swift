@@ -43,7 +43,7 @@ extension Api
         
         // MARK: - Exposed methods
         
-        public func request(for endpoint: Endpoint) async throws
+        public func request(for endpoint: Endpoint) async throws -> Void
         {
             let req = try handleRequest(for: endpoint)
             
