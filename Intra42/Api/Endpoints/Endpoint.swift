@@ -11,7 +11,7 @@ extension Api
 {
     
     /// A structure representing the API's endpoints.
-    public enum Endpoint
+    enum Endpoint
     {
         
         // Correction Point Historics

@@ -10,6 +10,7 @@
 		9C1743532B42E18E00A707C4 /* Api+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1743522B42E18E00A707C4 /* Api+Keys.swift */; };
 		9C1743552B42E30A00A707C4 /* Api+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1743542B42E30A00A707C4 /* Api+Errors.swift */; };
 		9C1743582B42E58F00A707C4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1743572B42E58F00A707C4 /* Endpoint.swift */; };
+		9C17435A2B42E5E100A707C4 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1743592B42E5E100A707C4 /* Authorization.swift */; };
 		9C1F1F262B42C0DF00695C3E /* Intra42App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F252B42C0DF00695C3E /* Intra42App.swift */; };
 		9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F272B42C0DF00695C3E /* ContentView.swift */; };
 		9C1F1F2A2B42C0E000695C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F1F292B42C0E000695C3E /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		9C1743522B42E18E00A707C4 /* Api+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Keys.swift"; sourceTree = "<group>"; };
 		9C1743542B42E30A00A707C4 /* Api+Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Errors.swift"; sourceTree = "<group>"; };
 		9C1743572B42E58F00A707C4 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		9C1743592B42E5E100A707C4 /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
 		9C1F1F222B42C0DF00695C3E /* Intra42.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intra42.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1F1F252B42C0DF00695C3E /* Intra42App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intra42App.swift; sourceTree = "<group>"; };
 		9C1F1F272B42C0DF00695C3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		9C1743562B42E58200A707C4 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
+				9C1743592B42E5E100A707C4 /* Authorization.swift */,
 				9C1743572B42E58F00A707C4 /* Endpoint.swift */,
 			);
 			path = Endpoints;
@@ -438,6 +441,7 @@
 				9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */,
 				9C1F1F632B42C77500695C3E /* CorrectionPointHistorics.swift in Sources */,
 				9C1F1F712B42C93500695C3E /* Slot.swift in Sources */,
+				9C17435A2B42E5E100A707C4 /* Authorization.swift in Sources */,
 				9C1F1F782B42CA5600695C3E /* Exam+Samples.swift in Sources */,
 				9C1F1F652B42C7BD00695C3E /* Event.swift in Sources */,
 				9C1F1F762B42CA3A00695C3E /* Event+Samples.swift in Sources */,
