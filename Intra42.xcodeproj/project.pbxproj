@@ -52,6 +52,7 @@
 		9CFEFFB22B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */; };
 		9CFEFFB42B42FF9D0054859E /* OnBoarding+Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */; };
 		9CFEFFB82B4301620054859E /* OnBoarding+SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB72B4301620054859E /* OnBoarding+SignInButton.swift */; };
+		9CFEFFBA2B4302490054859E /* OnBoarding+Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB92B4302490054859E /* OnBoarding+Author.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+WelcomeTitle.swift"; sourceTree = "<group>"; };
 		9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+Paragraph.swift"; sourceTree = "<group>"; };
 		9CFEFFB72B4301620054859E /* OnBoarding+SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+SignInButton.swift"; sourceTree = "<group>"; };
+		9CFEFFB92B4302490054859E /* OnBoarding+Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+Author.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +346,7 @@
 		9CFEFFA92B42FDA00054859E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9CFEFFB92B4302490054859E /* OnBoarding+Author.swift */,
 				9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */,
 				9CFEFFB72B4301620054859E /* OnBoarding+SignInButton.swift */,
 				9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */,
@@ -512,6 +515,7 @@
 				9C1F1F5A2B42C61500695C3E /* Api.swift in Sources */,
 				9CFEFFB22B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift in Sources */,
 				9C1F1F8D2B42CF7E00695C3E /* ExamRow.swift in Sources */,
+				9CFEFFBA2B4302490054859E /* OnBoarding+Author.swift in Sources */,
 				9C1743532B42E18E00A707C4 /* Api+Keys.swift in Sources */,
 				9C1F1F7E2B42CAB000695C3E /* Scale+Samples.swift in Sources */,
 				9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */,

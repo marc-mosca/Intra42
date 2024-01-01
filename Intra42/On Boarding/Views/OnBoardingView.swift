@@ -14,12 +14,21 @@ struct OnBoardingView: View
     
     var body: some View
     {
-        VStack(alignment: .leading, spacing: 50)
+        VStack
         {
-            WelcomeTitle()
-            Paragraph()
-            SignInButton(placeholder: "Sign In")
+            VStack(spacing: 50)
             {
+                WelcomeTitle()
+                Paragraph()
+            }
+            .frame(maxHeight: .infinity, alignment: .top)
+            
+            VStack(spacing: 10)
+            {
+                SignInButton(placeholder: "Sign In")
+                {
+                }
+                Author()
             }
         }
         .padding()
