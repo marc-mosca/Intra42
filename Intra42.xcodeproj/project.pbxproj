@@ -25,6 +25,7 @@
 		9C1F1F6B2B42C87300695C3E /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F6A2B42C87300695C3E /* OAuth.swift */; };
 		9C1F1F6D2B42C8A700695C3E /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F6C2B42C8A700695C3E /* Scale.swift */; };
 		9C1F1F6F2B42C8E500695C3E /* UncertainValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F6E2B42C8E500695C3E /* UncertainValue.swift */; };
+		9C1F1F712B42C93500695C3E /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F702B42C93500695C3E /* Slot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		9C1F1F6A2B42C87300695C3E /* OAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
 		9C1F1F6C2B42C8A700695C3E /* Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
 		9C1F1F6E2B42C8E500695C3E /* UncertainValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UncertainValue.swift; sourceTree = "<group>"; };
+		9C1F1F702B42C93500695C3E /* Slot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 				9C1F1F682B42C84100695C3E /* Logtime.swift */,
 				9C1F1F6A2B42C87300695C3E /* OAuth.swift */,
 				9C1F1F6C2B42C8A700695C3E /* Scale.swift */,
+				9C1F1F702B42C93500695C3E /* Slot.swift */,
 				9C1F1F6E2B42C8E500695C3E /* UncertainValue.swift */,
 				9C1F1F602B42C6E500695C3E /* User.swift */,
 			);
@@ -338,6 +341,7 @@
 				9C1F1F5A2B42C61500695C3E /* Api.swift in Sources */,
 				9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */,
 				9C1F1F632B42C77500695C3E /* CorrectionPointHistorics.swift in Sources */,
+				9C1F1F712B42C93500695C3E /* Slot.swift in Sources */,
 				9C1F1F652B42C7BD00695C3E /* Event.swift in Sources */,
 				9C1F1F6F2B42C8E500695C3E /* UncertainValue.swift in Sources */,
 				9C1F1F6D2B42C8A700695C3E /* Scale.swift in Sources */,
