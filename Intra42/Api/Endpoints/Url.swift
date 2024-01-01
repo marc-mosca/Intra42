@@ -35,9 +35,9 @@ extension Api.Endpoint
             return "/v2/campus/\(campusId)/cursus/\(cursusId)/events"
         case .fetchUserEvents(let userId):
             return "/v2/users/\(userId)/events"
-        case .fetchEventUser(let userId, let eventId):
+        case .fetchEventUser(let userId, _):
             return "/v2/users/\(userId)/events_users"
-        case .updateUserEvents(let userId, let eventId):
+        case .updateUserEvents:
             return "/v2/events_users"
         case .deleteEvent(let eventUserId):
             return "/v2/events_users/\(eventUserId)"
@@ -51,7 +51,7 @@ extension Api.Endpoint
             return "/v2/me/scale_teams"
         case .fetchUserSlots:
             return "/v2/me/slots"
-        case .createUserSlot(let userId, let beginAt, let endAt):
+        case .createUserSlot:
             return "/v2/slots"
         case .deleteUserSlot(let slotId):
             return "/v2/slots/\(slotId)"
