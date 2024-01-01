@@ -10,7 +10,7 @@ import Foundation
 extension Api
 {
     
-    /// API access keys.
+    /// An object representing API-related tokens.
     enum Keys
     {
         
