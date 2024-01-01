@@ -21,6 +21,7 @@
 		9C1F1F632B42C77500695C3E /* CorrectionPointHistorics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F622B42C77500695C3E /* CorrectionPointHistorics.swift */; };
 		9C1F1F652B42C7BD00695C3E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F642B42C7BD00695C3E /* Event.swift */; };
 		9C1F1F672B42C81500695C3E /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F662B42C81500695C3E /* Exam.swift */; };
+		9C1F1F692B42C84100695C3E /* Logtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F682B42C84100695C3E /* Logtime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		9C1F1F622B42C77500695C3E /* CorrectionPointHistorics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectionPointHistorics.swift; sourceTree = "<group>"; };
 		9C1F1F642B42C7BD00695C3E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9C1F1F662B42C81500695C3E /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
+		9C1F1F682B42C84100695C3E /* Logtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logtime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				9C1F1F622B42C77500695C3E /* CorrectionPointHistorics.swift */,
 				9C1F1F642B42C7BD00695C3E /* Event.swift */,
 				9C1F1F662B42C81500695C3E /* Exam.swift */,
+				9C1F1F682B42C84100695C3E /* Logtime.swift */,
 				9C1F1F602B42C6E500695C3E /* User.swift */,
 			);
 			path = Types;
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1F1F672B42C81500695C3E /* Exam.swift in Sources */,
+				9C1F1F692B42C84100695C3E /* Logtime.swift in Sources */,
 				9C1F1F612B42C6E500695C3E /* User.swift in Sources */,
 				9C1F1F5A2B42C61500695C3E /* Api.swift in Sources */,
 				9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */,
