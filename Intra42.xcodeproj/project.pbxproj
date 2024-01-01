@@ -26,6 +26,14 @@
 		9C1F1F6D2B42C8A700695C3E /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F6C2B42C8A700695C3E /* Scale.swift */; };
 		9C1F1F6F2B42C8E500695C3E /* UncertainValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F6E2B42C8E500695C3E /* UncertainValue.swift */; };
 		9C1F1F712B42C93500695C3E /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F702B42C93500695C3E /* Slot.swift */; };
+		9C1F1F742B42C9FB00695C3E /* CorrectionPointHistorics+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F732B42C9FB00695C3E /* CorrectionPointHistorics+Samples.swift */; };
+		9C1F1F762B42CA3A00695C3E /* Event+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F752B42CA3A00695C3E /* Event+Samples.swift */; };
+		9C1F1F782B42CA5600695C3E /* Exam+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F772B42CA5600695C3E /* Exam+Samples.swift */; };
+		9C1F1F7A2B42CA7600695C3E /* Logtime+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F792B42CA7600695C3E /* Logtime+Samples.swift */; };
+		9C1F1F7C2B42CA9A00695C3E /* OAuth+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F7B2B42CA9A00695C3E /* OAuth+Samples.swift */; };
+		9C1F1F7E2B42CAB000695C3E /* Scale+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F7D2B42CAB000695C3E /* Scale+Samples.swift */; };
+		9C1F1F802B42CAC800695C3E /* Slot+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F7F2B42CAC800695C3E /* Slot+Samples.swift */; };
+		9C1F1F822B42CAE200695C3E /* User+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F812B42CAE200695C3E /* User+Samples.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +79,14 @@
 		9C1F1F6C2B42C8A700695C3E /* Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
 		9C1F1F6E2B42C8E500695C3E /* UncertainValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UncertainValue.swift; sourceTree = "<group>"; };
 		9C1F1F702B42C93500695C3E /* Slot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
+		9C1F1F732B42C9FB00695C3E /* CorrectionPointHistorics+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CorrectionPointHistorics+Samples.swift"; sourceTree = "<group>"; };
+		9C1F1F752B42CA3A00695C3E /* Event+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+Samples.swift"; sourceTree = "<group>"; };
+		9C1F1F772B42CA5600695C3E /* Exam+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exam+Samples.swift"; sourceTree = "<group>"; };
+		9C1F1F792B42CA7600695C3E /* Logtime+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logtime+Samples.swift"; sourceTree = "<group>"; };
+		9C1F1F7B2B42CA9A00695C3E /* OAuth+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OAuth+Samples.swift"; sourceTree = "<group>"; };
+		9C1F1F7D2B42CAB000695C3E /* Scale+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scale+Samples.swift"; sourceTree = "<group>"; };
+		9C1F1F7F2B42CAC800695C3E /* Slot+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Slot+Samples.swift"; sourceTree = "<group>"; };
+		9C1F1F812B42CAE200695C3E /* User+Samples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Samples.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +153,7 @@
 		9C1F1F2B2B42C0E000695C3E /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				9C1F1F722B42C9D500695C3E /* Api */,
 				9C1F1F2C2B42C0E000695C3E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -199,6 +216,21 @@
 				9C1F1F602B42C6E500695C3E /* User.swift */,
 			);
 			path = Types;
+			sourceTree = "<group>";
+		};
+		9C1F1F722B42C9D500695C3E /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				9C1F1F732B42C9FB00695C3E /* CorrectionPointHistorics+Samples.swift */,
+				9C1F1F752B42CA3A00695C3E /* Event+Samples.swift */,
+				9C1F1F772B42CA5600695C3E /* Exam+Samples.swift */,
+				9C1F1F792B42CA7600695C3E /* Logtime+Samples.swift */,
+				9C1F1F7B2B42CA9A00695C3E /* OAuth+Samples.swift */,
+				9C1F1F7D2B42CAB000695C3E /* Scale+Samples.swift */,
+				9C1F1F7F2B42CAC800695C3E /* Slot+Samples.swift */,
+				9C1F1F812B42CAE200695C3E /* User+Samples.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,15 +366,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1F1F742B42C9FB00695C3E /* CorrectionPointHistorics+Samples.swift in Sources */,
+				9C1F1F7A2B42CA7600695C3E /* Logtime+Samples.swift in Sources */,
+				9C1F1F802B42CAC800695C3E /* Slot+Samples.swift in Sources */,
 				9C1F1F6B2B42C87300695C3E /* OAuth.swift in Sources */,
 				9C1F1F672B42C81500695C3E /* Exam.swift in Sources */,
+				9C1F1F7C2B42CA9A00695C3E /* OAuth+Samples.swift in Sources */,
 				9C1F1F692B42C84100695C3E /* Logtime.swift in Sources */,
 				9C1F1F612B42C6E500695C3E /* User.swift in Sources */,
+				9C1F1F822B42CAE200695C3E /* User+Samples.swift in Sources */,
 				9C1F1F5A2B42C61500695C3E /* Api.swift in Sources */,
+				9C1F1F7E2B42CAB000695C3E /* Scale+Samples.swift in Sources */,
 				9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */,
 				9C1F1F632B42C77500695C3E /* CorrectionPointHistorics.swift in Sources */,
 				9C1F1F712B42C93500695C3E /* Slot.swift in Sources */,
+				9C1F1F782B42CA5600695C3E /* Exam+Samples.swift in Sources */,
 				9C1F1F652B42C7BD00695C3E /* Event.swift in Sources */,
+				9C1F1F762B42CA3A00695C3E /* Event+Samples.swift in Sources */,
 				9C1F1F6F2B42C8E500695C3E /* UncertainValue.swift in Sources */,
 				9C1F1F6D2B42C8A700695C3E /* Scale.swift in Sources */,
 				9C1F1F262B42C0DF00695C3E /* Intra42App.swift in Sources */,
