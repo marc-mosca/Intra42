@@ -15,6 +15,8 @@
 		9C17435E2B42E6E000A707C4 /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C17435D2B42E6E000A707C4 /* Url.swift */; };
 		9C1743602B42E81500A707C4 /* Api+Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C17435F2B42E81500A707C4 /* Api+Keychain.swift */; };
 		9C1743622B42EA2400A707C4 /* Api+Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1743612B42EA2400A707C4 /* Api+Tokens.swift */; };
+		9C1743642B42EB1F00A707C4 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1743632B42EB1F00A707C4 /* Client.swift */; };
+		9C1743672B42ED0600A707C4 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1743662B42ED0600A707C4 /* AppError.swift */; };
 		9C1F1F262B42C0DF00695C3E /* Intra42App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F252B42C0DF00695C3E /* Intra42App.swift */; };
 		9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F272B42C0DF00695C3E /* ContentView.swift */; };
 		9C1F1F2A2B42C0E000695C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F1F292B42C0E000695C3E /* Assets.xcassets */; };
@@ -74,6 +76,8 @@
 		9C17435D2B42E6E000A707C4 /* Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Url.swift; sourceTree = "<group>"; };
 		9C17435F2B42E81500A707C4 /* Api+Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Keychain.swift"; sourceTree = "<group>"; };
 		9C1743612B42EA2400A707C4 /* Api+Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Tokens.swift"; sourceTree = "<group>"; };
+		9C1743632B42EB1F00A707C4 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		9C1743662B42ED0600A707C4 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		9C1F1F222B42C0DF00695C3E /* Intra42.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intra42.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1F1F252B42C0DF00695C3E /* Intra42App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intra42App.swift; sourceTree = "<group>"; };
 		9C1F1F272B42C0DF00695C3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,6 +153,14 @@
 			path = Endpoints;
 			sourceTree = "<group>";
 		};
+		9C1743652B42ECFE00A707C4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9C1743662B42ED0600A707C4 /* AppError.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		9C1F1F192B42C0DF00695C3E = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +190,7 @@
 				9C1F1F512B42C2D800695C3E /* Navigation */,
 				9C1F1F2B2B42C0E000695C3E /* Preview Content */,
 				9C1F1F522B42C2DE00695C3E /* Ressources */,
+				9C1743652B42ECFE00A707C4 /* Shared */,
 				9C1F1F562B42C52100695C3E /* Api.plist */,
 				9C1F1F552B42C49B00695C3E /* Info.plist */,
 				9C1F1F252B42C0DF00695C3E /* Intra42App.swift */,
@@ -236,6 +249,7 @@
 				9C1F1F5B2B42C66000695C3E /* Types */,
 				9C1F1F832B42CB4F00695C3E /* UI Components */,
 				9C1F1F592B42C61500695C3E /* Api.swift */,
+				9C1743632B42EB1F00A707C4 /* Client.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -438,6 +452,7 @@
 				9C1743582B42E58F00A707C4 /* Endpoint.swift in Sources */,
 				9C1F1F7A2B42CA7600695C3E /* Logtime+Samples.swift in Sources */,
 				9C1F1F802B42CAC800695C3E /* Slot+Samples.swift in Sources */,
+				9C1743672B42ED0600A707C4 /* AppError.swift in Sources */,
 				9C1743622B42EA2400A707C4 /* Api+Tokens.swift in Sources */,
 				9C1F1F6B2B42C87300695C3E /* OAuth.swift in Sources */,
 				9C1F1F852B42CBBF00695C3E /* EventRow.swift in Sources */,
@@ -460,6 +475,7 @@
 				9C17435A2B42E5E100A707C4 /* Authorization.swift in Sources */,
 				9C1F1F782B42CA5600695C3E /* Exam+Samples.swift in Sources */,
 				9C1F1F652B42C7BD00695C3E /* Event.swift in Sources */,
+				9C1743642B42EB1F00A707C4 /* Client.swift in Sources */,
 				9C1F1F762B42CA3A00695C3E /* Event+Samples.swift in Sources */,
 				9C1F1F892B42CE5C00695C3E /* Api+Types.swift in Sources */,
 				9C1F1F6F2B42C8E500695C3E /* UncertainValue.swift in Sources */,
