@@ -17,13 +17,13 @@ extension Api
         // MARK: - Exposed properties
         
         /// The access token corresponding to the application authorisation.
-        case appAccessToken
+        case applicationAccessToken
         
         /// The access token corresponding to the user's authorisation.
-        case accessToken
+        case userAccessToken
         
         /// The refresh token corresponding to the user's access token, enabling the access token to be renewed.
-        case refreshToken
+        case userRefreshToken
         
         /// The value associated with the API access token.
         var value: String?
@@ -51,11 +51,11 @@ extension Api
         {
             switch self
             {
-            case .appAccessToken:
+            case .applicationAccessToken:
                 return .applicationAccessToken
-            case .accessToken:
+            case .userAccessToken:
                 return .userAccessToken
-            case .refreshToken:
+            case .userRefreshToken:
                 return .userRefreshToken
             }
         }
