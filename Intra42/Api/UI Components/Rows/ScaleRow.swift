@@ -21,11 +21,6 @@ struct ScaleRow: View
         String(localized: "You will be evaluated by someone on ft_transcendence in 45 minutes.")
     }
     
-    private var formatStyle: Date.FormatStyle
-    {
-        .dateTime.day().month().year().hour().minute()
-    }
-    
     // MARK: - Body
     
     var body: some View
