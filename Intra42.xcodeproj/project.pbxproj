@@ -14,6 +14,8 @@
 		9C1F1F372B42C0E000695C3E /* Intra42Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F362B42C0E000695C3E /* Intra42Tests.swift */; };
 		9C1F1F412B42C0E000695C3E /* Intra42UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F402B42C0E000695C3E /* Intra42UITests.swift */; };
 		9C1F1F432B42C0E000695C3E /* Intra42UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F422B42C0E000695C3E /* Intra42UITestsLaunchTests.swift */; };
+		9C1F1F542B42C45800695C3E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F1F532B42C45800695C3E /* Localizable.xcstrings */; };
+		9C1F1F572B42C52100695C3E /* Api.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F1F562B42C52100695C3E /* Api.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 		9C1F1F422B42C0E000695C3E /* Intra42UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intra42UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9C1F1F4F2B42C1B800695C3E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9C1F1F502B42C1FE00695C3E /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		9C1F1F532B42C45800695C3E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		9C1F1F552B42C49B00695C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9C1F1F562B42C52100695C3E /* Api.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Api.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +103,12 @@
 		9C1F1F242B42C0DF00695C3E /* Intra42 */ = {
 			isa = PBXGroup;
 			children = (
-				9C1F1F252B42C0DF00695C3E /* Intra42App.swift */,
-				9C1F1F272B42C0DF00695C3E /* ContentView.swift */,
-				9C1F1F292B42C0E000695C3E /* Assets.xcassets */,
+				9C1F1F512B42C2D800695C3E /* Navigation */,
 				9C1F1F2B2B42C0E000695C3E /* Preview Content */,
+				9C1F1F522B42C2DE00695C3E /* Ressources */,
+				9C1F1F562B42C52100695C3E /* Api.plist */,
+				9C1F1F552B42C49B00695C3E /* Info.plist */,
+				9C1F1F252B42C0DF00695C3E /* Intra42App.swift */,
 			);
 			path = Intra42;
 			sourceTree = "<group>";
@@ -129,6 +136,23 @@
 				9C1F1F422B42C0E000695C3E /* Intra42UITestsLaunchTests.swift */,
 			);
 			path = Intra42UITests;
+			sourceTree = "<group>";
+		};
+		9C1F1F512B42C2D800695C3E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				9C1F1F272B42C0DF00695C3E /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		9C1F1F522B42C2DE00695C3E /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				9C1F1F292B42C0E000695C3E /* Assets.xcassets */,
+				9C1F1F532B42C45800695C3E /* Localizable.xcstrings */,
+			);
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +241,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 9C1F1F192B42C0DF00695C3E;
 			productRefGroup = 9C1F1F232B42C0DF00695C3E /* Products */;
@@ -236,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1F1F2D2B42C0E000695C3E /* Preview Assets.xcassets in Resources */,
+				9C1F1F572B42C52100695C3E /* Api.plist in Resources */,
 				9C1F1F2A2B42C0E000695C3E /* Assets.xcassets in Resources */,
+				9C1F1F542B42C45800695C3E /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +456,7 @@
 				DEVELOPMENT_TEAM = BHH429N5DK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Intra42/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,6 +486,7 @@
 				DEVELOPMENT_TEAM = BHH429N5DK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Intra42/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
