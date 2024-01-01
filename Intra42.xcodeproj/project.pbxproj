@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C1743532B42E18E00A707C4 /* Api+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1743522B42E18E00A707C4 /* Api+Keys.swift */; };
 		9C1F1F262B42C0DF00695C3E /* Intra42App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F252B42C0DF00695C3E /* Intra42App.swift */; };
 		9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F272B42C0DF00695C3E /* ContentView.swift */; };
 		9C1F1F2A2B42C0E000695C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F1F292B42C0E000695C3E /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C1743522B42E18E00A707C4 /* Api+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Keys.swift"; sourceTree = "<group>"; };
 		9C1F1F222B42C0DF00695C3E /* Intra42.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intra42.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1F1F252B42C0DF00695C3E /* Intra42App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intra42App.swift; sourceTree = "<group>"; };
 		9C1F1F272B42C0DF00695C3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				9C1F1F882B42CE5C00695C3E /* Api+Types.swift */,
+				9C1743522B42E18E00A707C4 /* Api+Keys.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				9C1F1F822B42CAE200695C3E /* User+Samples.swift in Sources */,
 				9C1F1F5A2B42C61500695C3E /* Api.swift in Sources */,
 				9C1F1F8D2B42CF7E00695C3E /* ExamRow.swift in Sources */,
+				9C1743532B42E18E00A707C4 /* Api+Keys.swift in Sources */,
 				9C1F1F7E2B42CAB000695C3E /* Scale+Samples.swift in Sources */,
 				9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */,
 				9C1F1F632B42C77500695C3E /* CorrectionPointHistorics.swift in Sources */,
