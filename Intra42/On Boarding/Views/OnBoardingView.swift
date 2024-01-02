@@ -37,7 +37,6 @@ struct OnBoardingView: View
             }
         }
         .padding()
-        .onChange(of: viewModel.signInStatus, onChange)
     }
     
     // MARK: - Private methods
@@ -46,15 +45,10 @@ struct OnBoardingView: View
     {
         Task
         {
-            await viewModel.signIn(webAuthenticationSession: webAuthenticationSession)
-        }
-    }
-    
-    private func onChange()
-    {
-        if viewModel.signInStatus == .success
-        {
-            userIsConnected = true
+            if await viewModel.signIn(webAuthenticationSession: webAuthenticationSession)
+            {
+                userIsConnected = true
+            }
         }
     }
     

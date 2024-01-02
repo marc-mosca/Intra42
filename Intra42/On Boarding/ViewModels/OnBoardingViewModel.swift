@@ -16,51 +16,30 @@ extension OnBoardingView
     final class ViewModel
     {
         
-        // MARK: - Exposed properties
-        
-        enum SignInStatus
-        {
-            case loading
-            case failed
-            case success
-        }
-        
-        var signInStatus = SignInStatus.loading
-        
         // MARK: - Exposed methods
         
-        func signIn(webAuthenticationSession: WebAuthenticationSession) async
+        func signIn(webAuthenticationSession: WebAuthenticationSession) async -> Bool
         {
             let authorizeURL = Api.Endpoint.authorize.url
             let callbackURLScheme = Api.Keys.redirectURI.value.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
             
-            guard let callbackURLScheme = callbackURLScheme
-            else
-            {
-                signInStatus = .failed
-                return
-            }
+            guard let callbackURLScheme = callbackURLScheme else { return false }
             
             do
             {
                 let urlWithCode = try await webAuthenticationSession.authenticate(using: authorizeURL, callbackURLScheme: callbackURLScheme)
                 let queryItems = URLComponents(string: urlWithCode.absoluteString)?.queryItems
                 
-                guard let code = queryItems?.first(where: { $0.name == "code" })?.value
-                else
-                {
-                    signInStatus = .failed
-                    return
-                }
+                guard let code = queryItems?.first(where: { $0.name == "code" })?.value else { return false }
                 
                 try await Api.Client.shared.request(for: .fetchUserAccessToken(code: code))
                 try await Api.Client.shared.request(for: .fetchApplicationAccessToken)
                 
-                signInStatus = .success
+                return true
             }
             catch
             {
-                signInStatus = .failed
+                return false
             }
         }
         
