@@ -39,12 +39,30 @@ extension ActivitiesView
         
         // MARK: - Exposed properties
         
+        enum LoadingState
+        {
+            case loading
+            case succeded
+            case failed
+        }
+        
+        var loadingState = LoadingState.succeded
         var selection = PickerCategories.corrections
         
         // MARK: - Exposed methods
         
-        func updateUserActivitiesInformations() async
+        func updateUserActivitiesInformations(store: Store) async throws
         {
+            loadingState = .loading
+            
+            let user = try await Api.Client.shared.request(for: .fetchConnectedUser) as Api.Types.User
+            
+            store.user = user
+            store.userEvents = try await Api.Client.shared.request(for: .fetchUserEvents(userId: user.id))
+            store.userExams = try await Api.Client.shared.request(for: .fetchUserExams(userId: user.id))
+            store.userScales = try await Api.Client.shared.request(for: .fetchUserScales)
+            
+            loadingState = .succeded
         }
         
     }

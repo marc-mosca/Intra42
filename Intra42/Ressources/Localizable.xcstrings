@@ -171,6 +171,16 @@
         }
       }
     },
+    "Refresh informations" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rafraichir les informations"
+          }
+        }
+      }
+    },
     "Register for an event offered by your campus to see it appear here." : {
       "localizations" : {
         "fr" : {
