@@ -90,6 +90,13 @@ extension Api
             guard status == errSecSuccess || status == errSecItemNotFound else { throw Errors.unknown(status) }
         }
         
+        func clear()
+        {
+            try? delete(account: .applicationAccessToken)
+            try? delete(account: .userAccessToken)
+            try? delete(account: .userRefreshToken)
+        }
+        
     }
     
 }

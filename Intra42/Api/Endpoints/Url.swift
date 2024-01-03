@@ -16,7 +16,11 @@ extension Api.Endpoint
         components.scheme = "https"
         components.host = "api.intra.42.fr"
         components.path = self.path
-        components.queryItems = self.queryItems
+        
+        if !self.queryItems.isEmpty
+        {
+            components.queryItems = self.queryItems
+        }
         
         return components.url!
     }

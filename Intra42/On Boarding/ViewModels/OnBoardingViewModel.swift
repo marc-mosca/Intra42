@@ -32,8 +32,12 @@ extension OnBoardingView
                 
                 guard let code = queryItems?.first(where: { $0.name == "code" })?.value else { return false }
                 
-                try await Api.Client.shared.request(for: .fetchUserAccessToken(code: code))
-                try await Api.Client.shared.request(for: .fetchApplicationAccessToken)
+                let userToken = try await Api.Client.shared.request(for: .fetchUserAccessToken(code: code)) as Api.Types.OAuth.UserToken
+                let applicationToken = try await Api.Client.shared.request(for: .fetchApplicationAccessToken) as Api.Types.OAuth.AppToken
+                
+                try Api.Keychain.shared.save(account: .applicationAccessToken, data: applicationToken.accessToken)
+                try Api.Keychain.shared.save(account: .userAccessToken, data: userToken.accessToken)
+                try Api.Keychain.shared.save(account: .userRefreshToken, data: userToken.refreshToken)
                 
                 return true
             }
