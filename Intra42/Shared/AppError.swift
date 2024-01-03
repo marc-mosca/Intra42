@@ -21,7 +21,7 @@ enum AppError: LocalizedError
         case .apiAuthorization:
             return String(localized: "An error has occurred with the authorization to share your data.")
         case .network:
-            return String(localized: "An error has occurred with the network. Please try again later")
+            return String(localized: "An error has occurred with the network. Please try again later.")
         }
     }
     

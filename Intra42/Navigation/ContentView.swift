@@ -7,18 +7,32 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+struct ContentView: View
+{
+    
+    // MARK: - Private properties
+    
+    @AppStorage("userIsConnected") private var userIsConnected: Bool?
+    
+    // MARK: - Body
+    
+    var body: some View
+    {
+        if userIsConnected != true
+        {
+            OnBoardingView()
         }
-        .padding()
+        else
+        {
+            Text("Home")
+        }
     }
+    
 }
 
-#Preview {
+// MARK: - Previews
+
+#Preview
+{
     ContentView()
 }
