@@ -14,6 +14,8 @@ final class Store
     
     // MARK: - Exposed properties
     
+    var selection = AppScreen.activities
+    
     var error: AppError?
     var errorAction: (() -> Void)?
     
