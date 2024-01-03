@@ -71,6 +71,8 @@ extension ExamRow
         
         let exam: Api.Types.Exam
         
+        // MARK: - Private properties
+        
         private var formatStyle: Date.FormatStyle
         {
             .dateTime.day().month().year().hour().minute()

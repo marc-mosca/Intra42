@@ -311,6 +311,16 @@
         }
       }
     },
+    "Description" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Description"
+          }
+        }
+      }
+    },
     "Developed by Marc MOSCA while eating 🍿" : {
       "localizations" : {
         "fr" : {
@@ -626,7 +636,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Inscrits"
+            "value" : "Participants"
           }
         }
       }
