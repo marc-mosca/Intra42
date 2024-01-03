@@ -36,6 +36,7 @@ extension CampusView
         
         // MARK: - Exposed properties
         
+        var loadingState = AppRequestState.succeded
         var selection = CampusPickerCategories.events
         var searched = ""
         var selectedFilter = String(localized: "All")
@@ -76,6 +77,18 @@ extension CampusView
         func resetFilterOnCategoryChange()
         {
             selectedFilter = String(localized: "All")
+        }
+        
+        func updateCampusActivities(store: Store) async throws
+        {
+            guard let user = store.user, let campusId = user.mainCampus?.campusId, let cursusId = user.mainCursus?.cursusId else { return }
+            
+            loadingState = .loading
+            
+            store.campusEvents = try await Api.Client.shared.request(for: .fetchCampusEvents(campusId: campusId, cursusId: cursusId))
+            store.campusExams = try await Api.Client.shared.request(for: .fetchCampusExams(campusId: campusId))
+            
+            loadingState = .succeded
         }
         
     }

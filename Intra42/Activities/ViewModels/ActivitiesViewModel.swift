@@ -39,14 +39,7 @@ extension ActivitiesView
         
         // MARK: - Exposed properties
         
-        enum LoadingState
-        {
-            case loading
-            case succeded
-            case failed
-        }
-        
-        var loadingState = LoadingState.succeded
+        var loadingState = AppRequestState.succeded
         var selection = PickerCategories.corrections
         
         // MARK: - Exposed methods

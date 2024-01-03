@@ -55,6 +55,7 @@
 		9C6FB8082B459665002AF3FF /* Campus+Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB8072B459665002AF3FF /* Campus+Picker.swift */; };
 		9C6FB80A2B459695002AF3FF /* Campus+EventsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB8092B459695002AF3FF /* Campus+EventsList.swift */; };
 		9C6FB80C2B4596E1002AF3FF /* Campus+ExamsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB80B2B4596E1002AF3FF /* Campus+ExamsList.swift */; };
+		9C6FB80E2B459DF8002AF3FF /* AppRequestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB80D2B459DF8002AF3FF /* AppRequestState.swift */; };
 		9C9BACD32B454C4600CBB2E2 /* SlideInModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD22B454C4600CBB2E2 /* SlideInModifier.swift */; };
 		9C9BACD62B4551BF00CBB2E2 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD52B4551BF00CBB2E2 /* Store.swift */; };
 		9C9BACD82B4551E700CBB2E2 /* EnvironmentValues+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD72B4551E700CBB2E2 /* EnvironmentValues+Store.swift */; };
@@ -148,6 +149,7 @@
 		9C6FB8072B459665002AF3FF /* Campus+Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Campus+Picker.swift"; sourceTree = "<group>"; };
 		9C6FB8092B459695002AF3FF /* Campus+EventsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Campus+EventsList.swift"; sourceTree = "<group>"; };
 		9C6FB80B2B4596E1002AF3FF /* Campus+ExamsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Campus+ExamsList.swift"; sourceTree = "<group>"; };
+		9C6FB80D2B459DF8002AF3FF /* AppRequestState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRequestState.swift; sourceTree = "<group>"; };
 		9C9BACD22B454C4600CBB2E2 /* SlideInModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInModifier.swift; sourceTree = "<group>"; };
 		9C9BACD52B4551BF00CBB2E2 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		9C9BACD72B4551E700CBB2E2 /* EnvironmentValues+Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Store.swift"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				9C6FB7F02B45892D002AF3FF /* UI Components */,
 				9CFEFFA72B42FD890054859E /* View Modifiers */,
 				9C1743662B42ED0600A707C4 /* AppError.swift */,
+				9C6FB80D2B459DF8002AF3FF /* AppRequestState.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -650,6 +653,7 @@
 				9CFEFFB82B4301620054859E /* OnBoarding+SignInButton.swift in Sources */,
 				9C9BACF52B45726100CBB2E2 /* ActivitiesViewModel.swift in Sources */,
 				9C1F1F6B2B42C87300695C3E /* OAuth.swift in Sources */,
+				9C6FB80E2B459DF8002AF3FF /* AppRequestState.swift in Sources */,
 				9C1F1F852B42CBBF00695C3E /* EventRow.swift in Sources */,
 				9C9BACDA2B45532800CBB2E2 /* HandleErrorsModifier.swift in Sources */,
 				9C9BACD32B454C4600CBB2E2 /* SlideInModifier.swift in Sources */,

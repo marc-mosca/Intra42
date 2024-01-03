@@ -41,8 +41,7 @@ struct ActivitiesView: View
             {
                 ToolbarItem
                 {
-                    RefreshButton(action: refreshButtonAction)
-                        .disabled(viewModel.loadingState == .loading)
+                    RefreshButton(state: viewModel.loadingState, action: refreshButtonAction)
                 }
             }
         }

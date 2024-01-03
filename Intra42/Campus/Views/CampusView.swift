@@ -55,13 +55,41 @@ struct CampusView: View
             .onChange(of: viewModel.selection, viewModel.resetFilterOnCategoryChange)
             .toolbar
             {
-                ToolbarItem
+                ToolbarItemGroup
                 {
                     FilterButton(selection: $viewModel.selectedFilter, filters: filters)
+                    RefreshButton(state: viewModel.loadingState, action: refreshButtonAction)
                 }
             }
         }
     }
+    
+    // MARK: - Private methods
+    
+    private func refreshButtonAction()
+    {
+        Task
+        {
+            do
+            {
+                try await viewModel.updateCampusActivities(store: store)
+            }
+            catch AppError.apiAuthorization
+            {
+                store.error = .apiAuthorization
+                store.errorAction = {
+                    Api.Keychain.shared.clear()
+                    userIsConnected = false
+                }
+            }
+            catch
+            {
+                store.error = .network
+                store.errorAction = refreshButtonAction
+            }
+        }
+    }
+    
 }
 
 // MARK: - Previews
