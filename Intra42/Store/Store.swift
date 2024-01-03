@@ -19,4 +19,12 @@ final class Store
     var error: AppError?
     var errorAction: (() -> Void)?
     
+    var user: Api.Types.User?
+    var userEvents = [Api.Types.Event]()
+    var userExams = [Api.Types.Exam]()
+    var userScales = [Api.Types.Scale]()
+    
+    var campusEvents = [Api.Types.Event]()
+    var campusExams = [Api.Types.Exam]()
+    
 }
