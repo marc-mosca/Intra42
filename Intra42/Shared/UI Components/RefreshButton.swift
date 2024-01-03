@@ -23,7 +23,6 @@ struct RefreshButton: View
             Label("Refresh informations", systemImage: "arrow.clockwise")
                 .labelStyle(.iconOnly)
                 .imageScale(.large)
-                .fontWeight(.semibold)
         }
         .tint(.night)
     }

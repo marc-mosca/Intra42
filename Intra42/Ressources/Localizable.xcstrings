@@ -11,6 +11,16 @@
         }
       }
     },
+    "All" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tous"
+          }
+        }
+      }
+    },
     "An error has occurred" : {
       "localizations" : {
         "fr" : {
@@ -227,6 +237,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Recherchez et consultez le profil de n'importe quel autre étudiant sur le réseau mondial 42."
+          }
+        }
+      }
+    },
+    "Select a filter" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sélectionner un filtre"
           }
         }
       }

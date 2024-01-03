@@ -30,7 +30,6 @@ struct FilterButton: View
         {
             Image(systemName: "line.3.horizontal.decrease.circle")
                 .imageScale(.large)
-                .fontWeight(.semibold)
         }
         .tint(.night)
     }

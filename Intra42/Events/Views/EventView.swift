@@ -10,13 +10,39 @@ import SwiftUI
 struct EventView: View
 {
     
-    // MARK: - Exposed properties
+    // MARK: - Private properties
+    
+    @Environment(\.store) private var store
+    @AppStorage("userIsConnected") private var userIsConnected: Bool?
+    @State private var viewModel = ViewModel()
+    
+    private var filters: [String]
+    {
+        viewModel.fetchFilters(events: store.campusEvents)
+    }
     
     // MARK: - Body
     
     var body: some View
     {
-        Text("Hello, World!")
+        NavigationStack
+        {
+            VStack
+            {
+                EventPicker(selection: $viewModel.selection)
+            }
+            .navigationTitle("Events")
+            .padding()
+            .searchable(text: $viewModel.searched)
+            .onChange(of: viewModel.selection, viewModel.resetFilterOnCategoryChange)
+            .toolbar
+            {
+                ToolbarItem
+                {
+                    FilterButton(selection: $viewModel.selectedFilter, filters: filters)
+                }
+            }
+        }
     }
 }
 
