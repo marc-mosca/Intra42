@@ -28,11 +28,8 @@ extension ActivitiesView
         {
             if !userFutureEvents.isEmpty
             {
-                List
-                {
-                    Text("Liste")
-                }
-                .listStyle(.plain)
+                List(userFutureEvents, rowContent: EventRow.init)
+                    .listStyle(.plain)
             }
             else
             {

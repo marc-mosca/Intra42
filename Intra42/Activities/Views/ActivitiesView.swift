@@ -12,7 +12,7 @@ struct ActivitiesView: View
     
     // MARK: - Private properties
     
-    @State private var selection = PickerCategories.corrections
+    @State private var viewModel = ViewModel()
     
     // MARK: - Body
     
@@ -22,9 +22,9 @@ struct ActivitiesView: View
         {
             VStack
             {
-                CategoryPicker(selection: $selection)
+                CategoryPicker(selection: $viewModel.selection)
                 
-                switch selection
+                switch viewModel.selection
                 {
                 case .corrections:
                     Corrections()
@@ -37,6 +37,7 @@ struct ActivitiesView: View
             .navigationTitle("My Activities")
         }
     }
+    
 }
 
 // MARK: - Previews

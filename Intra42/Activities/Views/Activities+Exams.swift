@@ -23,11 +23,8 @@ extension ActivitiesView
         {
             if !store.userExams.isEmpty
             {
-                List(store.userExams)
-                {
-                    ExamRow(exam: $0)
-                }
-                .listStyle(.plain)
+                List(store.userExams, rowContent: ExamRow.init)
+                    .listStyle(.plain)
             }
             else
             {

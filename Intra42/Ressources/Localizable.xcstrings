@@ -111,16 +111,6 @@
         }
       }
     },
-    "Liste" : {
-      "localizations" : {
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Liste"
-          }
-        }
-      }
-    },
     "My Activities" : {
       "localizations" : {
         "fr" : {

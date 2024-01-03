@@ -23,11 +23,8 @@ extension ActivitiesView
         {
             if !store.userScales.isEmpty
             {
-                List
-                {
-                    Text("Liste")
-                }
-                .listStyle(.plain)
+                List(store.userScales, rowContent: ScaleRow.init)
+                    .listStyle(.plain)
             }
             else
             {
