@@ -23,6 +23,7 @@ struct Intra42App: App
         {
             ContentView()
                 .environment(\.store, store)
+                .handleErrors(error: store.error, action: store.errorAction)
         }
     }
 }

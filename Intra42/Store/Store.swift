@@ -11,4 +11,10 @@ import Foundation
 @Observable
 final class Store
 {
+    
+    // MARK: - Exposed properties
+    
+    var error: AppError?
+    var errorAction: (() -> Void)?
+    
 }
