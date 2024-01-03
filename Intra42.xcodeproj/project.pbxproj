@@ -58,6 +58,7 @@
 		9C9BACE92B45655200CBB2E2 /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACE82B45655200CBB2E2 /* ActivitiesView.swift */; };
 		9C9BACED2B45698C00CBB2E2 /* Activities+Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACEC2B45698C00CBB2E2 /* Activities+Picker.swift */; };
 		9C9BACEF2B456AB700CBB2E2 /* Activities+Corrections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACEE2B456AB700CBB2E2 /* Activities+Corrections.swift */; };
+		9C9BACF12B456CFE00CBB2E2 /* Activities+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACF02B456CFE00CBB2E2 /* Activities+Events.swift */; };
 		9CFEFFAC2B42FDAE0054859E /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFAB2B42FDAE0054859E /* OnBoardingView.swift */; };
 		9CFEFFB22B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */; };
 		9CFEFFB42B42FF9D0054859E /* OnBoarding+Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */; };
@@ -141,6 +142,7 @@
 		9C9BACE82B45655200CBB2E2 /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
 		9C9BACEC2B45698C00CBB2E2 /* Activities+Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activities+Picker.swift"; sourceTree = "<group>"; };
 		9C9BACEE2B456AB700CBB2E2 /* Activities+Corrections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activities+Corrections.swift"; sourceTree = "<group>"; };
+		9C9BACF02B456CFE00CBB2E2 /* Activities+Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activities+Events.swift"; sourceTree = "<group>"; };
 		9CFEFFAB2B42FDAE0054859E /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+WelcomeTitle.swift"; sourceTree = "<group>"; };
 		9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+Paragraph.swift"; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				9C9BACEE2B456AB700CBB2E2 /* Activities+Corrections.swift */,
+				9C9BACF02B456CFE00CBB2E2 /* Activities+Events.swift */,
 				9C9BACEC2B45698C00CBB2E2 /* Activities+Picker.swift */,
 				9C9BACE82B45655200CBB2E2 /* ActivitiesView.swift */,
 			);
@@ -614,6 +617,7 @@
 				9CFEFFAC2B42FDAE0054859E /* OnBoardingView.swift in Sources */,
 				9CFEFFBC2B4302CA0054859E /* OnBoardingViewModel.swift in Sources */,
 				9C1F1F712B42C93500695C3E /* Slot.swift in Sources */,
+				9C9BACF12B456CFE00CBB2E2 /* Activities+Events.swift in Sources */,
 				9C17435A2B42E5E100A707C4 /* Authorization.swift in Sources */,
 				9C1F1F782B42CA5600695C3E /* Exam+Samples.swift in Sources */,
 				9C1F1F652B42C7BD00695C3E /* Event.swift in Sources */,

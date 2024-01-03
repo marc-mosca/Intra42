@@ -131,6 +131,16 @@
         }
       }
     },
+    "No events planned" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun événement prévu"
+          }
+        }
+      }
+    },
     "OK" : {
       "localizations" : {
         "fr" : {
@@ -147,6 +157,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Profil"
+          }
+        }
+      }
+    },
+    "Register for an event offered by your campus to see it appear here." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inscrivez-vous à un événement proposé par votre campus pour le voir apparaître ici."
           }
         }
       }

@@ -29,7 +29,7 @@ struct ActivitiesView: View
                 case .corrections:
                     Correction()
                 case .events:
-                    Text("Events")
+                    Events()
                 case .exams:
                     Text("Exams")
                 }
