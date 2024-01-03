@@ -56,6 +56,9 @@
 		9C6FB80A2B459695002AF3FF /* Campus+EventsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB8092B459695002AF3FF /* Campus+EventsList.swift */; };
 		9C6FB80C2B4596E1002AF3FF /* Campus+ExamsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB80B2B4596E1002AF3FF /* Campus+ExamsList.swift */; };
 		9C6FB80E2B459DF8002AF3FF /* AppRequestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB80D2B459DF8002AF3FF /* AppRequestState.swift */; };
+		9C6FB8102B459F22002AF3FF /* HRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB80F2B459F22002AF3FF /* HRow.swift */; };
+		9C6FB8122B459FE4002AF3FF /* VRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB8112B459FE4002AF3FF /* VRow.swift */; };
+		9C6FB8182B45A229002AF3FF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB8172B45A229002AF3FF /* Date.swift */; };
 		9C9BACD32B454C4600CBB2E2 /* SlideInModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD22B454C4600CBB2E2 /* SlideInModifier.swift */; };
 		9C9BACD62B4551BF00CBB2E2 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD52B4551BF00CBB2E2 /* Store.swift */; };
 		9C9BACD82B4551E700CBB2E2 /* EnvironmentValues+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD72B4551E700CBB2E2 /* EnvironmentValues+Store.swift */; };
@@ -150,6 +153,9 @@
 		9C6FB8092B459695002AF3FF /* Campus+EventsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Campus+EventsList.swift"; sourceTree = "<group>"; };
 		9C6FB80B2B4596E1002AF3FF /* Campus+ExamsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Campus+ExamsList.swift"; sourceTree = "<group>"; };
 		9C6FB80D2B459DF8002AF3FF /* AppRequestState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRequestState.swift; sourceTree = "<group>"; };
+		9C6FB80F2B459F22002AF3FF /* HRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRow.swift; sourceTree = "<group>"; };
+		9C6FB8112B459FE4002AF3FF /* VRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRow.swift; sourceTree = "<group>"; };
+		9C6FB8172B45A229002AF3FF /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		9C9BACD22B454C4600CBB2E2 /* SlideInModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInModifier.swift; sourceTree = "<group>"; };
 		9C9BACD52B4551BF00CBB2E2 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		9C9BACD72B4551E700CBB2E2 /* EnvironmentValues+Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Store.swift"; sourceTree = "<group>"; };
@@ -210,6 +216,7 @@
 		9C1743652B42ECFE00A707C4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9C6FB8162B45A223002AF3FF /* Extensions */,
 				9C6FB7F02B45892D002AF3FF /* UI Components */,
 				9CFEFFA72B42FD890054859E /* View Modifiers */,
 				9C1743662B42ED0600A707C4 /* AppError.swift */,
@@ -381,7 +388,9 @@
 			isa = PBXGroup;
 			children = (
 				9C6FB7F82B458D77002AF3FF /* FilterButton.swift */,
+				9C6FB80F2B459F22002AF3FF /* HRow.swift */,
 				9C6FB7F12B458939002AF3FF /* RefreshButton.swift */,
+				9C6FB8112B459FE4002AF3FF /* VRow.swift */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -412,6 +421,14 @@
 				9C6FB8032B45960C002AF3FF /* CampusViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9C6FB8162B45A223002AF3FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C6FB8172B45A229002AF3FF /* Date.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9C9BACD42B4551B000CBB2E2 /* Store */ = {
@@ -642,6 +659,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1F1F742B42C9FB00695C3E /* CorrectionPointHistorics+Samples.swift in Sources */,
+				9C6FB8102B459F22002AF3FF /* HRow.swift in Sources */,
 				9C1743582B42E58F00A707C4 /* Endpoint.swift in Sources */,
 				9C1F1F7A2B42CA7600695C3E /* Logtime+Samples.swift in Sources */,
 				9C1F1F802B42CAC800695C3E /* Slot+Samples.swift in Sources */,
@@ -660,6 +678,7 @@
 				9C1743602B42E81500A707C4 /* Api+Keychain.swift in Sources */,
 				9C1F1F672B42C81500695C3E /* Exam.swift in Sources */,
 				9C17435C2B42E65E00A707C4 /* Method.swift in Sources */,
+				9C6FB8122B459FE4002AF3FF /* VRow.swift in Sources */,
 				9C9BACE92B45655200CBB2E2 /* ActivitiesView.swift in Sources */,
 				9C1F1F7C2B42CA9A00695C3E /* OAuth+Samples.swift in Sources */,
 				9C1F1F692B42C84100695C3E /* Logtime.swift in Sources */,
@@ -674,6 +693,7 @@
 				9C1F1F5A2B42C61500695C3E /* Api.swift in Sources */,
 				9C6FB8042B45960C002AF3FF /* CampusViewModel.swift in Sources */,
 				9CFEFFB22B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift in Sources */,
+				9C6FB8182B45A229002AF3FF /* Date.swift in Sources */,
 				9C1F1F8D2B42CF7E00695C3E /* ExamRow.swift in Sources */,
 				9C9BACD62B4551BF00CBB2E2 /* Store.swift in Sources */,
 				9CFEFFBA2B4302490054859E /* OnBoarding+Author.swift in Sources */,
