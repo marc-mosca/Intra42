@@ -50,7 +50,7 @@ extension AppScreen
         case .search:
             Text("Search")
         case .events:
-            Text("Events")
+            EventView()
         case .profile:
             Text("Profile")
         }
