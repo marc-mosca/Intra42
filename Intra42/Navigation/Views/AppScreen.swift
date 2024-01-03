@@ -46,7 +46,7 @@ extension AppScreen
         switch self
         {
         case .activities:
-            Text("Activities")
+            ActivitiesView()
         case .search:
             Text("Search")
         case .events:

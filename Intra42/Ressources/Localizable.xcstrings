@@ -91,6 +91,16 @@
         }
       }
     },
+    "My Activities" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mes activités"
+          }
+        }
+      }
+    },
     "OK" : {
       "localizations" : {
         "fr" : {
