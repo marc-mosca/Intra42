@@ -51,6 +51,16 @@
         }
       }
     },
+    "Corrections" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corrections"
+          }
+        }
+      }
+    },
     "Developed by Marc MOSCA while eating 🍿" : {
       "localizations" : {
         "fr" : {
@@ -72,7 +82,6 @@
       }
     },
     "Exams" : {
-      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {

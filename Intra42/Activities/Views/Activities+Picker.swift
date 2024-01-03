@@ -10,13 +10,26 @@ import SwiftUI
 extension ActivitiesView
 {
     
-    enum PickerCategories: String, Identifiable, CaseIterable
+    enum PickerCategories: Identifiable, CaseIterable
     {
         case corrections
         case events
         case exams
         
         var id: Self { self }
+        
+        var title: String.LocalizationValue
+        {
+            switch self
+            {
+            case .corrections:
+                return "Corrections"
+            case .events:
+                return "Events"
+            case .exams:
+                return "Exams"
+            }
+        }
     }
     
     struct CategoryPicker: View
@@ -34,7 +47,7 @@ extension ActivitiesView
             {
                 ForEach(PickerCategories.allCases)
                 {
-                    Text($0.rawValue.capitalized)
+                    Text(String(localized: $0.title))
                 }
             }
             .pickerStyle(.segmented)
