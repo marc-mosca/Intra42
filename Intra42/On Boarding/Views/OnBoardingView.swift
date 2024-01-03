@@ -14,6 +14,7 @@ struct OnBoardingView: View
     // MARK: - Private properties
     
     @Environment(\.webAuthenticationSession) private var webAuthenticationSession
+    @Environment(\.store) private var store
     @AppStorage("userIsConnected") private var userIsConnected: Bool?
     @State private var viewModel = ViewModel()
     
@@ -48,6 +49,10 @@ struct OnBoardingView: View
             if await viewModel.signIn(webAuthenticationSession: webAuthenticationSession)
             {
                 userIsConnected = true
+            }
+            else
+            {
+                store.error = .apiAuthorization
             }
         }
     }
