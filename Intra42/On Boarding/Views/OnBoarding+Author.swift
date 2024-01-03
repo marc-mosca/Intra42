@@ -21,6 +21,7 @@ extension OnBoardingView
                 .foregroundStyle(.secondary)
                 .font(.caption2)
                 .frame(maxWidth: .infinity)
+                .slideIn(rowHeight: 50, duration: 1, delay: 0.9)
         }
         
     }

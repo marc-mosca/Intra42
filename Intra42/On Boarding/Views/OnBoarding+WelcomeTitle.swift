@@ -44,6 +44,7 @@ extension OnBoardingView
             .accessibilityAddTraits(.isStaticText)
             .allowsTightening(true)
             .minimumScaleFactor(0.5)
+            .slideIn(rowHeight: 50, duration: 1, delay: 0.2)
         }
     }
     

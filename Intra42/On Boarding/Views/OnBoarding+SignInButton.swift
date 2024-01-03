@@ -36,6 +36,7 @@ extension OnBoardingView
                 .frame(maxWidth: .infinity)
                 .background(.night)
                 .clipShape(.buttonBorder)
+                .slideIn(rowHeight: 50, duration: 1, delay: 0.8)
         }
         
     }

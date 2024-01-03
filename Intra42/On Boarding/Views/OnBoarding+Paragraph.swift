@@ -24,18 +24,21 @@ extension OnBoardingView
                     title: "Your activities",
                     description: "View and manage your upcoming events, examinations and corrections."
                 )
+                .slideIn(rowHeight: 50, duration: 1, delay: 0.4)
                 
                 paragraph(
                     icon: "magnifyingglass",
                     title: "Connectivity",
                     description: "Search and view the profile of any other student on the worldwide 42 network."
                 )
+                .slideIn(rowHeight: 50, duration: 1, delay: 0.5)
                 
                 paragraph(
                     icon: "person",
                     title: "Your profile",
                     description: "View your projects, your logtime, your events and much more information about your course."
                 )
+                .slideIn(rowHeight: 50, duration: 1, delay: 0.6)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
