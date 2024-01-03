@@ -71,6 +71,16 @@
         }
       }
     },
+    "Exams" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exams"
+          }
+        }
+      }
+    },
     "Headline" : {
       "localizations" : {
         "fr" : {
@@ -91,12 +101,32 @@
         }
       }
     },
+    "Liste" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liste"
+          }
+        }
+      }
+    },
     "My Activities" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mes activités"
+          }
+        }
+      }
+    },
+    "No corrections planned" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune correction prévu"
           }
         }
       }
@@ -147,6 +177,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Recherchez et consultez le profil de n'importe quel autre étudiant sur le réseau mondial 42."
+          }
+        }
+      }
+    },
+    "Select an activity category" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sélectionner une catégorie d'activité"
           }
         }
       }
@@ -227,6 +267,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bienvenue sur"
+          }
+        }
+      }
+    },
+    "When a student takes one of your correction slots to be corrected, you'll see it appear here." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lorsqu'un étudiant prendra l’un de vos créneaux de correction pour se faire corriger, vous le verrez apparaître ici."
           }
         }
       }

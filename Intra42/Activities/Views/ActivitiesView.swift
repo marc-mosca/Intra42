@@ -10,6 +10,10 @@ import SwiftUI
 struct ActivitiesView: View
 {
     
+    // MARK: - Private properties
+    
+    @State private var selection = PickerCategories.corrections
+    
     // MARK: - Body
     
     var body: some View
@@ -18,9 +22,19 @@ struct ActivitiesView: View
         {
             VStack
             {
+                CategoryPicker(selection: $selection)
+                
+                switch selection
+                {
+                case .corrections:
+                    Correction()
+                case .events:
+                    Text("Events")
+                case .exams:
+                    Text("Exams")
+                }
             }
             .navigationTitle("My Activities")
-            .padding()
         }
     }
 }
