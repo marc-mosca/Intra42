@@ -1,5 +1,5 @@
 //
-//  EventViewModel.swift
+//  CampusViewModel.swift
 //  Intra42
 //
 //  Created by Marc Mosca on 03/01/2024.
@@ -8,10 +8,10 @@
 import Observation
 import Foundation
 
-extension EventView
+extension CampusView
 {
     
-    enum EventPickerCategories: Identifiable, CaseIterable
+    enum CampusPickerCategories: Identifiable, CaseIterable
     {
         case events
         case exams
@@ -36,7 +36,7 @@ extension EventView
         
         // MARK: - Exposed properties
         
-        var selection = EventPickerCategories.events
+        var selection = CampusPickerCategories.events
         var searched = ""
         var selectedFilter = String(localized: "All")
         

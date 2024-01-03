@@ -1,5 +1,5 @@
 //
-//  Event+Picker.swift
+//  Campus+Picker.swift
 //  Intra42
 //
 //  Created by Marc Mosca on 03/01/2024.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-extension EventView
+extension CampusView
 {
     
-    struct EventPicker: View
+    struct CampusPicker: View
     {
         
         // MARK: - Exposed properties
         
-        @Binding var selection: EventPickerCategories
+        @Binding var selection: CampusPickerCategories
         
         // MARK: - Body
         
@@ -23,7 +23,7 @@ extension EventView
         {
             Picker("Select an activity category", selection: $selection)
             {
-                ForEach(EventPickerCategories.allCases)
+                ForEach(CampusPickerCategories.allCases)
                 {
                     Text(String(localized: $0.title))
                 }

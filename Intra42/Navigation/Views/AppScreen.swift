@@ -12,7 +12,7 @@ enum AppScreen: Identifiable, CaseIterable
     
     case activities
     case search
-    case events
+    case campus
     case profile
     
     var id: Self { self }
@@ -33,8 +33,8 @@ extension AppScreen
             Label("Activities", systemImage: "list.bullet.clipboard.fill")
         case .search:
             Label("Search", systemImage: "magnifyingglass")
-        case .events:
-            Label("Events", systemImage: "calendar")
+        case .campus:
+            Label("Campus", systemImage: "graduationcap.fill")
         case .profile:
             Label("Profile", systemImage: "person.fill")
         }
@@ -49,8 +49,8 @@ extension AppScreen
             ActivitiesView()
         case .search:
             Text("Search")
-        case .events:
-            EventView()
+        case .campus:
+            CampusView()
         case .profile:
             Text("Profile")
         }

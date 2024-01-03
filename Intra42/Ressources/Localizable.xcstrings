@@ -51,6 +51,16 @@
         }
       }
     },
+    "Campus" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Campus"
+          }
+        }
+      }
+    },
     "Connectivity" : {
       "localizations" : {
         "fr" : {
@@ -131,12 +141,32 @@
         }
       }
     },
+    "My campus" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mon campus"
+          }
+        }
+      }
+    },
     "No corrections planned" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucune correction prévu"
+          }
+        }
+      }
+    },
+    "No events are planned on your campus." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun événement n'est prévu dans votre campus."
           }
         }
       }
@@ -157,6 +187,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucun examen prévu"
+          }
+        }
+      }
+    },
+    "No exams are scheduled on your campus." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun examen n'est prévu dans votre campus."
           }
         }
       }

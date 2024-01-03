@@ -1,5 +1,5 @@
 //
-//  EventView.swift
+//  CampusView.swift
 //  Intra42
 //
 //  Created by Marc Mosca on 03/01/2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EventView: View
+struct CampusView: View
 {
     
     // MARK: - Private properties
@@ -29,9 +29,17 @@ struct EventView: View
         {
             VStack
             {
-                EventPicker(selection: $viewModel.selection)
+                CampusPicker(selection: $viewModel.selection)
+                
+                switch viewModel.selection
+                {
+                case .events:
+                    EventsList()
+                case .exams:
+                    ExamsList()
+                }
             }
-            .navigationTitle("Events")
+            .navigationTitle("My campus")
             .padding()
             .searchable(text: $viewModel.searched)
             .onChange(of: viewModel.selection, viewModel.resetFilterOnCategoryChange)
@@ -50,5 +58,5 @@ struct EventView: View
 
 #Preview
 {
-    EventView()
+    CampusView()
 }
