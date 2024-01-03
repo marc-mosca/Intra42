@@ -13,17 +13,17 @@ extension CampusView
     struct ExamsList: View
     {
         
-        // MARK: - Private properties
+        // MARK: - Exposed properties
         
-        @Environment(\.store) private var store
+        let exams: [Api.Types.Exam]
         
         // MARK: - Body
         
         var body: some View
         {
-            if !store.campusExams.isEmpty
+            if !exams.isEmpty
             {
-                List(store.campusExams, rowContent: ExamRow.init)
+                List(exams, rowContent: ExamRow.init)
                     .listStyle(.plain)
             }
             else

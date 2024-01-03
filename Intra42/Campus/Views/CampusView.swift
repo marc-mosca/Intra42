@@ -21,6 +21,16 @@ struct CampusView: View
         viewModel.fetchFilters(events: store.campusEvents)
     }
     
+    private var filteredEvents: [Api.Types.Event]
+    {
+        viewModel.filter(for: store.campusEvents)
+    }
+    
+    private var filteredExams: [Api.Types.Exam]
+    {
+        viewModel.filter(for: store.campusExams)
+    }
+    
     // MARK: - Body
     
     var body: some View
@@ -34,9 +44,9 @@ struct CampusView: View
                 switch viewModel.selection
                 {
                 case .events:
-                    EventsList()
+                    EventsList(events: filteredEvents)
                 case .exams:
-                    ExamsList()
+                    ExamsList(exams: filteredExams)
                 }
             }
             .navigationTitle("My campus")

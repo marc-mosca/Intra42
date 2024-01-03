@@ -57,6 +57,22 @@ extension CampusView
             return filters.sorted()
         }
         
+        func filter(for events: [Api.Types.Event]) -> [Api.Types.Event]
+        {
+            let filteredEvents = selectedFilter != String(localized: "All") ? events.filter { $0.kind.capitalized == selectedFilter } : events
+            
+            guard !searched.isEmpty else { return filteredEvents }
+            
+            return filteredEvents.filter { $0.name.lowercased().contains(searched.lowercased()) }
+        }
+        
+        func filter(for exams: [Api.Types.Exam]) -> [Api.Types.Exam]
+        {
+            guard !searched.isEmpty else { return exams }
+            
+            return exams.filter { $0.name.lowercased().contains(searched.lowercased()) }
+        }
+        
         func resetFilterOnCategoryChange()
         {
             selectedFilter = String(localized: "All")
