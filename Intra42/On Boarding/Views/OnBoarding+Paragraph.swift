@@ -68,6 +68,7 @@ extension OnBoardingView
                         .foregroundStyle(.secondary)
                         .font(.subheadline)
                 }
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
         
