@@ -8,10 +8,22 @@
 import SwiftUI
 
 @main
-struct Intra42App: App {
-    var body: some Scene {
-        WindowGroup {
+struct Intra42App: App
+{
+    
+    // MARK: - Private properties
+    
+    @State private var store = Store()
+    
+    // MARK: - Body
+    
+    var body: some Scene
+    {
+        WindowGroup
+        {
             ContentView()
+                .environment(\.store, store)
+                .handleErrors(error: store.error, action: store.errorAction)
         }
     }
 }

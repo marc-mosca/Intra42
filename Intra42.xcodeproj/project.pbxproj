@@ -49,6 +49,10 @@
 		9C1F1F8D2B42CF7E00695C3E /* ExamRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F8C2B42CF7E00695C3E /* ExamRow.swift */; };
 		9C1F1F8F2B42D03400695C3E /* ScaleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F8E2B42D03400695C3E /* ScaleRow.swift */; };
 		9C9BACD32B454C4600CBB2E2 /* SlideInModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD22B454C4600CBB2E2 /* SlideInModifier.swift */; };
+		9C9BACD62B4551BF00CBB2E2 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD52B4551BF00CBB2E2 /* Store.swift */; };
+		9C9BACD82B4551E700CBB2E2 /* EnvironmentValues+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD72B4551E700CBB2E2 /* EnvironmentValues+Store.swift */; };
+		9C9BACDA2B45532800CBB2E2 /* HandleErrorsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD92B45532800CBB2E2 /* HandleErrorsModifier.swift */; };
+		9C9BACDE2B45587000CBB2E2 /* AppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACDD2B45587000CBB2E2 /* AppScreen.swift */; };
 		9CFEFFAC2B42FDAE0054859E /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFAB2B42FDAE0054859E /* OnBoardingView.swift */; };
 		9CFEFFB22B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */; };
 		9CFEFFB42B42FF9D0054859E /* OnBoarding+Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */; };
@@ -123,6 +127,10 @@
 		9C1F1F8C2B42CF7E00695C3E /* ExamRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamRow.swift; sourceTree = "<group>"; };
 		9C1F1F8E2B42D03400695C3E /* ScaleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleRow.swift; sourceTree = "<group>"; };
 		9C9BACD22B454C4600CBB2E2 /* SlideInModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInModifier.swift; sourceTree = "<group>"; };
+		9C9BACD52B4551BF00CBB2E2 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		9C9BACD72B4551E700CBB2E2 /* EnvironmentValues+Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Store.swift"; sourceTree = "<group>"; };
+		9C9BACD92B45532800CBB2E2 /* HandleErrorsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleErrorsModifier.swift; sourceTree = "<group>"; };
+		9C9BACDD2B45587000CBB2E2 /* AppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreen.swift; sourceTree = "<group>"; };
 		9CFEFFAB2B42FDAE0054859E /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+WelcomeTitle.swift"; sourceTree = "<group>"; };
 		9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+Paragraph.swift"; sourceTree = "<group>"; };
@@ -207,6 +215,7 @@
 				9C1F1F2B2B42C0E000695C3E /* Preview Content */,
 				9C1F1F522B42C2DE00695C3E /* Ressources */,
 				9C1743652B42ECFE00A707C4 /* Shared */,
+				9C9BACD42B4551B000CBB2E2 /* Store */,
 				9C1F1F562B42C52100695C3E /* Api.plist */,
 				9C1F1F552B42C49B00695C3E /* Info.plist */,
 				9C1F1F252B42C0DF00695C3E /* Intra42App.swift */,
@@ -243,6 +252,7 @@
 		9C1F1F512B42C2D800695C3E /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				9C9BACDD2B45587000CBB2E2 /* AppScreen.swift */,
 				9C1F1F272B42C0DF00695C3E /* ContentView.swift */,
 			);
 			path = Navigation;
@@ -331,9 +341,19 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		9C9BACD42B4551B000CBB2E2 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				9C9BACD72B4551E700CBB2E2 /* EnvironmentValues+Store.swift */,
+				9C9BACD52B4551BF00CBB2E2 /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		9CFEFFA72B42FD890054859E /* View Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				9C9BACD92B45532800CBB2E2 /* HandleErrorsModifier.swift */,
 				9C9BACD22B454C4600CBB2E2 /* SlideInModifier.swift */,
 			);
 			path = "View Modifiers";
@@ -510,6 +530,7 @@
 				9CFEFFB82B4301620054859E /* OnBoarding+SignInButton.swift in Sources */,
 				9C1F1F6B2B42C87300695C3E /* OAuth.swift in Sources */,
 				9C1F1F852B42CBBF00695C3E /* EventRow.swift in Sources */,
+				9C9BACDA2B45532800CBB2E2 /* HandleErrorsModifier.swift in Sources */,
 				9C9BACD32B454C4600CBB2E2 /* SlideInModifier.swift in Sources */,
 				9C1743602B42E81500A707C4 /* Api+Keychain.swift in Sources */,
 				9C1F1F672B42C81500695C3E /* Exam.swift in Sources */,
@@ -522,10 +543,12 @@
 				9C1F1F5A2B42C61500695C3E /* Api.swift in Sources */,
 				9CFEFFB22B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift in Sources */,
 				9C1F1F8D2B42CF7E00695C3E /* ExamRow.swift in Sources */,
+				9C9BACD62B4551BF00CBB2E2 /* Store.swift in Sources */,
 				9CFEFFBA2B4302490054859E /* OnBoarding+Author.swift in Sources */,
 				9C1743532B42E18E00A707C4 /* Api+Keys.swift in Sources */,
 				9C1F1F7E2B42CAB000695C3E /* Scale+Samples.swift in Sources */,
 				9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */,
+				9C9BACD82B4551E700CBB2E2 /* EnvironmentValues+Store.swift in Sources */,
 				9C1F1F632B42C77500695C3E /* CorrectionPointHistorics.swift in Sources */,
 				9C17435E2B42E6E000A707C4 /* Url.swift in Sources */,
 				9CFEFFAC2B42FDAE0054859E /* OnBoardingView.swift in Sources */,
@@ -542,6 +565,7 @@
 				9C1F1F6D2B42C8A700695C3E /* Scale.swift in Sources */,
 				9C1F1F262B42C0DF00695C3E /* Intra42App.swift in Sources */,
 				9C1743552B42E30A00A707C4 /* Api+Errors.swift in Sources */,
+				9C9BACDE2B45587000CBB2E2 /* AppScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
