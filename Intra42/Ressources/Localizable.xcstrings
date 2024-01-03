@@ -51,6 +51,16 @@
         }
       }
     },
+    "Corrections" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corrections"
+          }
+        }
+      }
+    },
     "Developed by Marc MOSCA while eating 🍿" : {
       "localizations" : {
         "fr" : {
@@ -67,6 +77,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Événements"
+          }
+        }
+      }
+    },
+    "Exams" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exams"
           }
         }
       }
@@ -101,6 +121,36 @@
         }
       }
     },
+    "No corrections planned" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune correction prévu"
+          }
+        }
+      }
+    },
+    "No events planned" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun événement prévu"
+          }
+        }
+      }
+    },
+    "No examinations planned" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun examen prévu"
+          }
+        }
+      }
+    },
     "OK" : {
       "localizations" : {
         "fr" : {
@@ -117,6 +167,36 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Profil"
+          }
+        }
+      }
+    },
+    "Refresh informations" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rafraichir les informations"
+          }
+        }
+      }
+    },
+    "Register for an event offered by your campus to see it appear here." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inscrivez-vous à un événement proposé par votre campus pour le voir apparaître ici."
+          }
+        }
+      }
+    },
+    "Register for an exam offered by your campus to see it appear here." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inscrivez-vous à un examen proposé par votre campus pour le voir apparaître ici."
           }
         }
       }
@@ -147,6 +227,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Recherchez et consultez le profil de n'importe quel autre étudiant sur le réseau mondial 42."
+          }
+        }
+      }
+    },
+    "Select an activity category" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sélectionner une catégorie d'activité"
           }
         }
       }
@@ -227,6 +317,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bienvenue sur"
+          }
+        }
+      }
+    },
+    "When a student takes one of your correction slots to be corrected, you'll see it appear here." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lorsqu'un étudiant prendra l’un de vos créneaux de correction pour se faire corriger, vous le verrez apparaître ici."
           }
         }
       }

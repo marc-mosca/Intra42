@@ -146,10 +146,13 @@ extension Api
             switch authorization
             {
             case .application:
-                try await request(for: .fetchApplicationAccessToken)
+                let applicationToken = try await request(for: .fetchApplicationAccessToken) as Api.Types.OAuth.AppToken
+                try Api.Keychain.shared.save(account: .applicationAccessToken, data: applicationToken.accessToken)
             case .user:
                 guard let refreshToken = Api.Tokens.userRefreshToken.value else { throw Api.Errors.invalidAccessToken }
-                try await request(for: .updateUserAccessToken(refreshToken: refreshToken))
+                let userToken = try await request(for: .updateUserAccessToken(refreshToken: refreshToken)) as Api.Types.OAuth.UserToken
+                try Api.Keychain.shared.save(account: .userAccessToken, data: userToken.accessToken)
+                try Api.Keychain.shared.save(account: .userRefreshToken, data: userToken.refreshToken)
             }
         }
         
