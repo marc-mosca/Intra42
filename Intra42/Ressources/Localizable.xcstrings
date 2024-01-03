@@ -72,6 +72,7 @@
       }
     },
     "Exams" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -141,6 +142,16 @@
         }
       }
     },
+    "No examinations planned" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun examen prévu"
+          }
+        }
+      }
+    },
     "OK" : {
       "localizations" : {
         "fr" : {
@@ -167,6 +178,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inscrivez-vous à un événement proposé par votre campus pour le voir apparaître ici."
+          }
+        }
+      }
+    },
+    "Register for an exam offered by your campus to see it appear here." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inscrivez-vous à un examen proposé par votre campus pour le voir apparaître ici."
           }
         }
       }

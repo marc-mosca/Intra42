@@ -27,11 +27,11 @@ struct ActivitiesView: View
                 switch selection
                 {
                 case .corrections:
-                    Correction()
+                    Corrections()
                 case .events:
                     Events()
                 case .exams:
-                    Text("Exams")
+                    Exams()
                 }
             }
             .navigationTitle("My Activities")

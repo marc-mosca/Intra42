@@ -1,5 +1,5 @@
 //
-//  Activities+Corrections.swift
+//  Activities+Exams.swift
 //  Intra42
 //
 //  Created by Marc Mosca on 03/01/2024.
@@ -10,7 +10,7 @@ import SwiftUI
 extension ActivitiesView
 {
     
-    struct Corrections: View
+    struct Exams: View
     {
         
         // MARK: - Private properties
@@ -21,20 +21,20 @@ extension ActivitiesView
         
         var body: some View
         {
-            if !store.userScales.isEmpty
+            if !store.userExams.isEmpty
             {
-                List
+                List(store.userExams)
                 {
-                    Text("Liste")
+                    ExamRow(exam: $0)
                 }
                 .listStyle(.plain)
             }
             else
             {
                 ContentUnavailableView(
-                    "No corrections planned",
-                    systemImage: "person.badge.clock.fill",
-                    description: Text("When a student takes one of your correction slots to be corrected, you'll see it appear here.")
+                    "No examinations planned",
+                    systemImage: "scroll.fill",
+                    description: Text("Register for an exam offered by your campus to see it appear here.")
                 )
             }
         }
