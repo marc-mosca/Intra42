@@ -231,6 +231,16 @@
         }
       }
     },
+    "Account" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compte"
+          }
+        }
+      }
+    },
     "Activities" : {
       "localizations" : {
         "fr" : {
@@ -381,6 +391,16 @@
         }
       }
     },
+    "Do you really want to log out of the application?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voulez-vous vraiment vous déconnecter de l'application ?"
+          }
+        }
+      }
+    },
     "Do you really want to unsubscribe from this event?" : {
       "localizations" : {
         "fr" : {
@@ -487,6 +507,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lieu"
+          }
+        }
+      }
+    },
+    "Log out" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se déconnecter"
           }
         }
       }
