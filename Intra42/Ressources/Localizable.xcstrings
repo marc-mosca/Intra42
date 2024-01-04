@@ -311,6 +311,16 @@
         }
       }
     },
+    "Dark" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sombre"
+          }
+        }
+      }
+    },
     "Date" : {
       "localizations" : {
         "fr" : {
@@ -417,6 +427,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Intra42"
+          }
+        }
+      }
+    },
+    "Light" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clair"
           }
         }
       }
@@ -651,6 +671,26 @@
         }
       }
     },
+    "Set the default theme for the application." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Définissez le thème utilisé par défaut pour l'application."
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres"
+          }
+        }
+      }
+    },
     "Sign In" : {
       "localizations" : {
         "fr" : {
@@ -691,6 +731,16 @@
         }
       }
     },
+    "System" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Système"
+          }
+        }
+      }
+    },
     "The authorisation key is no longer valid (code 401)." : {
       "localizations" : {
         "fr" : {
@@ -727,6 +777,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le serveur reçoit trop de demandes (code 429)."
+          }
+        }
+      }
+    },
+    "Theme" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thème"
           }
         }
       }

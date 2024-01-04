@@ -13,7 +13,13 @@ struct Intra42App: App
     
     // MARK: - Private properties
     
+    @AppStorage("userDefaultColorScheme") private var userDefaultColorScheme: Int?
     @State private var store = Store()
+    
+    private var colorScheme: ColorScheme?
+    {
+        AppColorScheme.transformToColorScheme(colorScheme: userDefaultColorScheme ?? 0)
+    }
     
     // MARK: - Body
     
@@ -23,6 +29,7 @@ struct Intra42App: App
         {
             ContentView()
                 .environment(\.store, store)
+                .preferredColorScheme(colorScheme)
                 .handleErrors(error: store.error, action: store.errorAction)
         }
     }

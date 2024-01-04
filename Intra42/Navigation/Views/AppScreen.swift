@@ -57,7 +57,7 @@ extension AppScreen
         case .profile:
             Text("Profile")
         case .settings:
-            Text("Settings")
+            SettingView()
         }
     }
     
