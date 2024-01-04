@@ -8,22 +8,22 @@
 import Foundation
 
 /// A structure representing an uncertain value of type T or U.
-public struct UncertainValue<T: Decodable, U: Decodable>: Decodable
+struct UncertainValue<T: Decodable, U: Decodable>: Decodable
 {
     
     // MARK: - Exposed properties
     
-    public var tValue: T?
-    public var uValue: U?
+    var tValue: T?
+    var uValue: U?
     
-    public var value: Any?
+    var value: Any?
     {
         return tValue ?? uValue
     }
     
     // MARK: - Exposed constructors
     
-    public init(from decoder: Decoder) throws
+    init(from decoder: Decoder) throws
     {
         let container = try decoder.singleValueContainer()
         

@@ -1,5 +1,5 @@
 //
-//  ActivitiesView.swift
+//  CampusView.swift
 //  Intra42
 //
 //  Created by Marc Mosca on 03/01/2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ActivitiesView: View
+struct CampusView: View
 {
     
     // MARK: - Private properties
@@ -15,6 +15,21 @@ struct ActivitiesView: View
     @Environment(\.store) private var store
     @AppStorage("userIsConnected") private var userIsConnected: Bool?
     @State private var viewModel = ViewModel()
+    
+    private var filters: [String]
+    {
+        viewModel.fetchFilters(events: store.campusEvents)
+    }
+    
+    private var filteredEvents: [Api.Types.Event]
+    {
+        viewModel.filter(for: store.campusEvents)
+    }
+    
+    private var filteredExams: [Api.Types.Exam]
+    {
+        viewModel.filter(for: store.campusExams)
+    }
     
     // MARK: - Body
     
@@ -24,23 +39,25 @@ struct ActivitiesView: View
         {
             VStack
             {
-                CategoryPicker(selection: $viewModel.selection)
+                CampusPicker(selection: $viewModel.selection)
                 
                 switch viewModel.selection
                 {
-                case .corrections:
-                    Corrections()
                 case .events:
-                    Events()
+                    EventsList(events: filteredEvents)
                 case .exams:
-                    Exams()
+                    ExamsList(exams: filteredExams)
                 }
             }
-            .navigationTitle("My Activities")
+            .navigationTitle("My campus")
+            .padding()
+            .searchable(text: $viewModel.searched)
+            .onChange(of: viewModel.selection, viewModel.resetFilterOnCategoryChange)
             .toolbar
             {
-                ToolbarItem
+                ToolbarItemGroup
                 {
+                    FilterButton(selection: $viewModel.selectedFilter, filters: filters)
                     RefreshButton(state: viewModel.loadingState, action: refreshButtonAction)
                 }
             }
@@ -55,7 +72,7 @@ struct ActivitiesView: View
         {
             do
             {
-                try await viewModel.updateUserActivitiesInformations(store: store)
+                try await viewModel.updateCampusActivities(store: store)
             }
             catch AppError.apiAuthorization
             {
@@ -79,5 +96,5 @@ struct ActivitiesView: View
 
 #Preview
 {
-    ActivitiesView()
+    CampusView()
 }

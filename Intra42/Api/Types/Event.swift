@@ -10,42 +10,53 @@ import Foundation
 extension Api.Types
 {
     
-    /// A structure representing an event.
-    public struct Event: Decodable, Identifiable
+    /// An object representing events for deletion to the API.
+    struct EventUser: Decodable, Identifiable
     {
         
         // MARK: - Exposed properties
         
-        public let id: Int
-        public let name: String
-        public let description: String
-        public let location: String
-        public let kind: String
-        public let maxPeople: Int?
-        public let nbrSubscribers: Int
-        public let beginAt: Date
-        public let endAt: Date
+        let id: Int
+        let eventId: Int
+        let userId: Int
+    }
+    
+    /// A structure representing an event.
+    struct Event: Decodable, Identifiable
+    {
         
-        public var isInFuture: Bool
+        // MARK: - Exposed properties
+        
+        let id: Int
+        let name: String
+        let description: String
+        let location: String
+        let kind: String
+        let maxPeople: Int?
+        let nbrSubscribers: Int
+        let beginAt: Date
+        let endAt: Date
+        
+        var isInFuture: Bool
         {
             beginAt > .now
         }
         
-        public var beginAtFormatted: String
+        var beginAtFormatted: String
         {
             let formatStyle = Date.FormatStyle.dateTime.year().month(.wide)
             
             return beginAt.formatted(formatStyle)
         }
         
-        public var numberOfSubscribers: String
+        var numberOfSubscribers: String
         {
             guard let maxPeople = maxPeople else { return nbrSubscribers.formatted() }
             
             return "\(nbrSubscribers) / \(maxPeople)"
         }
         
-        public var hasWaitlist: Bool
+        var hasWaitlist: Bool
         {
             guard let maxPeople = maxPeople else { return false }
             

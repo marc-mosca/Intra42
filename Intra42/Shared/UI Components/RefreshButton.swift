@@ -12,6 +12,7 @@ struct RefreshButton: View
     
     // MARK: - Exposed properties
     
+    let state: AppRequestState
     let action: () -> Void
     
     // MARK: - Body
@@ -23,9 +24,9 @@ struct RefreshButton: View
             Label("Refresh informations", systemImage: "arrow.clockwise")
                 .labelStyle(.iconOnly)
                 .imageScale(.large)
-                .fontWeight(.semibold)
         }
         .tint(.night)
+        .disabled(state == .loading)
     }
 }
 
@@ -33,7 +34,7 @@ struct RefreshButton: View
 
 #Preview
 {
-    RefreshButton
+    RefreshButton(state: .succeded)
     {
         print("Taped")
     }
