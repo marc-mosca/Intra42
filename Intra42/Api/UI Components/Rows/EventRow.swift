@@ -17,10 +17,18 @@ struct EventRow: View
     // MARK: - Private properties
     
     @Environment(\.store) private var store
+    @Environment(\.dismiss) private var dismiss
+    @AppStorage("userIsConnected") private var userIsConnected: Bool?
+    @State private var showAlert = false
     
-    private var userIsSubscribe: String
+    private var userIsSubscribe: Bool
     {
-        store.userEvents.contains(where: { $0.id == event.id }) ? String(localized: "Yes") : String(localized: "No")
+        store.userEvents.contains(where: { $0.id == event.id })
+    }
+    
+    private var userIsSubscribeFormatted: String
+    {
+        userIsSubscribe ? String(localized: "Yes") : String(localized: "No")
     }
     
     // MARK: - Body
@@ -35,7 +43,7 @@ struct EventRow: View
                 {
                     HRow(title: "Date", value: event.beginAt)
                     HRow(title: "Duration", value: Date.duration(beginAt: event.beginAt, endAt: event.endAt))
-                    HRow(title: "Registered", value: userIsSubscribe)
+                    HRow(title: "Registered", value: userIsSubscribeFormatted)
                     HRow(title: "Subscribers", value: event.numberOfSubscribers)
                     HRow(title: "Location", value: event.location)
                 }
@@ -47,12 +55,69 @@ struct EventRow: View
             }
             .navigationTitle(event.name)
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar
+            {
+                ToolbarItem
+                {
+                    Button(userIsSubscribe ? "Unsubscribe" : "Subscribe", action: { showAlert.toggle() })
+                        .disabled(event.hasWaitlist)
+                }
+            }
+            .alert(userIsSubscribe ? "Unsubscribe from the event" : "Subscribe to the event", isPresented: $showAlert)
+            {
+                Button("Cancel", role: .cancel) { }
+                Button(userIsSubscribe ? "Unsubscribe" : "Subscribe", action: handleUpdateEvents)
+            }
+            message:
+            {
+                Text(
+                    userIsSubscribe ? "Do you really want to unsubscribe from this event?"
+                    : "Do you really like to subscribe for this event?"
+                )
+            }
         }
         label:
         {
             RowLabel(event: event)
         }
     }
+    
+    // MARK: - Private methods
+    
+    private func handleUpdateEvents()
+    {
+        guard let user = store.user else { return }
+        
+        Task
+        {
+            do
+            {
+                switch userIsSubscribe
+                {
+                case true:
+                    let eventUser = try await Api.Client.shared.request(for: .fetchEventUser(userId: user.id, eventId: event.id)) as Api.Types.EventUser
+                    try await Api.Client.shared.request(for: .deleteEvent(eventUserId: eventUser.eventId))
+                    store.userEvents.removeAll(where: { $0.id == event.id })
+                case false:
+                    try await Api.Client.shared.request(for: .updateUserEvents(userId: user.id, eventId: event.id))
+                    store.userEvents.append(event)
+                }
+            }
+            catch AppError.apiAuthorization
+            {
+                store.error = .apiAuthorization
+                store.errorAction = {
+                    Api.Keychain.shared.clear()
+                    userIsConnected = false
+                }
+            }
+            catch
+            {
+                store.error = .network
+            }
+        }
+    }
+    
 }
 
 // MARK: - Extensions
