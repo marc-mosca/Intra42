@@ -52,6 +52,8 @@
 		9C3FA1032B46C1ED00F2F767 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA1022B46C1ED00F2F767 /* SettingViewModel.swift */; };
 		9C3FA1052B46C28100F2F767 /* Setting+ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA1042B46C28100F2F767 /* Setting+ColorScheme.swift */; };
 		9C3FA1072B46C3E600F2F767 /* AppColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA1062B46C3E600F2F767 /* AppColorScheme.swift */; };
+		9C3FA1092B46CB8B00F2F767 /* Setting+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA1082B46CB8B00F2F767 /* Setting+Language.swift */; };
+		9C3FA10B2B46CC0700F2F767 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA10A2B46CC0700F2F767 /* AppLanguage.swift */; };
 		9C6FB7F22B458939002AF3FF /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB7F12B458939002AF3FF /* RefreshButton.swift */; };
 		9C6FB7F92B458D77002AF3FF /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB7F82B458D77002AF3FF /* FilterButton.swift */; };
 		9C6FB8042B45960C002AF3FF /* CampusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB8032B45960C002AF3FF /* CampusViewModel.swift */; };
@@ -153,6 +155,8 @@
 		9C3FA1022B46C1ED00F2F767 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		9C3FA1042B46C28100F2F767 /* Setting+ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting+ColorScheme.swift"; sourceTree = "<group>"; };
 		9C3FA1062B46C3E600F2F767 /* AppColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorScheme.swift; sourceTree = "<group>"; };
+		9C3FA1082B46CB8B00F2F767 /* Setting+Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting+Language.swift"; sourceTree = "<group>"; };
+		9C3FA10A2B46CC0700F2F767 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
 		9C6FB7F12B458939002AF3FF /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
 		9C6FB7F82B458D77002AF3FF /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		9C6FB8032B45960C002AF3FF /* CampusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusViewModel.swift; sourceTree = "<group>"; };
@@ -229,6 +233,7 @@
 				9CFEFFA72B42FD890054859E /* View Modifiers */,
 				9C3FA1062B46C3E600F2F767 /* AppColorScheme.swift */,
 				9C1743662B42ED0600A707C4 /* AppError.swift */,
+				9C3FA10A2B46CC0700F2F767 /* AppLanguage.swift */,
 				9C6FB80D2B459DF8002AF3FF /* AppRequestState.swift */,
 			);
 			path = Shared;
@@ -406,8 +411,9 @@
 		9C3FA0FE2B46C08800F2F767 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9C3FA1002B46C09100F2F767 /* SettingView.swift */,
 				9C3FA1042B46C28100F2F767 /* Setting+ColorScheme.swift */,
+				9C3FA1082B46CB8B00F2F767 /* Setting+Language.swift */,
+				9C3FA1002B46C09100F2F767 /* SettingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -741,6 +747,7 @@
 				9C1F1F7E2B42CAB000695C3E /* Scale+Samples.swift in Sources */,
 				9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */,
 				9C9BACD82B4551E700CBB2E2 /* EnvironmentValues+Store.swift in Sources */,
+				9C3FA10B2B46CC0700F2F767 /* AppLanguage.swift in Sources */,
 				9C1F1F632B42C77500695C3E /* CorrectionPointHistorics.swift in Sources */,
 				9C17435E2B42E6E000A707C4 /* Url.swift in Sources */,
 				9CFEFFAC2B42FDAE0054859E /* OnBoardingView.swift in Sources */,
@@ -750,6 +757,7 @@
 				9C17435A2B42E5E100A707C4 /* Authorization.swift in Sources */,
 				9C1F1F782B42CA5600695C3E /* Exam+Samples.swift in Sources */,
 				9C1F1F652B42C7BD00695C3E /* Event.swift in Sources */,
+				9C3FA1092B46CB8B00F2F767 /* Setting+Language.swift in Sources */,
 				9C3FA1072B46C3E600F2F767 /* AppColorScheme.swift in Sources */,
 				9CFEFFB42B42FF9D0054859E /* OnBoarding+Paragraph.swift in Sources */,
 				9C1743642B42EB1F00A707C4 /* Client.swift in Sources */,

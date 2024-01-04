@@ -13,8 +13,14 @@ struct Intra42App: App
     
     // MARK: - Private properties
     
+    @AppStorage("userDefaultLanguage") private var userDefaultLanguage: String?
     @AppStorage("userDefaultColorScheme") private var userDefaultColorScheme: Int?
     @State private var store = Store()
+    
+    private var identifier: String
+    {
+        userDefaultLanguage ?? Locale.current.identifier
+    }
     
     private var colorScheme: ColorScheme?
     {
@@ -29,6 +35,7 @@ struct Intra42App: App
         {
             ContentView()
                 .environment(\.store, store)
+                .environment(\.locale, .init(identifier: identifier))
                 .preferredColorScheme(colorScheme)
                 .handleErrors(error: store.error, action: store.errorAction)
         }

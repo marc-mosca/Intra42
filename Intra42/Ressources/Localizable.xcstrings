@@ -431,6 +431,16 @@
         }
       }
     },
+    "Language" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langue"
+          }
+        }
+      }
+    },
     "Light" : {
       "localizations" : {
         "fr" : {
@@ -667,6 +677,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sélectionner une catégorie d'activité"
+          }
+        }
+      }
+    },
+    "Set the default langauge for the application." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Définissez la langue utilisée par défaut pour l'application."
           }
         }
       }

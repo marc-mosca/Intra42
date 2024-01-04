@@ -23,6 +23,7 @@ struct SettingView: View
             List
             {
                 ColorSchemeSetting()
+                LanguageSetting()
             }
             .navigationTitle("Settings")
         }
