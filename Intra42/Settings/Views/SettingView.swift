@@ -25,6 +25,7 @@ struct SettingView: View
                 ColorSchemeSetting()
                 LanguageSetting()
                 LogtimeSetting()
+                HelpSetting()
             }
             .navigationTitle("Settings")
         }

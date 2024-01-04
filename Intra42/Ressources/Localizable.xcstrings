@@ -431,6 +431,16 @@
         }
       }
     },
+    "Help" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aide"
+          }
+        }
+      }
+    },
     "Informations" : {
       "localizations" : {
         "fr" : {
@@ -657,6 +667,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inscrit"
+          }
+        }
+      }
+    },
+    "Report a problem" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signaler un problème"
           }
         }
       }
