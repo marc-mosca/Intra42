@@ -10,22 +10,22 @@ import Foundation
 extension Api.Types
 {
     
-    public typealias LogtimeResult = [String: String]
+    typealias LogtimeResult = [String: String]
     
     /// A structure representing the user's logtime.
-    public struct Logtime: Decodable, Identifiable
+    struct Logtime: Decodable, Identifiable
     {
         
         // MARK: - Exposed properties
         
-        public var id = UUID()
+        var id = UUID()
         
-        public let month: String
-        public let total: Double
-        public let details: LogtimeResult
-        public let numberOfDaysToWork: Double
+        let month: String
+        let total: Double
+        let details: LogtimeResult
+        let numberOfDaysToWork: Double
         
-        public var fullmonth: String
+        var fullmonth: String
         {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM"

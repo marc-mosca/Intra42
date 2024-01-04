@@ -11,30 +11,30 @@ extension Api.Types
 {
     
     /// A structure representing a user.
-    public struct User: Decodable, Identifiable
+    struct User: Decodable, Identifiable
     {
         
         // MARK: - Exposed properties
         
-        public let id: Int
-        public let email: String
-        public let login: String
-        public let phone: String
-        public let displayname: String
-        public let image: Avatar
-        public let correctionPoint: Int
-        public let poolMonth: String
-        public let poolYear: String
-        public let location: String?
-        public let wallet: Int
-        public let cursusUsers: [Cursus]
-        public let projectsUsers: [Projects]
-        public let achievements: [Achievements]
-        public let patroned: [Patronages]
-        public let patroning: [Patronages]
-        public let campusUsers: [Campus]
+        let id: Int
+        let email: String
+        let login: String
+        let phone: String
+        let displayname: String
+        let image: Avatar
+        let correctionPoint: Int
+        let poolMonth: String
+        let poolYear: String
+        let location: String?
+        let wallet: Int
+        let cursusUsers: [Cursus]
+        let projectsUsers: [Projects]
+        let achievements: [Achievements]
+        let patroned: [Patronages]
+        let patroning: [Patronages]
+        let campusUsers: [Campus]
         
-        public var mainCursus: Cursus?
+        var mainCursus: Cursus?
         {
             let studentCursus = cursusUsers.first { cursus in
                 cursus.cursus.slug == "42cursus"
@@ -47,12 +47,12 @@ extension Api.Types
             return studentCursus != nil ? studentCursus : piscineCursus
         }
         
-        public var mainCampus: Campus?
+        var mainCampus: Campus?
         {
             campusUsers.first(where: \.isPrimary)
         }
         
-        public var postCC: Bool
+        var postCC: Bool
         {
             let lastProject = projectsUsers.first { project in
                 project.project.slug == "ft_transcendence"
@@ -65,7 +65,7 @@ extension Api.Types
             return lastProject?.validated == true && lastExam?.validated == true
         }
         
-        public var entryDate: String
+        var entryDate: String
         {
             let defaultEntryDate = "\(poolYear)-01-01"
             let dateFormatter = DateFormatter()
@@ -86,80 +86,80 @@ extension Api.Types
         // MARK: - Sub-structures
         
         /// A structure representing a user's achievements.
-        public struct Achievements: Decodable, Identifiable
+        struct Achievements: Decodable, Identifiable
         {
-            public let id: Int
-            public let name: String
-            public let description: String
-            public let kind: String
+            let id: Int
+            let name: String
+            let description: String
+            let kind: String
         }
         
         /// A structure representing a user's profile image.
-        public struct Avatar: Decodable
+        struct Avatar: Decodable
         {
-            public let link: String
+            let link: String
         }
         
         /// A structure representing the user's campus information.
-        public struct Campus: Decodable, Identifiable
+        struct Campus: Decodable, Identifiable
         {
-            public let id: Int
-            public let campusId: Int
-            public let isPrimary: Bool
+            let id: Int
+            let campusId: Int
+            let isPrimary: Bool
         }
         
         /// A structure representing the user's cursus.
-        public struct Cursus: Decodable, Identifiable
+        struct Cursus: Decodable, Identifiable
         {
-            public let id: Int
-            public let grade: String?
-            public let level: Double
-            public let skills: [Skills]
-            public let cursusId: Int
-            public let hasCoalition: Bool
-            public let cursus: Details
+            let id: Int
+            let grade: String?
+            let level: Double
+            let skills: [Skills]
+            let cursusId: Int
+            let hasCoalition: Bool
+            let cursus: Details
             
             /// A structure representing the skills in the user's cursus.
-            public struct Skills: Decodable, Identifiable
+            struct Skills: Decodable, Identifiable
             {
-                public let id: Int
-                public let name: String
-                public let level: Double
+                let id: Int
+                let name: String
+                let level: Double
             }
             
             /// A structure representing the details of the user's cursus.
-            public struct Details: Decodable, Identifiable
+            struct Details: Decodable, Identifiable
             {
-                public let id: Int
-                public let name: String
-                public let slug: String
+                let id: Int
+                let name: String
+                let slug: String
             }
         }
         
         /// A structure representing a user's patronages.
-        public struct Patronages: Decodable, Identifiable
+        struct Patronages: Decodable, Identifiable
         {
-            public let id: Int
-            public let userId: Int
-            public let godfatherId: Int
-            public let ongoing: Bool
+            let id: Int
+            let userId: Int
+            let godfatherId: Int
+            let ongoing: Bool
         }
         
         /// A structure representing the user's projects.
-        public struct Projects: Decodable, Identifiable
+        struct Projects: Decodable, Identifiable
         {
-            public let id: Int
-            public let finalMark: Int?
-            public let status: String
-            public let validated: Bool?
-            public let currentTeamId: Int?
-            public let project: Details
-            public let cursusIds: [Int]
-            public let markedAt: Date?
-            public let marked: Bool
-            public let retriableAt: Date?
+            let id: Int
+            let finalMark: Int?
+            let status: String
+            let validated: Bool?
+            let currentTeamId: Int?
+            let project: Details
+            let cursusIds: [Int]
+            let markedAt: Date?
+            let marked: Bool
+            let retriableAt: Date?
             
-            public var markedAtFormatted: String
+            var markedAtFormatted: String
             {
                 guard let markedAt = markedAt else { return "N/A" }
                 
@@ -169,12 +169,12 @@ extension Api.Types
             }
             
             /// A structure representing the details of the user's projects.
-            public struct Details: Decodable, Identifiable
+            struct Details: Decodable, Identifiable
             {
-                public let id: Int
-                public let name: String
-                public let slug: String
-                public let parentId: Int?
+                let id: Int
+                let name: String
+                let slug: String
+                let parentId: Int?
             }
             
             private enum CodingKeys: String, CodingKey

@@ -11,25 +11,25 @@ extension Api.Types
 {
     
     /// A structure representing a correction.
-    public struct Scale: Decodable, Identifiable
+    struct Scale: Decodable, Identifiable
     {
         
         // MARK: - Exposed properties
         
-        public let id: Int
-        public let scaleId: Int
-        public let beginAt: Date
-        public let correcteds: UncertainValue<String, [User]>?
-        public let corrector: UncertainValue<String, User>?
-        public let scale: Details
-        public let teams: Team?
+        let id: Int
+        let scaleId: Int
+        let beginAt: Date
+        let correcteds: UncertainValue<String, [User]>?
+        let corrector: UncertainValue<String, User>?
+        let scale: Details
+        let teams: Team?
         
-        public var members: [Team.User]
+        var members: [Team.User]
         {
             teams?.users ?? []
         }
         
-        public var teamName: String
+        var teamName: String
         {
             guard !members.isEmpty else { return "someone" }
             
@@ -44,40 +44,40 @@ extension Api.Types
         // MARK: - Exposed sub-structures
         
         /// A structure representing a user of a correction.
-        public struct User: Decodable, Identifiable
+        struct User: Decodable, Identifiable
         {
-            public let id: Int
-            public let login: String
+            let id: Int
+            let login: String
         }
         
         /// A structure representing the details of a correction.
-        public struct Details: Decodable, Identifiable
+        struct Details: Decodable, Identifiable
         {
-            public let id: Int
-            public let correctionNumber: Int
-            public let duration: Int
+            let id: Int
+            let correctionNumber: Int
+            let duration: Int
         }
         
         /// A structure representing a correction team.
-        public struct Team: Decodable, Identifiable
+        struct Team: Decodable, Identifiable
         {
-            public let id: Int
-            public let name: String
-            public let projectId: Int
-            public let status: String
-            public let users: [User]
-            public let locked: Bool
-            public let validated: Bool?
-            public let closed: Bool
-            public let lockedAt: Date?
-            public let closedAt: Date?
+            let id: Int
+            let name: String
+            let projectId: Int
+            let status: String
+            let users: [User]
+            let locked: Bool
+            let validated: Bool?
+            let closed: Bool
+            let lockedAt: Date?
+            let closedAt: Date?
             
             /// A structure representing a user in a team.
-            public struct User: Decodable, Identifiable
+            struct User: Decodable, Identifiable
             {
-                public let id: Int
-                public let login: String
-                public let leader: Bool
+                let id: Int
+                let login: String
+                let leader: Bool
             }
             
             private enum CodingKeys: String, CodingKey

@@ -11,34 +11,34 @@ extension Api.Types
 {
     
     /// A structure representing a correction slot.
-    public struct Slot: Decodable, Identifiable
+    struct Slot: Decodable, Identifiable
     {
         
         // MARK: - Exposed properties
         
-        public let id: Int
-        public let beginAt: Date
-        public let endAt: Date
-        public let scaleTeam: UncertainValue<String, ScaleTeam>?
-        public let user: User
+        let id: Int
+        let beginAt: Date
+        let endAt: Date
+        let scaleTeam: UncertainValue<String, ScaleTeam>?
+        let user: User
         
         // MARK: - Exposed sub-structures
         
         /// A structure representing a user of a correction slot.
-        public struct User: Codable, Identifiable
+        struct User: Codable, Identifiable
         {
-            public let id: Int
-            public let login: String
+            let id: Int
+            let login: String
         }
         
         /// A structure representing a team in a correction slot.
-        public struct ScaleTeam: Codable, Identifiable
+        struct ScaleTeam: Codable, Identifiable
         {
-            public let id: Int
-            public let scaleId: Int
-            public let beginAt: Date
-            public let correcteds: [Slot.User]
-            public let corrector: Slot.User
+            let id: Int
+            let scaleId: Int
+            let beginAt: Date
+            let correcteds: [Slot.User]
+            let corrector: Slot.User
         }
         
     }
