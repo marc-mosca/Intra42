@@ -281,6 +281,16 @@
         }
       }
     },
+    "Cancel" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
+          }
+        }
+      }
+    },
     "Connectivity" : {
       "localizations" : {
         "fr" : {
@@ -327,6 +337,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Developed by Marc MOSCA while eating 🍿"
+          }
+        }
+      }
+    },
+    "Do you really like to subscribe for this event?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Souhaitez-vous vraiment vous inscrire à cet événement ?"
+          }
+        }
+      }
+    },
+    "Do you really want to unsubscribe from this event?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voulez-vous vraiment vous désinscrire de cet événement ?"
           }
         }
       }
@@ -631,6 +661,26 @@
         }
       }
     },
+    "Subscribe" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "S'inscrire"
+          }
+        }
+      }
+    },
+    "Subscribe to the event" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "S'inscrire à l'événement"
+          }
+        }
+      }
+    },
     "Subscribers" : {
       "localizations" : {
         "fr" : {
@@ -677,6 +727,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le serveur reçoit trop de demandes (code 429)."
+          }
+        }
+      }
+    },
+    "Unsubscribe" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se désinscrire"
+          }
+        }
+      }
+    },
+    "Unsubscribe from the event" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se désinscrire de l'événement"
           }
         }
       }
