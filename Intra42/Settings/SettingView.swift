@@ -10,10 +10,6 @@ import SwiftUI
 struct SettingView: View
 {
     
-    // MARK: - Private properties
-    
-    @State private var viewModel = ViewModel()
-    
     // MARK: - Body
     
     var body: some View
