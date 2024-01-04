@@ -27,7 +27,6 @@ extension SettingView
             {
                 userDefaultColorScheme = $0 == 0 ? nil : $0
             }
-
         }
         
         // MARK: - Body

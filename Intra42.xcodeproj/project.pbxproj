@@ -54,6 +54,7 @@
 		9C3FA1072B46C3E600F2F767 /* AppColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA1062B46C3E600F2F767 /* AppColorScheme.swift */; };
 		9C3FA1092B46CB8B00F2F767 /* Setting+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA1082B46CB8B00F2F767 /* Setting+Language.swift */; };
 		9C3FA10B2B46CC0700F2F767 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA10A2B46CC0700F2F767 /* AppLanguage.swift */; };
+		9C3FA10D2B46DA3900F2F767 /* Setting+Logtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA10C2B46DA3900F2F767 /* Setting+Logtime.swift */; };
 		9C6FB7F22B458939002AF3FF /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB7F12B458939002AF3FF /* RefreshButton.swift */; };
 		9C6FB7F92B458D77002AF3FF /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB7F82B458D77002AF3FF /* FilterButton.swift */; };
 		9C6FB8042B45960C002AF3FF /* CampusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB8032B45960C002AF3FF /* CampusViewModel.swift */; };
@@ -157,6 +158,7 @@
 		9C3FA1062B46C3E600F2F767 /* AppColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorScheme.swift; sourceTree = "<group>"; };
 		9C3FA1082B46CB8B00F2F767 /* Setting+Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting+Language.swift"; sourceTree = "<group>"; };
 		9C3FA10A2B46CC0700F2F767 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		9C3FA10C2B46DA3900F2F767 /* Setting+Logtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting+Logtime.swift"; sourceTree = "<group>"; };
 		9C6FB7F12B458939002AF3FF /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
 		9C6FB7F82B458D77002AF3FF /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		9C6FB8032B45960C002AF3FF /* CampusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusViewModel.swift; sourceTree = "<group>"; };
@@ -413,6 +415,7 @@
 			children = (
 				9C3FA1042B46C28100F2F767 /* Setting+ColorScheme.swift */,
 				9C3FA1082B46CB8B00F2F767 /* Setting+Language.swift */,
+				9C3FA10C2B46DA3900F2F767 /* Setting+Logtime.swift */,
 				9C3FA1002B46C09100F2F767 /* SettingView.swift */,
 			);
 			path = Views;
@@ -766,6 +769,7 @@
 				9C1F1F6F2B42C8E500695C3E /* UncertainValue.swift in Sources */,
 				9C1F1F6D2B42C8A700695C3E /* Scale.swift in Sources */,
 				9C1F1F262B42C0DF00695C3E /* Intra42App.swift in Sources */,
+				9C3FA10D2B46DA3900F2F767 /* Setting+Logtime.swift in Sources */,
 				9C1743552B42E30A00A707C4 /* Api+Errors.swift in Sources */,
 				9C9BACDE2B45587000CBB2E2 /* AppScreen.swift in Sources */,
 				9C6FB7F92B458D77002AF3FF /* FilterButton.swift in Sources */,

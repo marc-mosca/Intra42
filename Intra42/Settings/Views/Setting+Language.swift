@@ -29,7 +29,6 @@ extension SettingView
             {
                 userDefaultLanguage = $0
             }
-            
         }
         
         // MARK: - Body
@@ -47,7 +46,7 @@ extension SettingView
                     }
                 }
             }
-        footer:
+            footer:
             {
                 Text("Set the default langauge for the application.")
             }

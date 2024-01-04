@@ -24,6 +24,7 @@ struct SettingView: View
             {
                 ColorSchemeSetting()
                 LanguageSetting()
+                LogtimeSetting()
             }
             .navigationTitle("Settings")
         }
