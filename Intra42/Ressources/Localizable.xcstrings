@@ -221,6 +221,26 @@
         }
       }
     },
+    "%lldh" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lldh"
+          }
+        }
+      }
+    },
+    "Account" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compte"
+          }
+        }
+      }
+    },
     "Activities" : {
       "localizations" : {
         "fr" : {
@@ -311,12 +331,32 @@
         }
       }
     },
+    "Dark" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sombre"
+          }
+        }
+      }
+    },
     "Date" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Date"
+          }
+        }
+      }
+    },
+    "Default" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Par défaut"
           }
         }
       }
@@ -347,6 +387,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Souhaitez-vous vraiment vous inscrire à cet événement ?"
+          }
+        }
+      }
+    },
+    "Do you really want to log out of the application?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voulez-vous vraiment vous déconnecter de l'application ?"
           }
         }
       }
@@ -401,6 +451,16 @@
         }
       }
     },
+    "Help" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aide"
+          }
+        }
+      }
+    },
     "Informations" : {
       "localizations" : {
         "fr" : {
@@ -421,12 +481,52 @@
         }
       }
     },
+    "Language" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langue"
+          }
+        }
+      }
+    },
+    "Light" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clair"
+          }
+        }
+      }
+    },
     "Location" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lieu"
+          }
+        }
+      }
+    },
+    "Log out" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se déconnecter"
+          }
+        }
+      }
+    },
+    "Logtime" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Logtime"
           }
         }
       }
@@ -601,6 +701,16 @@
         }
       }
     },
+    "Report a problem" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signaler un problème"
+          }
+        }
+      }
+    },
     "Retrieving your current information..." : {
       "localizations" : {
         "fr" : {
@@ -651,6 +761,46 @@
         }
       }
     },
+    "Set a default value for the number of hours you wish to work per day. Leave on \"Default\" if you want the application to automatically calculate the number of hours you should work per month." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Définissez une valeur par défaut pour le nombre d'heures que vous souhaitez travailler par jour. Laissez sur \"Par défaut\" si vous voulez que l'application calcule automatiquement le nombre d'heures que vous devez travailler par mois."
+          }
+        }
+      }
+    },
+    "Set the default langauge for the application." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Définissez la langue utilisée par défaut pour l'application."
+          }
+        }
+      }
+    },
+    "Set the default theme for the application." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Définissez le thème utilisé par défaut pour l'application."
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres"
+          }
+        }
+      }
+    },
     "Sign In" : {
       "localizations" : {
         "fr" : {
@@ -691,6 +841,16 @@
         }
       }
     },
+    "System" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Système"
+          }
+        }
+      }
+    },
     "The authorisation key is no longer valid (code 401)." : {
       "localizations" : {
         "fr" : {
@@ -727,6 +887,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le serveur reçoit trop de demandes (code 429)."
+          }
+        }
+      }
+    },
+    "Theme" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thème"
           }
         }
       }

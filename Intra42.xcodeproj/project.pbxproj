@@ -48,6 +48,14 @@
 		9C1F1F892B42CE5C00695C3E /* Api+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F882B42CE5C00695C3E /* Api+Types.swift */; };
 		9C1F1F8D2B42CF7E00695C3E /* ExamRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F8C2B42CF7E00695C3E /* ExamRow.swift */; };
 		9C1F1F8F2B42D03400695C3E /* ScaleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F8E2B42D03400695C3E /* ScaleRow.swift */; };
+		9C3FA1012B46C09100F2F767 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA1002B46C09100F2F767 /* SettingView.swift */; };
+		9C3FA1052B46C28100F2F767 /* Setting+ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA1042B46C28100F2F767 /* Setting+ColorScheme.swift */; };
+		9C3FA1072B46C3E600F2F767 /* AppColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA1062B46C3E600F2F767 /* AppColorScheme.swift */; };
+		9C3FA1092B46CB8B00F2F767 /* Setting+Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA1082B46CB8B00F2F767 /* Setting+Language.swift */; };
+		9C3FA10B2B46CC0700F2F767 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA10A2B46CC0700F2F767 /* AppLanguage.swift */; };
+		9C3FA10D2B46DA3900F2F767 /* Setting+Logtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA10C2B46DA3900F2F767 /* Setting+Logtime.swift */; };
+		9C3FA10F2B46DC0100F2F767 /* Setting+Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA10E2B46DC0100F2F767 /* Setting+Help.swift */; };
+		9C3FA1112B46DD3700F2F767 /* Setting+Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA1102B46DD3700F2F767 /* Setting+Account.swift */; };
 		9C6FB7F22B458939002AF3FF /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB7F12B458939002AF3FF /* RefreshButton.swift */; };
 		9C6FB7F92B458D77002AF3FF /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB7F82B458D77002AF3FF /* FilterButton.swift */; };
 		9C6FB8042B45960C002AF3FF /* CampusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB8032B45960C002AF3FF /* CampusViewModel.swift */; };
@@ -145,6 +153,14 @@
 		9C1F1F882B42CE5C00695C3E /* Api+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Types.swift"; sourceTree = "<group>"; };
 		9C1F1F8C2B42CF7E00695C3E /* ExamRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamRow.swift; sourceTree = "<group>"; };
 		9C1F1F8E2B42D03400695C3E /* ScaleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleRow.swift; sourceTree = "<group>"; };
+		9C3FA1002B46C09100F2F767 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		9C3FA1042B46C28100F2F767 /* Setting+ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting+ColorScheme.swift"; sourceTree = "<group>"; };
+		9C3FA1062B46C3E600F2F767 /* AppColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorScheme.swift; sourceTree = "<group>"; };
+		9C3FA1082B46CB8B00F2F767 /* Setting+Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting+Language.swift"; sourceTree = "<group>"; };
+		9C3FA10A2B46CC0700F2F767 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		9C3FA10C2B46DA3900F2F767 /* Setting+Logtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting+Logtime.swift"; sourceTree = "<group>"; };
+		9C3FA10E2B46DC0100F2F767 /* Setting+Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting+Help.swift"; sourceTree = "<group>"; };
+		9C3FA1102B46DD3700F2F767 /* Setting+Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Setting+Account.swift"; sourceTree = "<group>"; };
 		9C6FB7F12B458939002AF3FF /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
 		9C6FB7F82B458D77002AF3FF /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		9C6FB8032B45960C002AF3FF /* CampusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusViewModel.swift; sourceTree = "<group>"; };
@@ -219,7 +235,9 @@
 				9C6FB8162B45A223002AF3FF /* Extensions */,
 				9C6FB7F02B45892D002AF3FF /* UI Components */,
 				9CFEFFA72B42FD890054859E /* View Modifiers */,
+				9C3FA1062B46C3E600F2F767 /* AppColorScheme.swift */,
 				9C1743662B42ED0600A707C4 /* AppError.swift */,
+				9C3FA10A2B46CC0700F2F767 /* AppLanguage.swift */,
 				9C6FB80D2B459DF8002AF3FF /* AppRequestState.swift */,
 			);
 			path = Shared;
@@ -258,6 +276,7 @@
 				9C1F1F2B2B42C0E000695C3E /* Preview Content */,
 				9C1F1F522B42C2DE00695C3E /* Ressources */,
 				9C1743652B42ECFE00A707C4 /* Shared */,
+				9C3FA0FD2B46C08000F2F767 /* Settings */,
 				9C9BACD42B4551B000CBB2E2 /* Store */,
 				9C1F1F562B42C52100695C3E /* Api.plist */,
 				9C1F1F552B42C49B00695C3E /* Info.plist */,
@@ -382,6 +401,19 @@
 				9C1743612B42EA2400A707C4 /* Api+Tokens.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9C3FA0FD2B46C08000F2F767 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9C3FA1102B46DD3700F2F767 /* Setting+Account.swift */,
+				9C3FA1042B46C28100F2F767 /* Setting+ColorScheme.swift */,
+				9C3FA10E2B46DC0100F2F767 /* Setting+Help.swift */,
+				9C3FA1082B46CB8B00F2F767 /* Setting+Language.swift */,
+				9C3FA10C2B46DA3900F2F767 /* Setting+Logtime.swift */,
+				9C3FA1002B46C09100F2F767 /* SettingView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		9C6FB7F02B45892D002AF3FF /* UI Components */ = {
@@ -673,12 +705,14 @@
 				9C1F1F6B2B42C87300695C3E /* OAuth.swift in Sources */,
 				9C6FB80E2B459DF8002AF3FF /* AppRequestState.swift in Sources */,
 				9C1F1F852B42CBBF00695C3E /* EventRow.swift in Sources */,
+				9C3FA1052B46C28100F2F767 /* Setting+ColorScheme.swift in Sources */,
 				9C9BACDA2B45532800CBB2E2 /* HandleErrorsModifier.swift in Sources */,
 				9C9BACD32B454C4600CBB2E2 /* SlideInModifier.swift in Sources */,
 				9C1743602B42E81500A707C4 /* Api+Keychain.swift in Sources */,
 				9C1F1F672B42C81500695C3E /* Exam.swift in Sources */,
 				9C17435C2B42E65E00A707C4 /* Method.swift in Sources */,
 				9C6FB8122B459FE4002AF3FF /* VRow.swift in Sources */,
+				9C3FA1012B46C09100F2F767 /* SettingView.swift in Sources */,
 				9C9BACE92B45655200CBB2E2 /* ActivitiesView.swift in Sources */,
 				9C1F1F7C2B42CA9A00695C3E /* OAuth+Samples.swift in Sources */,
 				9C1F1F692B42C84100695C3E /* Logtime.swift in Sources */,
@@ -693,7 +727,9 @@
 				9C1F1F5A2B42C61500695C3E /* Api.swift in Sources */,
 				9C6FB8042B45960C002AF3FF /* CampusViewModel.swift in Sources */,
 				9CFEFFB22B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift in Sources */,
+				9C3FA1112B46DD3700F2F767 /* Setting+Account.swift in Sources */,
 				9C6FB8182B45A229002AF3FF /* Date.swift in Sources */,
+				9C3FA10F2B46DC0100F2F767 /* Setting+Help.swift in Sources */,
 				9C1F1F8D2B42CF7E00695C3E /* ExamRow.swift in Sources */,
 				9C9BACD62B4551BF00CBB2E2 /* Store.swift in Sources */,
 				9CFEFFBA2B4302490054859E /* OnBoarding+Author.swift in Sources */,
@@ -702,6 +738,7 @@
 				9C1F1F7E2B42CAB000695C3E /* Scale+Samples.swift in Sources */,
 				9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */,
 				9C9BACD82B4551E700CBB2E2 /* EnvironmentValues+Store.swift in Sources */,
+				9C3FA10B2B46CC0700F2F767 /* AppLanguage.swift in Sources */,
 				9C1F1F632B42C77500695C3E /* CorrectionPointHistorics.swift in Sources */,
 				9C17435E2B42E6E000A707C4 /* Url.swift in Sources */,
 				9CFEFFAC2B42FDAE0054859E /* OnBoardingView.swift in Sources */,
@@ -711,6 +748,8 @@
 				9C17435A2B42E5E100A707C4 /* Authorization.swift in Sources */,
 				9C1F1F782B42CA5600695C3E /* Exam+Samples.swift in Sources */,
 				9C1F1F652B42C7BD00695C3E /* Event.swift in Sources */,
+				9C3FA1092B46CB8B00F2F767 /* Setting+Language.swift in Sources */,
+				9C3FA1072B46C3E600F2F767 /* AppColorScheme.swift in Sources */,
 				9CFEFFB42B42FF9D0054859E /* OnBoarding+Paragraph.swift in Sources */,
 				9C1743642B42EB1F00A707C4 /* Client.swift in Sources */,
 				9C1F1F762B42CA3A00695C3E /* Event+Samples.swift in Sources */,
@@ -718,6 +757,7 @@
 				9C1F1F6F2B42C8E500695C3E /* UncertainValue.swift in Sources */,
 				9C1F1F6D2B42C8A700695C3E /* Scale.swift in Sources */,
 				9C1F1F262B42C0DF00695C3E /* Intra42App.swift in Sources */,
+				9C3FA10D2B46DA3900F2F767 /* Setting+Logtime.swift in Sources */,
 				9C1743552B42E30A00A707C4 /* Api+Errors.swift in Sources */,
 				9C9BACDE2B45587000CBB2E2 /* AppScreen.swift in Sources */,
 				9C6FB7F92B458D77002AF3FF /* FilterButton.swift in Sources */,
