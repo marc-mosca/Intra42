@@ -44,7 +44,7 @@ extension AppScreen
     }
     
     @ViewBuilder
-    var destination: some View
+    func destination(user: Api.Types.User) -> some View
     {
         switch self
         {
@@ -55,7 +55,7 @@ extension AppScreen
         case .search:
             Text("Search")
         case .profile:
-            ProfileView()
+            ProfileView(user: user)
         case .settings:
             SettingView()
         }

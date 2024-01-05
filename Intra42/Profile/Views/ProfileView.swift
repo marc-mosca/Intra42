@@ -10,6 +10,17 @@ import SwiftUI
 struct ProfileView: View
 {
     
+    // MARK: - Exposed properties
+    
+    let user: Api.Types.User
+    let isSearchedProfile: Bool
+    
+    init(user: Api.Types.User, isSearchedProfile: Bool = false)
+    {
+        self.user = user
+        self.isSearchedProfile = isSearchedProfile
+    }
+    
     // MARK: - Body
     
     var body: some View
@@ -18,6 +29,7 @@ struct ProfileView: View
         {
             VStack
             {
+                Avatar(url: user.image.link, isConnected: user.location != nil)
             }
             .navigationTitle("My profile")
         }
@@ -29,5 +41,5 @@ struct ProfileView: View
 
 #Preview
 {
-    ProfileView()
+    ProfileView(user: .sample)
 }
