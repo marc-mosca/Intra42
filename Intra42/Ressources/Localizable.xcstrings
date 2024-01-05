@@ -551,6 +551,16 @@
         }
       }
     },
+    "My profile" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mon profil"
+          }
+        }
+      }
+    },
     "N/A" : {
       "localizations" : {
         "fr" : {
