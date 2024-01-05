@@ -491,6 +491,16 @@
         }
       }
     },
+    "Level - %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niveau - %@"
+          }
+        }
+      }
+    },
     "Light" : {
       "localizations" : {
         "fr" : {

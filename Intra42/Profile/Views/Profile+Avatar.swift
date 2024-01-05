@@ -39,7 +39,7 @@ extension ProfileView
             {
                 Circle()
                     .fill(.clear)
-                    .stroke(isConnected ? .green : .gray, lineWidth: 3)
+                    .stroke(isConnected ? .green : .gray, lineWidth: 2)
             }
             .frame(width: 128, height: 128)
         }

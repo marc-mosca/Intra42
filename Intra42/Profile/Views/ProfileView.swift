@@ -29,9 +29,14 @@ struct ProfileView: View
         {
             VStack
             {
-                Avatar(url: user.image.link, isConnected: user.location != nil)
+                HStack(spacing: 20)
+                {
+                    Avatar(url: user.image.link, isConnected: user.location != nil)
+                    Informations(name: user.displayname, email: user.email, isPostCC: user.postCC, cursus: user.mainCursus)
+                }
             }
             .navigationTitle("My profile")
+            .padding()
         }
     }
     
