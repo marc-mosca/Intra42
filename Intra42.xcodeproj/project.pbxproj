@@ -48,6 +48,7 @@
 		9C1F1F892B42CE5C00695C3E /* Api+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F882B42CE5C00695C3E /* Api+Types.swift */; };
 		9C1F1F8D2B42CF7E00695C3E /* ExamRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F8C2B42CF7E00695C3E /* ExamRow.swift */; };
 		9C1F1F8F2B42D03400695C3E /* ScaleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F1F8E2B42D03400695C3E /* ScaleRow.swift */; };
+		9C2901F72B49788C005EE554 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 9C2901F62B49788C005EE554 /* Algorithms */; };
 		9C36B8382B46F2E800D79D19 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36B8372B46F2E800D79D19 /* ProfileView.swift */; };
 		9C3FA1012B46C09100F2F767 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA1002B46C09100F2F767 /* SettingView.swift */; };
 		9C3FA1052B46C28100F2F767 /* Setting+ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FA1042B46C28100F2F767 /* Setting+ColorScheme.swift */; };
@@ -86,6 +87,9 @@
 		9CEC13A72B494CEC00D5698C /* Profile+GridInformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC13A62B494CEC00D5698C /* Profile+GridInformations.swift */; };
 		9CEC13A92B494FF800D5698C /* Profile+Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC13A82B494FF800D5698C /* Profile+Dashboard.swift */; };
 		9CEC13AB2B4953BA00D5698C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC13AA2B4953BA00D5698C /* ProfileViewModel.swift */; };
+		9CEC13AE2B49588400D5698C /* Profile+UserInformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC13AD2B49588400D5698C /* Profile+UserInformations.swift */; };
+		9CEC13B02B4959EC00D5698C /* Profile+UserProjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC13AF2B4959EC00D5698C /* Profile+UserProjects.swift */; };
+		9CEC13B22B495ABB00D5698C /* ProjectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC13B12B495ABB00D5698C /* ProjectRow.swift */; };
 		9CFEFFAC2B42FDAE0054859E /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFAB2B42FDAE0054859E /* OnBoardingView.swift */; };
 		9CFEFFB22B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */; };
 		9CFEFFB42B42FF9D0054859E /* OnBoarding+Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */; };
@@ -197,6 +201,9 @@
 		9CEC13A62B494CEC00D5698C /* Profile+GridInformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+GridInformations.swift"; sourceTree = "<group>"; };
 		9CEC13A82B494FF800D5698C /* Profile+Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+Dashboard.swift"; sourceTree = "<group>"; };
 		9CEC13AA2B4953BA00D5698C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		9CEC13AD2B49588400D5698C /* Profile+UserInformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+UserInformations.swift"; sourceTree = "<group>"; };
+		9CEC13AF2B4959EC00D5698C /* Profile+UserProjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+UserProjects.swift"; sourceTree = "<group>"; };
+		9CEC13B12B495ABB00D5698C /* ProjectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRow.swift; sourceTree = "<group>"; };
 		9CFEFFAB2B42FDAE0054859E /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		9CFEFFB12B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+WelcomeTitle.swift"; sourceTree = "<group>"; };
 		9CFEFFB32B42FF9D0054859E /* OnBoarding+Paragraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+Paragraph.swift"; sourceTree = "<group>"; };
@@ -210,6 +217,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C2901F72B49788C005EE554 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +407,7 @@
 			children = (
 				9C1F1F842B42CBBF00695C3E /* EventRow.swift */,
 				9C1F1F8C2B42CF7E00695C3E /* ExamRow.swift */,
+				9CEC13B12B495ABB00D5698C /* ProjectRow.swift */,
 				9C1F1F8E2B42D03400695C3E /* ScaleRow.swift */,
 			);
 			path = Rows;
@@ -428,6 +437,7 @@
 		9C36B8352B46F2D700D79D19 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9CEC13AC2B49584A00D5698C /* SubViews */,
 				9CA479012B47FA6A007E1188 /* Profile+Avatar.swift */,
 				9CEC13A82B494FF800D5698C /* Profile+Dashboard.swift */,
 				9CEC13A62B494CEC00D5698C /* Profile+GridInformations.swift */,
@@ -561,6 +571,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		9CEC13AC2B49584A00D5698C /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC13AD2B49588400D5698C /* Profile+UserInformations.swift */,
+				9CEC13AF2B4959EC00D5698C /* Profile+UserProjects.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		9CFEFFA72B42FD890054859E /* View Modifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -615,6 +634,9 @@
 			dependencies = (
 			);
 			name = Intra42;
+			packageProductDependencies = (
+				9C2901F62B49788C005EE554 /* Algorithms */,
+			);
 			productName = Intra42;
 			productReference = 9C1F1F222B42C0DF00695C3E /* Intra42.app */;
 			productType = "com.apple.product-type.application";
@@ -688,6 +710,9 @@
 				fr,
 			);
 			mainGroup = 9C1F1F192B42C0DF00695C3E;
+			packageReferences = (
+				9C2901F52B49788C005EE554 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 9C1F1F232B42C0DF00695C3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -742,6 +767,8 @@
 				9C9BACE02B455ABD00CBB2E2 /* AppTabView.swift in Sources */,
 				9C1743672B42ED0600A707C4 /* AppError.swift in Sources */,
 				9C1743622B42EA2400A707C4 /* Api+Tokens.swift in Sources */,
+				9CEC13B02B4959EC00D5698C /* Profile+UserProjects.swift in Sources */,
+				9CEC13AE2B49588400D5698C /* Profile+UserInformations.swift in Sources */,
 				9CFEFFB82B4301620054859E /* OnBoarding+SignInButton.swift in Sources */,
 				9C9BACF52B45726100CBB2E2 /* ActivitiesViewModel.swift in Sources */,
 				9C1F1F6B2B42C87300695C3E /* OAuth.swift in Sources */,
@@ -772,6 +799,7 @@
 				9C6FB8042B45960C002AF3FF /* CampusViewModel.swift in Sources */,
 				9CFEFFB22B42FEFE0054859E /* OnBoarding+WelcomeTitle.swift in Sources */,
 				9C3FA1112B46DD3700F2F767 /* Setting+Account.swift in Sources */,
+				9CEC13B22B495ABB00D5698C /* ProjectRow.swift in Sources */,
 				9C6FB8182B45A229002AF3FF /* Date.swift in Sources */,
 				9C3FA10F2B46DC0100F2F767 /* Setting+Help.swift in Sources */,
 				9CA479022B47FA6A007E1188 /* Profile+Avatar.swift in Sources */,
@@ -1145,6 +1173,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C2901F52B49788C005EE554 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C2901F62B49788C005EE554 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C2901F52B49788C005EE554 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9C1F1F1A2B42C0DF00695C3E /* Project object */;
 }

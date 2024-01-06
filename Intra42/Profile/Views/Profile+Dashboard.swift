@@ -37,8 +37,15 @@ extension ProfileView
                 
                 List
                 {
-                    DashboardLink(image: "info.circle", title: "Informations", destination: EmptyView.init)
-                    DashboardLink(image: "briefcase", title: "Projects", destination: EmptyView.init)
+                    DashboardLink(image: "info.circle", title: "Informations")
+                    {
+                        UserInformations(user: user)
+                    }
+                    
+                    DashboardLink(image: "briefcase", title: "Projects")
+                    {
+                        UserProjects(projects: user.projectsUsers, cursus: user.cursusUsers)
+                    }
                     
                     if !isSearchedProfile
                     {

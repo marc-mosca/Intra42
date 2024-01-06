@@ -1,6 +1,32 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%@ - %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ - %2$@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ - %2$@"
+          }
+        }
+      }
+    },
+    "%@ %%" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %%"
+          }
+        }
+      }
+    },
     "%@'s profile" : {
       "localizations" : {
         "fr" : {
@@ -341,12 +367,32 @@
         }
       }
     },
+    "Correction points" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Points de correction"
+          }
+        }
+      }
+    },
     "Corrections" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Corrections"
+          }
+        }
+      }
+    },
+    "Cursus" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cursus"
           }
         }
       }
@@ -451,6 +497,16 @@
         }
       }
     },
+    "Email" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresse mail"
+          }
+        }
+      }
+    },
     "Events" : {
       "localizations" : {
         "fr" : {
@@ -467,6 +523,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Exams"
+          }
+        }
+      }
+    },
+    "Finished" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminé"
+          }
+        }
+      }
+    },
+    "General" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Général"
           }
         }
       }
@@ -501,6 +577,16 @@
         }
       }
     },
+    "In progress" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En cours"
+          }
+        }
+      }
+    },
     "Informations" : {
       "localizations" : {
         "fr" : {
@@ -527,6 +613,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Langue"
+          }
+        }
+      }
+    },
+    "Level" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niveau"
           }
         }
       }
@@ -691,6 +787,16 @@
         }
       }
     },
+    "No projects found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun projet trouvé"
+          }
+        }
+      }
+    },
     "OK" : {
       "localizations" : {
         "fr" : {
@@ -707,6 +813,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parrainages"
+          }
+        }
+      }
+    },
+    "Phone number" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numéro de téléphone"
           }
         }
       }
@@ -1041,6 +1157,16 @@
         }
       }
     },
+    "Wallets" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wallets"
+          }
+        }
+      }
+    },
     "Welcome to" : {
       "localizations" : {
         "fr" : {
@@ -1067,6 +1193,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oui"
+          }
+        }
+      }
+    },
+    "You must register or have submitted a project to perceive it appears in this list." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous devez vous inscrire ou avoir soumis un projet pour qu'il apparaisse dans cette liste."
           }
         }
       }
