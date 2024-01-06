@@ -21,6 +21,17 @@ struct ProfileView: View
         self.isSearchedProfile = isSearchedProfile
     }
     
+    // MARK: - Private properties
+    
+    @Environment(\.store) private var store
+    @AppStorage("userIsConnected") private var userIsConnected: Bool?
+    @State private var viewModel = ViewModel()
+    
+    private var userRefresh: Api.Types.User
+    {
+        viewModel.user ?? user
+    }
+    
     // MARK: - Body
     
     var body: some View
@@ -33,16 +44,46 @@ struct ProfileView: View
                 {
                     HStack(spacing: 20)
                     {
-                        Avatar(url: user.image.link, isConnected: user.location != nil)
-                        Informations(name: user.displayname, email: user.email, isPostCC: user.postCC, cursus: user.mainCursus)
+                        Avatar(url: userRefresh.image.link, isConnected: userRefresh.location != nil)
+                        Informations(name: userRefresh.displayname, email: userRefresh.email, isPostCC: userRefresh.postCC, cursus: userRefresh.mainCursus)
                     }
                     
-                    GridInformations(location: user.location, grade: user.mainCursus?.grade, poolYear: user.poolYear)
-                    Dashboard(user: user, isSearchedProfile: isSearchedProfile)
+                    GridInformations(location: userRefresh.location, grade: userRefresh.mainCursus?.grade, poolYear: userRefresh.poolYear)
+                    Dashboard(user: userRefresh, isSearchedProfile: isSearchedProfile)
                 }
                 .padding()
             }
-            .navigationTitle(isSearchedProfile ? "\(user.login.capitalized)'s profile" : "My profile")
+            .navigationTitle(isSearchedProfile ? "\(userRefresh.login.capitalized)'s profile" : "My profile")
+            .toolbar
+            {
+                RefreshButton(state: viewModel.loadingState, action: refreshButtonAction)
+            }
+        }
+    }
+    
+    // MARK: - Private methods
+    
+    private func refreshButtonAction()
+    {
+        Task
+        {
+            do
+            {
+                try await viewModel.updateUserInformations(oldUser: userRefresh)
+            }
+            catch AppError.apiAuthorization
+            {
+                store.error = .apiAuthorization
+                store.errorAction = {
+                    Api.Keychain.shared.clear()
+                    userIsConnected = false
+                }
+            }
+            catch
+            {
+                store.error = .network
+                store.errorAction = refreshButtonAction
+            }
         }
     }
     
