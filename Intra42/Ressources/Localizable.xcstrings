@@ -1,6 +1,16 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%@'s profile" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil de %@"
+          }
+        }
+      }
+    },
     "%lld days" : {
       "localizations" : {
         "en" : {
@@ -441,6 +451,16 @@
         }
       }
     },
+    "Grade" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grade"
+          }
+        }
+      }
+    },
     "Headline" : {
       "localizations" : {
         "fr" : {
@@ -677,6 +697,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Projets liés"
+          }
+        }
+      }
+    },
+    "Promotion" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Promotion"
           }
         }
       }

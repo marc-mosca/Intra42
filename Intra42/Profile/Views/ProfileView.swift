@@ -27,15 +27,17 @@ struct ProfileView: View
     {
         NavigationStack
         {
-            VStack
+            VStack(spacing: 40)
             {
                 HStack(spacing: 20)
                 {
                     Avatar(url: user.image.link, isConnected: user.location != nil)
                     Informations(name: user.displayname, email: user.email, isPostCC: user.postCC, cursus: user.mainCursus)
                 }
+                
+                GridInformations(location: user.location, grade: user.mainCursus?.grade, poolYear: user.poolYear)
             }
-            .navigationTitle("My profile")
+            .navigationTitle(isSearchedProfile ? "\(user.login.capitalized)'s profile" : "My profile")
             .padding()
         }
     }
