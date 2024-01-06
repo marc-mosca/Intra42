@@ -22,7 +22,7 @@ extension Api.Types
     }
     
     /// A structure representing an event.
-    struct Event: Decodable, Identifiable
+    struct Event: Decodable, Identifiable, Hashable
     {
         
         // MARK: - Exposed properties

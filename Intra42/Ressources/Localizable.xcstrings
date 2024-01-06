@@ -757,6 +757,16 @@
         }
       }
     },
+    "No events found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun événement trouvé"
+          }
+        }
+      }
+    },
     "No events planned" : {
       "localizations" : {
         "fr" : {
@@ -1193,6 +1203,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oui"
+          }
+        }
+      }
+    },
+    "You must have taken part in an event to perceive it in the list." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous devez avoir participé à un événement pour le percevoir dans la liste."
           }
         }
       }

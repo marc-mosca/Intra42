@@ -124,11 +124,14 @@ extension EventRow
             .navigationBarTitleDisplayMode(.inline)
             .toolbar
             {
-                ToolbarItem
+                if event.beginAt > .now
                 {
-                    Button(userIsSubscribe ? "Unsubscribe" : "Subscribe")
+                    ToolbarItem
                     {
-                        showAlert.toggle()
+                        Button(userIsSubscribe ? "Unsubscribe" : "Subscribe")
+                        {
+                            showAlert.toggle()
+                        }
                     }
                 }
             }
