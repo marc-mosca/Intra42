@@ -54,7 +54,11 @@ extension ProfileView
                         DashboardLink(image: "scroll", title: "Corrections", destination: EmptyView.init)
                     }
                     
-                    DashboardLink(image: "list.bullet.clipboard", title: "Skills", destination: EmptyView.init)
+                    DashboardLink(image: "list.bullet.clipboard", title: "Skills")
+                    {
+                        UserSkills(skills: user.mainCursus?.skills ?? [])
+                    }
+                    
                     DashboardLink(image: "graduationcap", title: "Achievements", destination: EmptyView.init)
                     DashboardLink(image: "person.2", title: "Patronages", destination: EmptyView.init)
                 }

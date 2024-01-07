@@ -837,6 +837,16 @@
         }
       }
     },
+    "No skills found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune compétences trouvé"
+          }
+        }
+      }
+    },
     "OK" : {
       "localizations" : {
         "fr" : {
@@ -1173,6 +1183,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se désinscrire de l'événement"
+          }
+        }
+      }
+    },
+    "Validate projects to earn skills points." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valider des projets pour gagner des points de compétence."
           }
         }
       }
