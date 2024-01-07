@@ -59,7 +59,11 @@ extension ProfileView
                         UserSkills(skills: user.mainCursus?.skills ?? [])
                     }
                     
-                    DashboardLink(image: "graduationcap", title: "Achievements", destination: EmptyView.init)
+                    DashboardLink(image: "graduationcap", title: "Achievements")
+                    {
+                        UserAchievements(achievements: user.achievements)
+                    }
+                    
                     DashboardLink(image: "person.2", title: "Patronages", destination: EmptyView.init)
                 }
                 .listStyle(.plain)

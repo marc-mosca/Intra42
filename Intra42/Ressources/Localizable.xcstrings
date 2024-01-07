@@ -287,6 +287,16 @@
         }
       }
     },
+    "Achieved objectives to obtain achievements." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atteindre les objectifs pour obtenir des réalisations."
+          }
+        }
+      }
+    },
     "Achievements" : {
       "localizations" : {
         "fr" : {
@@ -753,6 +763,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non"
+          }
+        }
+      }
+    },
+    "No achievements found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune réalisation trouvée"
           }
         }
       }

@@ -70,6 +70,7 @@
 		9C6FB8122B459FE4002AF3FF /* VRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB8112B459FE4002AF3FF /* VRow.swift */; };
 		9C6FB8182B45A229002AF3FF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FB8172B45A229002AF3FF /* Date.swift */; };
 		9C7326E52B4AA93800779FC1 /* Profile+UserSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7326E42B4AA93800779FC1 /* Profile+UserSkills.swift */; };
+		9C7326E72B4AAA1A00779FC1 /* Profile+UserAchievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7326E62B4AAA1A00779FC1 /* Profile+UserAchievements.swift */; };
 		9C8D33812B49A82A00F716EC /* Profile+UserEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D33802B49A82A00F716EC /* Profile+UserEvents.swift */; };
 		9C8D33852B49AD6400F716EC /* Profile+UserLogtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D33842B49AD6400F716EC /* Profile+UserLogtime.swift */; };
 		9C9BACD32B454C4600CBB2E2 /* SlideInModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD22B454C4600CBB2E2 /* SlideInModifier.swift */; };
@@ -187,6 +188,7 @@
 		9C6FB8112B459FE4002AF3FF /* VRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRow.swift; sourceTree = "<group>"; };
 		9C6FB8172B45A229002AF3FF /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		9C7326E42B4AA93800779FC1 /* Profile+UserSkills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+UserSkills.swift"; sourceTree = "<group>"; };
+		9C7326E62B4AAA1A00779FC1 /* Profile+UserAchievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+UserAchievements.swift"; sourceTree = "<group>"; };
 		9C8D33802B49A82A00F716EC /* Profile+UserEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+UserEvents.swift"; sourceTree = "<group>"; };
 		9C8D33842B49AD6400F716EC /* Profile+UserLogtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+UserLogtime.swift"; sourceTree = "<group>"; };
 		9C9BACD22B454C4600CBB2E2 /* SlideInModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInModifier.swift; sourceTree = "<group>"; };
@@ -580,6 +582,7 @@
 		9CEC13AC2B49584A00D5698C /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				9C7326E62B4AAA1A00779FC1 /* Profile+UserAchievements.swift */,
 				9C8D33802B49A82A00F716EC /* Profile+UserEvents.swift */,
 				9CEC13AD2B49588400D5698C /* Profile+UserInformations.swift */,
 				9C8D33842B49AD6400F716EC /* Profile+UserLogtime.swift */,
@@ -825,6 +828,7 @@
 				9C1F1F282B42C0DF00695C3E /* ContentView.swift in Sources */,
 				9C9BACD82B4551E700CBB2E2 /* EnvironmentValues+Store.swift in Sources */,
 				9C3FA10B2B46CC0700F2F767 /* AppLanguage.swift in Sources */,
+				9C7326E72B4AAA1A00779FC1 /* Profile+UserAchievements.swift in Sources */,
 				9C1F1F632B42C77500695C3E /* CorrectionPointHistorics.swift in Sources */,
 				9C17435E2B42E6E000A707C4 /* Url.swift in Sources */,
 				9CFEFFAC2B42FDAE0054859E /* OnBoardingView.swift in Sources */,
