@@ -1,6 +1,16 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
+    },
     "%@ - %@" : {
       "localizations" : {
         "en" : {
@@ -353,6 +363,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annuler"
+          }
+        }
+      }
+    },
+    "Connect to a workstation on your campus to see how long you've been online this month." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connectez-vous à un poste de travail sur votre campus pour savoir combien de temps vous avez été en ligne ce mois-ci."
           }
         }
       }
@@ -797,6 +817,16 @@
         }
       }
     },
+    "No hours this month" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune heure ce mois-ci"
+          }
+        }
+      }
+    },
     "No projects found" : {
       "localizations" : {
         "fr" : {
@@ -1143,6 +1173,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se désinscrire de l'événement"
+          }
+        }
+      }
+    },
+    "Value" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valeur"
           }
         }
       }

@@ -50,7 +50,7 @@ extension ProfileView
                     if !isSearchedProfile
                     {
                         DashboardLink(image: "calendar", title: "Events", destination: UserEvents.init)
-                        DashboardLink(image: "clock", title: "Logtime", destination: EmptyView.init)
+                        DashboardLink(image: "clock", title: "Logtime", destination: UserLogtime.init)
                         DashboardLink(image: "scroll", title: "Corrections", destination: EmptyView.init)
                     }
                     
