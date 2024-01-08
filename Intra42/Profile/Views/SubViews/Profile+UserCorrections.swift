@@ -316,7 +316,6 @@ extension ProfileView
                     .onChange(of: beginAt, onChange)
                 }
                 .navigationTitle("New correction slot")
-                .navigationBarTitleDisplayMode(.inline)
                 .toolbar
                 {
                     ToolbarItem(placement: .cancellationAction)

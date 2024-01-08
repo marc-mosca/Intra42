@@ -947,6 +947,16 @@
         }
       }
     },
+    "No history search" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun historique de recherche"
+          }
+        }
+      }
+    },
     "No hours this month" : {
       "localizations" : {
         "fr" : {
@@ -1153,6 +1163,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Recherchez et consultez le profil de n'importe quel autre étudiant sur le réseau mondial 42."
+          }
+        }
+      }
+    },
+    "Search for a student to see them appear on this list." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recherchez un étudiant pour le voir apparaître dans cette liste."
+          }
+        }
+      }
+    },
+    "Search history" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historique de recherche"
           }
         }
       }
