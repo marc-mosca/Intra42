@@ -51,7 +51,7 @@ extension ProfileView
                     {
                         DashboardLink(image: "calendar", title: "Events", destination: UserEvents.init)
                         DashboardLink(image: "clock", title: "Logtime", destination: UserLogtime.init)
-                        DashboardLink(image: "scroll", title: "Corrections", destination: EmptyView.init)
+                        DashboardLink(image: "scroll", title: "Corrections", destination: UserCorrections.init)
                     }
                     
                     DashboardLink(image: "list.bullet.clipboard", title: "Skills")
