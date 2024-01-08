@@ -45,17 +45,9 @@ extension CampusView
         
         func fetchFilters(events: [Api.Types.Event]) -> [String]
         {
-            var filters = [String]()
-            
-            if selection == .events
-            {
-                let filtersSet = Set(events.map(\.kind.capitalized))
-                filters = Array(filtersSet)
-            }
-            
-            filters.append(String(localized: "All"))
-            
-            return filters.sorted()
+            var filters = Set(events.map(\.kind.capitalized))
+            filters.insert(String(localized: "All"))
+            return Array(filters).sorted()
         }
         
         func filter(for events: [Api.Types.Event]) -> [Api.Types.Event]

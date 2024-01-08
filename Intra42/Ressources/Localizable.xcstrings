@@ -1,6 +1,62 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "- %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "- %@"
+          }
+        }
+      }
+    },
+    "%@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
+    },
+    "%@ - %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ - %2$@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ - %2$@"
+          }
+        }
+      }
+    },
+    "%@ %%" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ %%"
+          }
+        }
+      }
+    },
+    "%@'s profile" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil de %@"
+          }
+        }
+      }
+    },
     "%lld days" : {
       "localizations" : {
         "en" : {
@@ -241,12 +297,52 @@
         }
       }
     },
+    "Achieved objectives to obtain achievements." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atteindre les objectifs pour obtenir des réalisations."
+          }
+        }
+      }
+    },
+    "Achievements" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réalisations"
+          }
+        }
+      }
+    },
     "Activities" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Activités"
+          }
+        }
+      }
+    },
+    "Add" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter"
+          }
+        }
+      }
+    },
+    "Add a correction slot" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un créneau de correction"
           }
         }
       }
@@ -291,6 +387,16 @@
         }
       }
     },
+    "Begin" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Début"
+          }
+        }
+      }
+    },
     "Campus" : {
       "localizations" : {
         "fr" : {
@@ -311,12 +417,52 @@
         }
       }
     },
+    "Connect to a workstation on your campus to see how long you've been online this month." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connectez-vous à un poste de travail sur votre campus pour savoir combien de temps vous avez été en ligne ce mois-ci."
+          }
+        }
+      }
+    },
     "Connectivity" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Connectivité"
+          }
+        }
+      }
+    },
+    "Correction Point Historics" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historique des points de correction"
+          }
+        }
+      }
+    },
+    "Correction points" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Points de correction"
+          }
+        }
+      }
+    },
+    "Correction slots" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créneaux de correction"
           }
         }
       }
@@ -331,12 +477,52 @@
         }
       }
     },
+    "Create a correction slot" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créer un créneau de correction"
+          }
+        }
+      }
+    },
+    "Create a correction slot to see it appear in the list." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créez un créneau de correction pour le voir apparaître dans la liste."
+          }
+        }
+      }
+    },
+    "Cursus" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cursus"
+          }
+        }
+      }
+    },
     "Dark" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sombre"
+          }
+        }
+      }
+    },
+    "Dashboard" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tableau de bord"
           }
         }
       }
@@ -421,6 +607,26 @@
         }
       }
     },
+    "Email" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresse mail"
+          }
+        }
+      }
+    },
+    "End" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fin"
+          }
+        }
+      }
+    },
     "Events" : {
       "localizations" : {
         "fr" : {
@@ -441,6 +647,36 @@
         }
       }
     },
+    "Finished" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminé"
+          }
+        }
+      }
+    },
+    "General" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Général"
+          }
+        }
+      }
+    },
+    "Grade" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grade"
+          }
+        }
+      }
+    },
     "Headline" : {
       "localizations" : {
         "fr" : {
@@ -457,6 +693,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aide"
+          }
+        }
+      }
+    },
+    "In progress" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En cours"
           }
         }
       }
@@ -487,6 +733,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Langue"
+          }
+        }
+      }
+    },
+    "Level" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niveau"
+          }
+        }
+      }
+    },
+    "Level - %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niveau - %@"
           }
         }
       }
@@ -551,6 +817,16 @@
         }
       }
     },
+    "My profile" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mon profil"
+          }
+        }
+      }
+    },
     "N/A" : {
       "localizations" : {
         "fr" : {
@@ -571,12 +847,42 @@
         }
       }
     },
+    "New correction slot" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouveau créneau de correction"
+          }
+        }
+      }
+    },
     "No" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non"
+          }
+        }
+      }
+    },
+    "No achievements found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune réalisation trouvée"
+          }
+        }
+      }
+    },
+    "No correction slots found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun créneau de correction trouvé"
           }
         }
       }
@@ -597,6 +903,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucun événement n'est prévu dans votre campus."
+          }
+        }
+      }
+    },
+    "No events found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun événement trouvé"
           }
         }
       }
@@ -631,12 +947,92 @@
         }
       }
     },
+    "No hours this month" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune heure ce mois-ci"
+          }
+        }
+      }
+    },
+    "No patronage found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun parrainage trouvé"
+          }
+        }
+      }
+    },
+    "No projects found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun projet trouvé"
+          }
+        }
+      }
+    },
+    "No skills found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune compétences trouvé"
+          }
+        }
+      }
+    },
     "OK" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
+          }
+        }
+      }
+    },
+    "Patronages" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parrainages"
+          }
+        }
+      }
+    },
+    "Patroned" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parrain"
+          }
+        }
+      }
+    },
+    "Patroning" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filleul"
+          }
+        }
+      }
+    },
+    "Phone number" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numéro de téléphone"
           }
         }
       }
@@ -651,12 +1047,32 @@
         }
       }
     },
+    "Projects" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Projets"
+          }
+        }
+      }
+    },
     "Projects related" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Projets liés"
+          }
+        }
+      }
+    },
+    "Promotion" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Promotion"
           }
         }
       }
@@ -811,6 +1227,36 @@
         }
       }
     },
+    "Skills" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compétences"
+          }
+        }
+      }
+    },
+    "Slots available" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créneaux disponible"
+          }
+        }
+      }
+    },
+    "Slots taken" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créneaux pris"
+          }
+        }
+      }
+    },
     "Subscribe" : {
       "localizations" : {
         "fr" : {
@@ -901,6 +1347,26 @@
         }
       }
     },
+    "Total" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total"
+          }
+        }
+      }
+    },
+    "Total: %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total : %@"
+          }
+        }
+      }
+    },
     "Unsubscribe" : {
       "localizations" : {
         "fr" : {
@@ -921,6 +1387,26 @@
         }
       }
     },
+    "Validate projects to earn skills points." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valider des projets pour gagner des points de compétence."
+          }
+        }
+      }
+    },
+    "Value" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valeur"
+          }
+        }
+      }
+    },
     "View and manage your upcoming events, examinations and corrections." : {
       "localizations" : {
         "fr" : {
@@ -937,6 +1423,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Consultez vos projets, votre temps de connexion, vos événements et bien d'autres informations sur votre cours."
+          }
+        }
+      }
+    },
+    "Wallets" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wallets"
           }
         }
       }
@@ -971,12 +1467,54 @@
         }
       }
     },
-    "You will be evaluated by someone on ft_transcendence in 45 minutes." : {
+    "You must have taken part in an event to perceive it in the list." : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vous serez évalué par quelqu'un sur ft_transcendence dans 45 minutes."
+            "value" : "Vous devez avoir participé à un événement pour le percevoir dans la liste."
+          }
+        }
+      }
+    },
+    "You must register or have submitted a project to perceive it appears in this list." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous devez vous inscrire ou avoir soumis un projet pour qu'il apparaisse dans cette liste."
+          }
+        }
+      }
+    },
+    "You will be evaluated by %@ on %@ in %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You will be evaluated by %1$@ on %2$@ in %3$@."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous serez évalué par %1$@ sur %2$@ dans %3$@."
+          }
+        }
+      }
+    },
+    "You will evaluate %@ on %@ in %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You will evaluate %1$@ on %2$@ in %3$@."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous évaluerez %1$@ sur %2$@ dans %3$@."
           }
         }
       }

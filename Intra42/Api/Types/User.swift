@@ -146,7 +146,7 @@ extension Api.Types
         }
         
         /// A structure representing the user's projects.
-        struct Projects: Decodable, Identifiable
+        struct Projects: Decodable, Hashable, Identifiable
         {
             let id: Int
             let finalMark: Int?
@@ -161,7 +161,7 @@ extension Api.Types
             
             var markedAtFormatted: String
             {
-                guard let markedAt = markedAt else { return "N/A" }
+                guard let markedAt = markedAt else { return String(localized: "In progress") }
                 
                 let formatStyle = Date.FormatStyle.dateTime.year().month(.wide)
                 
@@ -169,7 +169,7 @@ extension Api.Types
             }
             
             /// A structure representing the details of the user's projects.
-            struct Details: Decodable, Identifiable
+            struct Details: Decodable, Identifiable, Hashable
             {
                 let id: Int
                 let name: String

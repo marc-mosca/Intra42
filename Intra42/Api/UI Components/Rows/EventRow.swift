@@ -87,7 +87,6 @@ extension EventRow
         // MARK: - Private properties
         
         @Environment(\.store) private var store
-        @AppStorage("userIsConnected") private var userIsConnected: Bool?
         @State private var showAlert = false
         
         private var userIsSubscribe: Bool
@@ -124,11 +123,14 @@ extension EventRow
             .navigationBarTitleDisplayMode(.inline)
             .toolbar
             {
-                ToolbarItem
+                if event.beginAt > .now
                 {
-                    Button(userIsSubscribe ? "Unsubscribe" : "Subscribe")
+                    ToolbarItem
                     {
-                        showAlert.toggle()
+                        Button(userIsSubscribe ? "Unsubscribe" : "Subscribe")
+                        {
+                            showAlert.toggle()
+                        }
                     }
                 }
             }
@@ -167,10 +169,6 @@ extension EventRow
                 catch AppError.apiAuthorization
                 {
                     store.error = .apiAuthorization
-                    store.errorAction = {
-                        Api.Keychain.shared.clear()
-                        userIsConnected = false
-                    }
                 }
                 catch
                 {

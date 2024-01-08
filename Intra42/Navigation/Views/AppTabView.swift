@@ -24,15 +24,18 @@ struct AppTabView: View
     {
         VStack
         {
-            TabView(selection: $selection)
+            if let user = store.user
             {
-                ForEach(AppScreen.allCases) { screen in
-                    screen.destination
-                        .tag(screen as AppScreen?)
-                        .tabItem { screen.label }
+                TabView(selection: $selection)
+                {
+                    ForEach(AppScreen.allCases) { screen in
+                        screen.destination(user: user)
+                            .tag(screen as AppScreen?)
+                            .tabItem { screen.label }
+                    }
                 }
+                .tint(.night)
             }
-            .tint(.night)
         }
         .slideIn(rowHeight: 50, duration: 1, delay: 0.2)
     }

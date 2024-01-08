@@ -13,7 +13,6 @@ struct ActivitiesView: View
     // MARK: - Private properties
     
     @Environment(\.store) private var store
-    @AppStorage("userIsConnected") private var userIsConnected: Bool?
     @State private var viewModel = ViewModel()
     
     // MARK: - Body
@@ -60,10 +59,6 @@ struct ActivitiesView: View
             catch AppError.apiAuthorization
             {
                 store.error = .apiAuthorization
-                store.errorAction = {
-                    Api.Keychain.shared.clear()
-                    userIsConnected = false
-                }
             }
             catch
             {
