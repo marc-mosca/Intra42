@@ -43,4 +43,50 @@ extension Api.Types
         
     }
     
+    /// An object representing correction slots grouped.
+    struct GroupedSlots: Decodable, Identifiable
+    {
+        
+        // MARK: - Exposed properties
+        
+        var id = UUID()
+        
+        var beginAt: Date
+        var endAt: Date
+        var slots: [Api.Types.Slot]
+        var slotsIds: [Int]
+        
+        // MARK: - Exposed methods
+        
+        /// Transforms a correction slot array into a grouped correction slot structure array.
+        /// - Parameter slots: The correction slot array used to create the new correction slot structure array.
+        /// - Returns: The new grouped correction slot structure array.
+        static func create(for slots: [Api.Types.Slot]) -> [Api.Types.GroupedSlots]
+        {
+            let sortedSlots = slots.sorted(by: { $0.beginAt < $1.beginAt })
+            var groupedSlots = [Api.Types.GroupedSlots]()
+            
+            for slot in sortedSlots
+            {
+                if groupedSlots.isEmpty || groupedSlots.last!.endAt != slot.beginAt
+                {
+                    let newGroupedSlot = Api.Types.GroupedSlots(beginAt: slot.beginAt, endAt: slot.endAt, slots: [slot], slotsIds: [slot.id])
+                    
+                    groupedSlots.append(newGroupedSlot)
+                }
+                else
+                {
+                    let count = groupedSlots.count - 1
+                    
+                    groupedSlots[count].slots.append(slot)
+                    groupedSlots[count].slotsIds.append(slot.id)
+                    groupedSlots[count].endAt = slot.endAt
+                }
+            }
+            
+            return groupedSlots
+        }
+        
+    }
+    
 }

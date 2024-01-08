@@ -1,6 +1,16 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "- %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "- %@"
+          }
+        }
+      }
+    },
     "%@" : {
       "localizations" : {
         "fr" : {
@@ -417,12 +427,32 @@
         }
       }
     },
+    "Correction slots" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créneaux de correction"
+          }
+        }
+      }
+    },
     "Corrections" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Corrections"
+          }
+        }
+      }
+    },
+    "Create a correction slot to see it appear in the list." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créez un créneau de correction pour le voir apparaître dans la liste."
           }
         }
       }
@@ -787,6 +817,16 @@
         }
       }
     },
+    "No correction slots found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun créneau de correction trouvé"
+          }
+        }
+      }
+    },
     "No corrections planned" : {
       "localizations" : {
         "fr" : {
@@ -1103,6 +1143,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compétences"
+          }
+        }
+      }
+    },
+    "Slots available" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créneaux disponible"
+          }
+        }
+      }
+    },
+    "Slots taken" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créneaux pris"
           }
         }
       }
