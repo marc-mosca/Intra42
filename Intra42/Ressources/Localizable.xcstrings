@@ -1457,12 +1457,34 @@
         }
       }
     },
-    "You will be evaluated by someone on ft_transcendence in 45 minutes." : {
+    "You will be evaluated by %@ on %@ in %@." : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You will be evaluated by %1$@ on %2$@ in %3$@."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vous serez évalué par quelqu'un sur ft_transcendence dans 45 minutes."
+            "value" : "Vous serez évalué par %1$@ sur %2$@ dans %3$@."
+          }
+        }
+      }
+    },
+    "You will evaluate %@ on %@ in %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You will evaluate %1$@ on %2$@ in %3$@."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous évaluerez %1$@ sur %2$@ dans %3$@."
           }
         }
       }

@@ -65,6 +65,8 @@ extension Api.Endpoint
             return "/v2/users/\(id)"
         case .fetchUserByLogin(let login):
             return "/v2/users/\(login)"
+        case .fetchProject(let id):
+            return "/v2/projects/\(id)"
         }
     }
     

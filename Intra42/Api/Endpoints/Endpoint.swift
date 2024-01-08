@@ -42,6 +42,10 @@ extension Api
         case fetchUserAccessToken(code: String)
         case updateUserAccessToken(refreshToken: String)
         
+        // Projects
+        
+        case fetchProject(id: Int)
+        
         // Scales
         
         case fetchUserScales
