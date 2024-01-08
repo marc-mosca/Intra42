@@ -53,7 +53,7 @@ extension AppScreen
         case .campus:
             CampusView()
         case .search:
-            Text("Search")
+            SearchView()
         case .profile:
             ProfileView(user: user)
         case .settings:

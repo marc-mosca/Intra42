@@ -51,5 +51,6 @@ struct Intra42App: App
                     }
                 }
         }
+        .modelContainer(for: HistorySearch.self)
     }
 }
