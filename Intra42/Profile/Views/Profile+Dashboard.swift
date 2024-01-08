@@ -64,7 +64,10 @@ extension ProfileView
                         UserAchievements(achievements: user.achievements)
                     }
                     
-                    DashboardLink(image: "person.2", title: "Patronages", destination: EmptyView.init)
+                    DashboardLink(image: "person.2", title: "Patronages")
+                    {
+                        UserPatronages(patroned: user.patroned, patroning: user.patroning)
+                    }
                 }
                 .listStyle(.plain)
                 .frame(minHeight: listSize)

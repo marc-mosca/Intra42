@@ -957,6 +957,16 @@
         }
       }
     },
+    "No patronage found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun parrainage trouvé"
+          }
+        }
+      }
+    },
     "No projects found" : {
       "localizations" : {
         "fr" : {
@@ -993,6 +1003,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parrainages"
+          }
+        }
+      }
+    },
+    "Patroned" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parrain"
+          }
+        }
+      }
+    },
+    "Patroning" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filleul"
           }
         }
       }

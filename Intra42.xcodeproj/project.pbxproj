@@ -75,6 +75,7 @@
 		9C8D33852B49AD6400F716EC /* Profile+UserLogtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D33842B49AD6400F716EC /* Profile+UserLogtime.swift */; };
 		9C99E91E2B4BE5590020E617 /* Profile+UserCorrections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C99E91D2B4BE5590020E617 /* Profile+UserCorrections.swift */; };
 		9C99E9202B4BEDE70020E617 /* SlotRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C99E91F2B4BEDE70020E617 /* SlotRow.swift */; };
+		9C99E9222B4C09C50020E617 /* Profile+UserPatronages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C99E9212B4C09C50020E617 /* Profile+UserPatronages.swift */; };
 		9C9BACD32B454C4600CBB2E2 /* SlideInModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD22B454C4600CBB2E2 /* SlideInModifier.swift */; };
 		9C9BACD62B4551BF00CBB2E2 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD52B4551BF00CBB2E2 /* Store.swift */; };
 		9C9BACD82B4551E700CBB2E2 /* EnvironmentValues+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BACD72B4551E700CBB2E2 /* EnvironmentValues+Store.swift */; };
@@ -195,6 +196,7 @@
 		9C8D33842B49AD6400F716EC /* Profile+UserLogtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+UserLogtime.swift"; sourceTree = "<group>"; };
 		9C99E91D2B4BE5590020E617 /* Profile+UserCorrections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+UserCorrections.swift"; sourceTree = "<group>"; };
 		9C99E91F2B4BEDE70020E617 /* SlotRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotRow.swift; sourceTree = "<group>"; };
+		9C99E9212B4C09C50020E617 /* Profile+UserPatronages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+UserPatronages.swift"; sourceTree = "<group>"; };
 		9C9BACD22B454C4600CBB2E2 /* SlideInModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInModifier.swift; sourceTree = "<group>"; };
 		9C9BACD52B4551BF00CBB2E2 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		9C9BACD72B4551E700CBB2E2 /* EnvironmentValues+Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Store.swift"; sourceTree = "<group>"; };
@@ -592,6 +594,7 @@
 				9C8D33802B49A82A00F716EC /* Profile+UserEvents.swift */,
 				9CEC13AD2B49588400D5698C /* Profile+UserInformations.swift */,
 				9C8D33842B49AD6400F716EC /* Profile+UserLogtime.swift */,
+				9C99E9212B4C09C50020E617 /* Profile+UserPatronages.swift */,
 				9CEC13AF2B4959EC00D5698C /* Profile+UserProjects.swift */,
 				9C7326E42B4AA93800779FC1 /* Profile+UserSkills.swift */,
 			);
@@ -829,6 +832,7 @@
 				9C1F1F8D2B42CF7E00695C3E /* ExamRow.swift in Sources */,
 				9C9BACD62B4551BF00CBB2E2 /* Store.swift in Sources */,
 				9CFEFFBA2B4302490054859E /* OnBoarding+Author.swift in Sources */,
+				9C99E9222B4C09C50020E617 /* Profile+UserPatronages.swift in Sources */,
 				9C9BACED2B45698C00CBB2E2 /* Activities+Picker.swift in Sources */,
 				9C1743532B42E18E00A707C4 /* Api+Keys.swift in Sources */,
 				9C1F1F7E2B42CAB000695C3E /* Scale+Samples.swift in Sources */,
