@@ -327,6 +327,26 @@
         }
       }
     },
+    "Add" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter"
+          }
+        }
+      }
+    },
+    "Add a correction slot" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un créneau de correction"
+          }
+        }
+      }
+    },
     "All" : {
       "localizations" : {
         "fr" : {
@@ -363,6 +383,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Une erreur s'est produite avec le réseau. Veuillez réessayer plus tard."
+          }
+        }
+      }
+    },
+    "Begin" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Début"
           }
         }
       }
@@ -443,6 +473,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Corrections"
+          }
+        }
+      }
+    },
+    "Create a correction slot" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créer un créneau de correction"
           }
         }
       }
@@ -573,6 +613,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adresse mail"
+          }
+        }
+      }
+    },
+    "End" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fin"
           }
         }
       }
@@ -793,6 +843,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nom"
+          }
+        }
+      }
+    },
+    "New correction slot" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouveau créneau de correction"
           }
         }
       }

@@ -13,6 +13,7 @@ struct Intra42App: App
     
     // MARK: - Private properties
     
+    @AppStorage("userIsConnected") private var userIsConnected: Bool?
     @AppStorage("userDefaultLanguage") private var userDefaultLanguage: String?
     @AppStorage("userDefaultColorScheme") private var userDefaultColorScheme: Int?
     @State private var store = Store()
@@ -38,6 +39,17 @@ struct Intra42App: App
                 .environment(\.locale, .init(identifier: identifier))
                 .preferredColorScheme(colorScheme)
                 .handleErrors(error: store.error, action: store.errorAction)
+                .onChange(of: store.error)
+                {
+                    switch store.error
+                    {
+                    case .apiAuthorization:
+                        Api.Keychain.shared.clear()
+                        userIsConnected = false
+                    default:
+                        return
+                    }
+                }
         }
     }
 }

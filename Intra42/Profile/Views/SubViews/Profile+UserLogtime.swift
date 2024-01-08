@@ -18,7 +18,6 @@ extension ProfileView
         // MARK: - Private properties
         
         @Environment(\.store) private var store
-        @AppStorage("userIsConnected") private var userIsConnected: Bool?
         
         @State private var loadingState = AppRequestState.loading
         @State private var logtimes = [Api.Types.Logtime]()
@@ -128,10 +127,6 @@ extension ProfileView
             catch AppError.apiAuthorization
             {
                 store.error = .apiAuthorization
-                store.errorAction = {
-                    Api.Keychain.shared.clear()
-                    userIsConnected = false
-                }
             }
             catch
             {

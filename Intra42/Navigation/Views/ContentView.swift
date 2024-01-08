@@ -57,10 +57,6 @@ struct ContentView: View
         catch AppError.apiAuthorization
         {
             store.error = .apiAuthorization
-            store.errorAction = {
-                Api.Keychain.shared.clear()
-                userIsConnected = false
-            }
         }
         catch
         {
