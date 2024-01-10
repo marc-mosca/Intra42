@@ -352,7 +352,7 @@ extension ProfileView
         {
             guard beginAt < endAt else { return }
             guard let user = store.user else { return }
-            guard let difference = calendar.dateComponents([.hour], from: beginAt, to: endAt).hour, difference <= 1 else { return }
+            guard let difference = calendar.dateComponents([.hour], from: beginAt, to: endAt).hour, difference >= 1 else { return }
             
             Task {
                 do
