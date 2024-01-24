@@ -2,15 +2,14 @@
 //  HRow.swift
 //  Intra42
 //
-//  Created by Marc Mosca on 03/01/2024.
+//  Created by Marc Mosca on 23/01/2024.
 //
 
 import SwiftUI
 
-struct HRow: View
-{
+struct HRow: View {
     
-    // MARK: - Exposed properties
+    // MARK: - Properties
     
     let title: String.LocalizationValue
     let value: String
@@ -29,10 +28,8 @@ struct HRow: View
     
     // MARK: - Body
     
-    var body: some View
-    {
-        HStack
-        {
+    var body: some View {
+        HStack {
             Text(String(localized: title))
                 .foregroundStyle(.primary)
                 .padding(.trailing, 10)
@@ -50,7 +47,6 @@ struct HRow: View
 
 // MARK: - Previews
 
-#Preview
-{
+#Preview {
     HRow(title: "Name", value: "Marc MOSCA")
 }

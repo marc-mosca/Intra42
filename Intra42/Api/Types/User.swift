@@ -2,17 +2,15 @@
 //  User.swift
 //  Intra42
 //
-//  Created by Marc Mosca on 01/01/2024.
+//  Created by Marc Mosca on 15/01/2024.
 //
 
 import Foundation
 
-extension Api.Types
-{
+extension Api.Types {
     
     /// A structure representing a user.
-    struct User: Decodable, Identifiable
-    {
+    struct User: Decodable, Identifiable {
         
         // MARK: - Exposed properties
         
@@ -34,39 +32,24 @@ extension Api.Types
         let patroning: [Patronages]
         let campusUsers: [Campus]
         
-        var mainCursus: Cursus?
-        {
-            let studentCursus = cursusUsers.first { cursus in
-                cursus.cursus.slug == "42cursus"
-            }
-            
-            let piscineCursus = cursusUsers.first { cursus in
-                cursus.cursus.slug == "c-piscine"
-            }
+        var mainCursus: Cursus? {
+            let studentCursus = cursusUsers.first(where: { $0.cursus.slug == "42cursus" })
+            let piscineCursus = cursusUsers.first(where: { $0.cursus.slug == "c-piscine" })
             
             return studentCursus != nil ? studentCursus : piscineCursus
         }
         
-        var mainCampus: Campus?
-        {
-            campusUsers.first(where: \.isPrimary)
-        }
+        var mainCampus: Campus? { campusUsers.first(where: \.isPrimary) }
         
         var postCC: Bool
         {
-            let lastProject = projectsUsers.first { project in
-                project.project.slug == "ft_transcendence"
-            }
-            
-            let lastExam = projectsUsers.first { project in
-                project.project.slug == "exam-rank-06"
-            }
+            let lastProject = projectsUsers.first(where: { $0.project.slug == "ft_transcendence" })
+            let lastExam = projectsUsers.first(where: { $0.project.slug == "exam-rank-06" })
             
             return lastProject?.validated == true && lastExam?.validated == true
         }
         
-        var entryDate: String
-        {
+        var entryDate: String {
             let defaultEntryDate = "\(poolYear)-01-01"
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "MMMM"
@@ -86,8 +69,7 @@ extension Api.Types
         // MARK: - Sub-structures
         
         /// A structure representing a user's achievements.
-        struct Achievements: Decodable, Identifiable
-        {
+        struct Achievements: Decodable, Identifiable {
             let id: Int
             let name: String
             let description: String
@@ -95,22 +77,19 @@ extension Api.Types
         }
         
         /// A structure representing a user's profile image.
-        struct Avatar: Decodable
-        {
+        struct Avatar: Decodable {
             let link: String
         }
         
         /// A structure representing the user's campus information.
-        struct Campus: Decodable, Identifiable
-        {
+        struct Campus: Decodable, Identifiable {
             let id: Int
             let campusId: Int
             let isPrimary: Bool
         }
         
         /// A structure representing the user's cursus.
-        struct Cursus: Decodable, Identifiable
-        {
+        struct Cursus: Decodable, Identifiable {
             let id: Int
             let grade: String?
             let level: Double
@@ -120,16 +99,14 @@ extension Api.Types
             let cursus: Details
             
             /// A structure representing the skills in the user's cursus.
-            struct Skills: Decodable, Identifiable
-            {
+            struct Skills: Decodable, Identifiable {
                 let id: Int
                 let name: String
                 let level: Double
             }
             
             /// A structure representing the details of the user's cursus.
-            struct Details: Decodable, Identifiable
-            {
+            struct Details: Decodable, Identifiable {
                 let id: Int
                 let name: String
                 let slug: String
@@ -137,8 +114,7 @@ extension Api.Types
         }
         
         /// A structure representing a user's patronages.
-        struct Patronages: Decodable, Identifiable
-        {
+        struct Patronages: Decodable, Identifiable {
             let id: Int
             let userId: Int
             let godfatherId: Int
@@ -146,8 +122,7 @@ extension Api.Types
         }
         
         /// A structure representing the user's projects.
-        struct Projects: Decodable, Hashable, Identifiable
-        {
+        struct Projects: Decodable, Hashable, Identifiable {
             let id: Int
             let finalMark: Int?
             let status: String
@@ -159,8 +134,7 @@ extension Api.Types
             let marked: Bool
             let retriableAt: Date?
             
-            var markedAtFormatted: String
-            {
+            var markedAtFormatted: String {
                 guard let markedAt = markedAt else { return String(localized: "In progress") }
                 
                 let formatStyle = Date.FormatStyle.dateTime.year().month(.wide)
@@ -169,26 +143,16 @@ extension Api.Types
             }
             
             /// A structure representing the details of the user's projects.
-            struct Details: Decodable, Identifiable, Hashable
-            {
+            struct Details: Decodable, Identifiable, Hashable {
                 let id: Int
                 let name: String
                 let slug: String
                 let parentId: Int?
             }
             
-            private enum CodingKeys: String, CodingKey
-            {
-                case id
-                case finalMark
-                case status
+            private enum CodingKeys: String, CodingKey {
+                case id, finalMark, status, currentTeamId, project, cursusIds, markedAt, marked, retriableAt
                 case validated = "validated?"
-                case currentTeamId
-                case project
-                case cursusIds
-                case markedAt
-                case marked
-                case retriableAt
             }
         }
         

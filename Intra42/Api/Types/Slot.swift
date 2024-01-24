@@ -2,17 +2,15 @@
 //  Slot.swift
 //  Intra42
 //
-//  Created by Marc Mosca on 01/01/2024.
+//  Created by Marc Mosca on 15/01/2024.
 //
 
 import Foundation
 
-extension Api.Types
-{
+extension Api.Types {
     
     /// A structure representing a correction slot.
-    struct Slot: Decodable, Identifiable
-    {
+    struct Slot: Decodable, Identifiable {
         
         // MARK: - Exposed properties
         
@@ -25,15 +23,13 @@ extension Api.Types
         // MARK: - Exposed sub-structures
         
         /// A structure representing a user of a correction slot.
-        struct User: Codable, Identifiable
-        {
+        struct User: Codable, Identifiable {
             let id: Int
             let login: String
         }
         
         /// A structure representing a team in a correction slot.
-        struct ScaleTeam: Codable, Identifiable
-        {
+        struct ScaleTeam: Codable, Identifiable {
             let id: Int
             let scaleId: Int
             let beginAt: Date
@@ -44,8 +40,7 @@ extension Api.Types
     }
     
     /// An object representing correction slots grouped.
-    struct GroupedSlots: Decodable, Identifiable
-    {
+    struct GroupedSlots: Decodable, Identifiable {
         
         // MARK: - Exposed properties
         
@@ -61,21 +56,17 @@ extension Api.Types
         /// Transforms a correction slot array into a grouped correction slot structure array.
         /// - Parameter slots: The correction slot array used to create the new correction slot structure array.
         /// - Returns: The new grouped correction slot structure array.
-        static func create(for slots: [Api.Types.Slot]) -> [Api.Types.GroupedSlots]
-        {
+        static func create(for slots: [Api.Types.Slot]) -> [Api.Types.GroupedSlots] {
             let sortedSlots = slots.sorted(by: { $0.beginAt < $1.beginAt })
             var groupedSlots = [Api.Types.GroupedSlots]()
             
-            for slot in sortedSlots
-            {
-                if groupedSlots.isEmpty || groupedSlots.last!.endAt != slot.beginAt
-                {
+            for slot in sortedSlots {
+                if groupedSlots.isEmpty || groupedSlots.last!.endAt != slot.beginAt {
                     let newGroupedSlot = Api.Types.GroupedSlots(beginAt: slot.beginAt, endAt: slot.endAt, slots: [slot], slotsIds: [slot.id])
                     
                     groupedSlots.append(newGroupedSlot)
                 }
-                else
-                {
+                else {
                     let count = groupedSlots.count - 1
                     
                     groupedSlots[count].slots.append(slot)

@@ -2,17 +2,15 @@
 //  Scale.swift
 //  Intra42
 //
-//  Created by Marc Mosca on 01/01/2024.
+//  Created by Marc Mosca on 15/01/2024.
 //
 
 import Foundation
 
-extension Api.Types
-{
+extension Api.Types {
     
     /// A structure representing a correction.
-    struct Scale: Decodable, Identifiable
-    {
+    struct Scale: Decodable, Identifiable {
         
         // MARK: - Exposed properties
         
@@ -24,17 +22,12 @@ extension Api.Types
         let scale: Details
         let teams: Team?
         
-        var members: [Team.User]
-        {
-            teams?.users ?? []
-        }
+        var members: [Team.User] { teams?.users ?? [] }
         
-        var teamName: String
-        {
+        var teamName: String {
             guard !members.isEmpty else { return "someone" }
             
-            if let teamName = members.count == 1 ? members.first(where: \.leader)?.login : teams?.name
-            {
+            if let teamName = members.count == 1 ? members.first(where: \.leader)?.login : teams?.name {
                 return teamName
             }
             
@@ -44,23 +37,20 @@ extension Api.Types
         // MARK: - Exposed sub-structures
         
         /// A structure representing a user of a correction.
-        struct User: Decodable, Identifiable
-        {
+        struct User: Decodable, Identifiable {
             let id: Int
             let login: String
         }
         
         /// A structure representing the details of a correction.
-        struct Details: Decodable, Identifiable
-        {
+        struct Details: Decodable, Identifiable {
             let id: Int
             let correctionNumber: Int
             let duration: Int
         }
         
         /// A structure representing a correction team.
-        struct Team: Decodable, Identifiable
-        {
+        struct Team: Decodable, Identifiable {
             let id: Int
             let name: String
             let projectId: Int
@@ -73,25 +63,17 @@ extension Api.Types
             let closedAt: Date?
             
             /// A structure representing a user in a team.
-            struct User: Decodable, Identifiable
-            {
+            struct User: Decodable, Identifiable {
                 let id: Int
                 let login: String
                 let leader: Bool
             }
             
-            private enum CodingKeys: String, CodingKey
-            {
-                case id
-                case name
-                case projectId
-                case status
-                case users
+            private enum CodingKeys: String, CodingKey {
+                case id, name, projectId, status, users, lockedAt, closedAt
                 case locked = "locked?"
                 case validated = "validated?"
                 case closed = "closed?"
-                case lockedAt
-                case closedAt
             }
             
         }

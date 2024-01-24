@@ -2,25 +2,22 @@
 //  VRow.swift
 //  Intra42
 //
-//  Created by Marc Mosca on 03/01/2024.
+//  Created by Marc Mosca on 23/01/2024.
 //
 
 import SwiftUI
 
-struct VRow: View
-{
+struct VRow: View {
     
-    // MARK: - Exposed properties
+    // MARK: - Properties
     
     let title: String
     let value: String
     
     // MARK: - Body
     
-    var body: some View
-    {
-        VStack(alignment: .leading, spacing: 4)
-        {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
             Text(title)
                 .foregroundStyle(.primary)
             
@@ -34,7 +31,6 @@ struct VRow: View
 
 // MARK: - Previews
 
-#Preview
-{
+#Preview {
     VRow(title: "Description", value: "This is a description.")
 }

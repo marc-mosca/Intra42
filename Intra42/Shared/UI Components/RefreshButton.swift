@@ -2,25 +2,22 @@
 //  RefreshButton.swift
 //  Intra42
 //
-//  Created by Marc Mosca on 03/01/2024.
+//  Created by Marc Mosca on 23/01/2024.
 //
 
 import SwiftUI
 
-struct RefreshButton: View
-{
+struct RefreshButton: View {
     
-    // MARK: - Exposed properties
+    // MARK: - Properties
     
-    let state: AppRequestState
+    let state: AppLoadingState
     let action: () -> Void
     
     // MARK: - Body
     
-    var body: some View
-    {
-        Button(action: action)
-        {
+    var body: some View {
+        Button(action: action) {
             Label("Refresh informations", systemImage: "arrow.clockwise")
                 .labelStyle(.iconOnly)
                 .imageScale(.large)
@@ -32,10 +29,6 @@ struct RefreshButton: View
 
 // MARK: - Previews
 
-#Preview
-{
-    RefreshButton(state: .succeded)
-    {
-        print("Taped")
-    }
+#Preview {
+    RefreshButton(state: .loading, action: { })
 }

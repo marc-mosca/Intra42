@@ -2,13 +2,12 @@
 //  Logtime+Samples.swift
 //  Intra42
 //
-//  Created by Marc Mosca on 01/01/2024.
+//  Created by Marc Mosca on 23/01/2024.
 //
 
 import Foundation
 
-extension Api.Types.LogtimeResult
-{
+extension Api.Types.LogtimeResult {
     
     static let sample = [
         "2021-03-17": "02:56:21.097917",
@@ -33,15 +32,13 @@ extension Api.Types.LogtimeResult
     
 }
 
-extension Api.Types.Logtime
-{
+extension Api.Types.Logtime {
     
     static let sample = Self.init(month: "2021-02", total: 70, details: .sample, numberOfDaysToWork: 147)
     
 }
 
-extension [Api.Types.Logtime]
-{
+extension [Api.Types.Logtime] {
     
     static let sample: Self = [
         .init(month: "2021-02", total: 70, details: .sample, numberOfDaysToWork: 147),

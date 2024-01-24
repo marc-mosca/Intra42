@@ -2,17 +2,15 @@
 //  Store.swift
 //  Intra42
 //
-//  Created by Marc Mosca on 03/01/2024.
+//  Created by Marc Mosca on 23/01/2024.
 //
 
-import Observation
 import Foundation
 
 @Observable
-final class Store
-{
+final class Store {
     
-    // MARK: - Exposed properties
+    // MARK: - Properties
     
     var selection = AppScreen.activities
     

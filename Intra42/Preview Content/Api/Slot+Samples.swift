@@ -2,20 +2,18 @@
 //  Slot+Samples.swift
 //  Intra42
 //
-//  Created by Marc Mosca on 01/01/2024.
+//  Created by Marc Mosca on 23/01/2024.
 //
 
 import Foundation
 
-extension Api.Types.Slot
-{
+extension Api.Types.Slot {
     
     static let sample = Self.init(id: 1, beginAt: .now, endAt: .now, scaleTeam: nil, user: .sample)
     
 }
 
-extension [Api.Types.Slot]
-{
+extension [Api.Types.Slot] {
     
     static let sample: Self = [
         .init(id: 1, beginAt: .now, endAt: .now, scaleTeam: nil, user: .sample),
@@ -24,15 +22,13 @@ extension [Api.Types.Slot]
     
 }
 
-extension Api.Types.Slot.User
-{
+extension Api.Types.Slot.User {
     
     static let sample = Self.init(id: 92127, login: "mmosca")
     
 }
 
-extension [Api.Types.Slot.User]
-{
+extension [Api.Types.Slot.User] {
     
     static let sample: Self = [
         .init(id: 92127, login: "mmosca"),
@@ -41,8 +37,7 @@ extension [Api.Types.Slot.User]
     
 }
 
-extension Api.Types.Slot.ScaleTeam
-{
+extension Api.Types.Slot.ScaleTeam {
     
     static let sample = Self.init(
         id: 1,
@@ -54,8 +49,7 @@ extension Api.Types.Slot.ScaleTeam
     
 }
 
-extension [Api.Types.Slot.ScaleTeam]
-{
+extension [Api.Types.Slot.ScaleTeam] {
     
     static let sample: Self = [
         .init(id: 1, scaleId: 1000, beginAt: .now, correcteds: .sample, corrector: .sample),

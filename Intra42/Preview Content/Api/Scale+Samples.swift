@@ -2,13 +2,12 @@
 //  Scale+Samples.swift
 //  Intra42
 //
-//  Created by Marc Mosca on 01/01/2024.
+//  Created by Marc Mosca on 23/01/2024.
 //
 
 import Foundation
 
-extension Api.Types.Scale
-{
+extension Api.Types.Scale {
     
     static let sample = Self.init(
         id: 6085486,
@@ -22,15 +21,13 @@ extension Api.Types.Scale
     
 }
 
-extension Api.Types.Scale.User
-{
+extension Api.Types.Scale.User {
     
     static let sample = Self.init(id: 92127, login: "mmosca")
     
 }
 
-extension [Api.Types.Scale.User]
-{
+extension [Api.Types.Scale.User] {
     
     static let smaple: Self = [
         .init(id: 92127, login: "mmosca"),
@@ -39,15 +36,13 @@ extension [Api.Types.Scale.User]
     
 }
 
-extension Api.Types.Scale.Details
-{
+extension Api.Types.Scale.Details {
     
     static let sample = Self.init(id: 28445, correctionNumber: 3, duration: 900)
     
 }
 
-extension Api.Types.Scale.Team
-{
+extension Api.Types.Scale.Team {
     
     static let sample = Self.init(
         id: 4839596,
@@ -64,15 +59,13 @@ extension Api.Types.Scale.Team
     
 }
 
-extension Api.Types.Scale.Team.User
-{
+extension Api.Types.Scale.Team.User {
     
     static let sample = Self.init(id: 92127, login: "mmosca", leader: true)
     
 }
 
-extension [Api.Types.Scale.Team.User]
-{
+extension [Api.Types.Scale.Team.User] {
     
     static let sample: Self = [
         .init(id: 92127, login: "mmosca", leader: true),

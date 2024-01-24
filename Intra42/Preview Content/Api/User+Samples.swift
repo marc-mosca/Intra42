@@ -2,13 +2,12 @@
 //  User+Samples.swift
 //  Intra42
 //
-//  Created by Marc Mosca on 01/01/2024.
+//  Created by Marc Mosca on 23/01/2024.
 //
 
 import Foundation
 
-extension Api.Types.User
-{
+extension Api.Types.User {
     
     static let sample = Self.init(
         id: 92127,
@@ -32,8 +31,7 @@ extension Api.Types.User
     
 }
 
-extension Api.Types.User.Achievements
-{
+extension Api.Types.User.Achievements {
     
     static let sample = Self.init(
         id: 41,
@@ -44,8 +42,7 @@ extension Api.Types.User.Achievements
     
 }
 
-extension [Api.Types.User.Achievements]
-{
+extension [Api.Types.User.Achievements] {
     
     static let sample: Self = [
         .init(id: 41, name: "All work and no play makes Jack a dull boy", description: "Logged for a total of 90 hours over a week.", kind: "scolarity"),
@@ -84,8 +81,7 @@ extension [Api.Types.User.Achievements]
     
 }
 
-extension Api.Types.User.Avatar
-{
+extension Api.Types.User.Avatar {
     
     static let sample = Self.init(
         link: "https://cdn.intra.42.fr/users/ed6e7d90a93ee28b04bcbadabc439024/mmosca.jpg"
@@ -93,15 +89,13 @@ extension Api.Types.User.Avatar
     
 }
 
-extension Api.Types.User.Campus
-{
+extension Api.Types.User.Campus {
     
     static let sample = Self.init(id: 83671, campusId: 9, isPrimary: true)
     
 }
 
-extension Api.Types.User.Cursus
-{
+extension Api.Types.User.Cursus {
     
     static let sample = Self.init(
         id: 127431,
@@ -115,8 +109,7 @@ extension Api.Types.User.Cursus
     
 }
 
-extension [Api.Types.User.Cursus]
-{
+extension [Api.Types.User.Cursus] {
     
     static let sample: Self = [
         .init(id: 127431, grade: nil, level: 8.71, skills: .sample, cursusId: 9, hasCoalition: true, cursus: .sample),
@@ -125,15 +118,13 @@ extension [Api.Types.User.Cursus]
     
 }
 
-extension Api.Types.User.Cursus.Skills
-{
+extension Api.Types.User.Cursus.Skills {
     
     static let sample = Self.init(id: 4, name: "Unix", level: 10.36)
     
 }
 
-extension [Api.Types.User.Cursus.Skills]
-{
+extension [Api.Types.User.Cursus.Skills] {
     
     static let sample: Self = [
         .init(id: 4, name: "Unix", level: 10.36),
@@ -144,15 +135,13 @@ extension [Api.Types.User.Cursus.Skills]
     
 }
 
-extension Api.Types.User.Cursus.Details
-{
+extension Api.Types.User.Cursus.Details {
     
     static let sample = Self.init(id: 9, name: "C Piscine", slug: "c-piscine")
     
 }
 
-extension [Api.Types.User.Cursus.Details]
-{
+extension [Api.Types.User.Cursus.Details] {
     
     static let sample: Self = [
         .init(id: 9, name: "C Piscine", slug: "c-piscine"),
@@ -161,15 +150,13 @@ extension [Api.Types.User.Cursus.Details]
     
 }
 
-extension Api.Types.User.Patronages
-{
+extension Api.Types.User.Patronages {
     
     static let sample = Self.init(id: 2775, userId: 92127, godfatherId: 78432, ongoing: true)
     
 }
 
-extension [Api.Types.User.Patronages]
-{
+extension [Api.Types.User.Patronages] {
     
     static let sample: Self = [
         .init(id: 2775, userId: 92127, godfatherId: 78432, ongoing: true),
@@ -178,8 +165,7 @@ extension [Api.Types.User.Patronages]
     
 }
 
-extension Api.Types.User.Projects
-{
+extension Api.Types.User.Projects {
     
     static let sample = Self.init(
         id: 3119659,
@@ -196,8 +182,7 @@ extension Api.Types.User.Projects
     
 }
 
-extension [Api.Types.User.Projects]
-{
+extension [Api.Types.User.Projects] {
     
     static let sample: Self = [
         .init(id: 3119659, finalMark: nil, status: "in_progress", validated: nil, currentTeamId: 4880392, project: .sample, cursusIds: [21], markedAt: nil, marked: false, retriableAt: nil),
@@ -206,15 +191,13 @@ extension [Api.Types.User.Projects]
     
 }
 
-extension Api.Types.User.Projects.Details
-{
+extension Api.Types.User.Projects.Details {
     
     static let sample = Self.init(id: 1638, name: "Internship I", slug: "internship-i", parentId: nil)
     
 }
 
-extension [Api.Types.User.Projects.Details]
-{
+extension [Api.Types.User.Projects.Details] {
     
     static let sample: Self = [
         .init(id: 1638, name: "Internship I", slug: "internship-i", parentId: nil),
