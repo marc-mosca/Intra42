@@ -86,6 +86,7 @@
 		9CAE6F492B615B9700FBAE49 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE6F442B615B9700FBAE49 /* AppLanguage.swift */; };
 		9CAE6F4A2B615B9700FBAE49 /* AppColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE6F452B615B9700FBAE49 /* AppColorScheme.swift */; };
 		9CAE6F4B2B615B9700FBAE49 /* AppStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE6F462B615B9700FBAE49 /* AppStorageKeys.swift */; };
+		9CAE6F4D2B615CF400FBAE49 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9CAE6F4C2B615CF400FBAE49 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,7 +115,7 @@
 		9C1F1F422B42C0E000695C3E /* Intra42UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intra42UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9C1F1F4F2B42C1B800695C3E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9C1F1F502B42C1FE00695C3E /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		9C1F1F552B42C49B00695C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9C1F1F552B42C49B00695C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C1F1F562B42C52100695C3E /* Api.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Api.plist; sourceTree = "<group>"; };
 		9CAE6E912B615A0500FBAE49 /* Intra42App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intra42App.swift; sourceTree = "<group>"; };
 		9CAE6EA32B615A6600FBAE49 /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
@@ -191,6 +192,7 @@
 		9CAE6F442B615B9700FBAE49 /* AppLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
 		9CAE6F452B615B9700FBAE49 /* AppColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColorScheme.swift; sourceTree = "<group>"; };
 		9CAE6F462B615B9700FBAE49 /* AppStorageKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStorageKeys.swift; sourceTree = "<group>"; };
+		9CAE6F4C2B615CF400FBAE49 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,21 +246,21 @@
 		9C1F1F242B42C0DF00695C3E /* Intra42 */ = {
 			isa = PBXGroup;
 			children = (
-				9CAE6F262B615B7200FBAE49 /* Shared */,
-				9CAE6F212B615B6700FBAE49 /* Settings */,
-				9CAE6F1A2B615B5B00FBAE49 /* Search */,
-				9CAE6F172B615B5100FBAE49 /* Ressources */,
-				9CAE6F012B615B3800FBAE49 /* Profile */,
-				9CAE6EEE2B615B1F00FBAE49 /* Preview Content */,
-				9CAE6EE92B615B1300FBAE49 /* On Boarding */,
-				9CAE6EE02B615B0600FBAE49 /* Navigation */,
-				9CAE6ED72B615ADC00FBAE49 /* Campus */,
-				9CAE6ED42B615ABE00FBAE49 /* Store */,
-				9CAE6EA72B615A7500FBAE49 /* Api */,
 				9CAE6EA22B615A4A00FBAE49 /* Activities */,
-				9CAE6E912B615A0500FBAE49 /* Intra42App.swift */,
+				9CAE6EA72B615A7500FBAE49 /* Api */,
+				9CAE6ED72B615ADC00FBAE49 /* Campus */,
+				9CAE6EE02B615B0600FBAE49 /* Navigation */,
+				9CAE6EE92B615B1300FBAE49 /* On Boarding */,
+				9CAE6EEE2B615B1F00FBAE49 /* Preview Content */,
+				9CAE6F012B615B3800FBAE49 /* Profile */,
+				9CAE6F172B615B5100FBAE49 /* Ressources */,
+				9CAE6F1A2B615B5B00FBAE49 /* Search */,
+				9CAE6F212B615B6700FBAE49 /* Settings */,
+				9CAE6F262B615B7200FBAE49 /* Shared */,
+				9CAE6ED42B615ABE00FBAE49 /* Store */,
 				9C1F1F562B42C52100695C3E /* Api.plist */,
 				9C1F1F552B42C49B00695C3E /* Info.plist */,
+				9CAE6E912B615A0500FBAE49 /* Intra42App.swift */,
 			);
 			path = Intra42;
 			sourceTree = "<group>";
@@ -292,6 +294,8 @@
 		9CAE6EA72B615A7500FBAE49 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				9CAE6EA92B615A7B00FBAE49 /* UI Components */,
+				9CAE6EA82B615A7800FBAE49 /* Types */,
 				9CAE6ECA2B615A9F00FBAE49 /* Api.swift */,
 				9CAE6ECC2B615A9F00FBAE49 /* Client.swift */,
 				9CAE6EC72B615A9F00FBAE49 /* Endpoints.swift */,
@@ -299,8 +303,6 @@
 				9CAE6ECB2B615A9F00FBAE49 /* Keychain.swift */,
 				9CAE6EC62B615A9F00FBAE49 /* Keys.swift */,
 				9CAE6EC92B615A9F00FBAE49 /* Tokens.swift */,
-				9CAE6EA92B615A7B00FBAE49 /* UI Components */,
-				9CAE6EA82B615A7800FBAE49 /* Types */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -373,8 +375,8 @@
 		9CAE6EEE2B615B1F00FBAE49 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				9CAE6F002B615B3100FBAE49 /* Preview Assets.xcassets */,
 				9CAE6EEF2B615B2500FBAE49 /* Api */,
+				9CAE6F002B615B3100FBAE49 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -397,9 +399,9 @@
 		9CAE6F012B615B3800FBAE49 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				9CAE6F022B615B3D00FBAE49 /* Details */,
 				9CAE6F142B615B4B00FBAE49 /* Profile-ViewModel.swift */,
 				9CAE6F132B615B4B00FBAE49 /* ProfileView.swift */,
-				9CAE6F022B615B3D00FBAE49 /* Details */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -423,6 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				9CAE6F182B615B5700FBAE49 /* Assets.xcassets */,
+				9CAE6F4C2B615CF400FBAE49 /* Localizable.xcstrings */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -449,14 +452,14 @@
 		9CAE6F262B615B7200FBAE49 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9CAE6F272B615B7500FBAE49 /* Extensions */,
+				9CAE6F282B615B7800FBAE49 /* UI Components */,
+				9CAE6F292B615B7B00FBAE49 /* View Modifiers */,
 				9CAE6F452B615B9700FBAE49 /* AppColorScheme.swift */,
 				9CAE6F422B615B9700FBAE49 /* AppError.swift */,
 				9CAE6F442B615B9700FBAE49 /* AppLanguage.swift */,
 				9CAE6F432B615B9700FBAE49 /* AppLoadingState.swift */,
 				9CAE6F462B615B9700FBAE49 /* AppStorageKeys.swift */,
-				9CAE6F292B615B7B00FBAE49 /* View Modifiers */,
-				9CAE6F282B615B7800FBAE49 /* UI Components */,
-				9CAE6F272B615B7500FBAE49 /* Extensions */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 			files = (
 				9CAE6F192B615B5700FBAE49 /* Assets.xcassets in Resources */,
 				9C1F1F572B42C52100695C3E /* Api.plist in Resources */,
+				9CAE6F4D2B615CF400FBAE49 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

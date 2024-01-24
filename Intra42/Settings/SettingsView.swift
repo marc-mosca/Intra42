@@ -72,7 +72,7 @@ extension SettingsView {
             }
         }
         footer: {
-            Text("Set the default langauge for the application.")
+            Text("Set the default language for the application.")
         }
         .onChange(of: viewModel.userLanguage) { userLanguage = viewModel.userLanguage }
     }
