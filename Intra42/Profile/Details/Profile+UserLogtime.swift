@@ -46,13 +46,24 @@ extension ProfileView {
             .navigationTitle("Logtime")
             .task { await viewModel.fetchUserLogtime(store: store) }
             .toolbar {
-                ToolbarItem {
+                ToolbarItemGroup {
                     RefreshButton(state: viewModel.loadingState) {
                         Task {
                             await viewModel.fetchUserLogtime(store: store)
                         }
                     }
+                    
+                    Button(action: viewModel.toggleShowInformationsAlert) {
+                        Label("Informations", systemImage: "info.circle")
+                            .labelStyle(.iconOnly)
+                    }
+                    .foregroundStyle(.night)
                 }
+            }
+            .alert("Logtime Informations", isPresented: $viewModel.showLogtimeInformations) {
+                Button("OK", role: .cancel) { }
+            } message: {
+                Text("The logtime shown on the application corresponds to the time you have spent connected to a workstation on your campus. The percentage is calculated according to the number of working days in the month (civic holidays are counted as working days).")
             }
         }
         

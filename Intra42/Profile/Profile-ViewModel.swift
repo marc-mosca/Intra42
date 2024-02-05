@@ -30,6 +30,7 @@ extension ProfileView {
         
         // - Logtime
         
+        var showLogtimeInformations = false
         private(set) var logtimes = [Api.Types.Logtime]()
         
         var formattedLogtimes: [Api.Types.Logtime]
@@ -199,6 +200,10 @@ extension ProfileView {
             return monthData
         }
         
+        func toggleShowInformationsAlert() {
+            showLogtimeInformations = true
+        }
+        
         // - Corrections
         
         func fetchUserCorrections(store: Store) async {
@@ -273,6 +278,7 @@ extension ProfileView {
         }
         
         func createCorrectionSlot(store: Store) {
+            guard Date.now < beginAt else { return }
             guard beginAt < endAt else { return }
             guard let user = store.user else { return }
             guard let difference = Calendar.current.dateComponents([.hour], from: beginAt, to: endAt).hour, difference >= 1 else { return }
