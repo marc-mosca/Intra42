@@ -12,9 +12,9 @@ struct ScaleRow: View {
     // MARK: - Properties
     
     @Environment(\.store) private var store
-    @State private var projectName = ""
     
     let scale: Api.Types.Scale
+    let projects: [Int: String]
     
     private var scaleTime: (Int, Int, Int, Int, Int)? {
         let calendar = Calendar.current
@@ -27,6 +27,7 @@ struct ScaleRow: View {
     
     private var title: String {
         guard let user = store.user else { return "UNDEFINED ERROR" }
+        let projectName = projects.first(where: { $0.key == scale.teams?.projectId })?.value
         
         var time = "N/A"
         
@@ -35,14 +36,14 @@ struct ScaleRow: View {
         }
         
         if let value = scale.corrector?.value as? String, value == "invisible" {
-            return String(localized: "You will be evaluated by \(scale.teamName) \(projectName.isEmpty ? "" : "on \(projectName) ")in \(time).")
+            return String(localized: "You will be evaluated by \(scale.teamName) \(projectName == nil ? "" : "on \(projectName!) ")in \(time).")
         }
         else if let value = scale.corrector?.value as? Api.Types.Scale.User {
             if value.id == user.id {
-                return String(localized: "You will evaluate \(scale.teamName)\(projectName.isEmpty ? " " : " on \(projectName)") in \(time).")
+                return String(localized: "You will evaluate \(scale.teamName)\(projectName == nil ? "" : "on \(projectName!) ") in \(time).")
             }
             else {
-                return String(localized: "You will be evaluated by \(scale.teamName) \(projectName.isEmpty ? "" : "on \(projectName) ")in \(time).")
+                return String(localized: "You will be evaluated by \(scale.teamName) \(projectName == nil ? "" : "on \(projectName!) ")in \(time).")
             }
         }
         else {
@@ -67,27 +68,6 @@ struct ScaleRow: View {
             .frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding(.vertical, 8)
-        .task {
-            await fetchProjectName()
-        }
-    }
-    
-    // MARK: - Methods
-    
-    private func fetchProjectName() async {
-        guard let user = store.user else { return }
-        guard let scaleProjectId = scale.teams?.projectId else { return }
-        
-        if let project = user.projectsUsers.first(where: { $0.project.id == scaleProjectId }) {
-            projectName = project.project.name
-        }
-        else {
-            let project = try? await Api.Client.shared.request(for: .fetchProject(id: scaleProjectId)) as Api.Types.User.Projects.Details
-            
-            if let project = project {
-                projectName = project.name
-            }
-        }
     }
     
 }
@@ -95,5 +75,5 @@ struct ScaleRow: View {
 // MARK: - Previews
 
 #Preview {
-    ScaleRow(scale: .sample)
+    ScaleRow(scale: .sample, projects: [:])
 }

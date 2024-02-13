@@ -34,6 +34,7 @@ extension ActivitiesView {
         
         private(set) var loadingState = AppLoadingState.succeded
         var selection = ActivitiesPickerCategory.corrections
+        var projects = [Int: String]()
         
         // MARK: - Methods
         
@@ -61,6 +62,29 @@ extension ActivitiesView {
                 
                 loadingState = .succeded
             }
+        }
+        
+        func fetchProjectsName(store: Store, for scales: [Api.Types.Scale]) async {
+            guard let user = store.user else { return }
+            
+            loadingState = .loading
+            
+            for scale in scales {
+                guard let scaleProjectId = scale.teams?.projectId else { return }
+                
+                if let project = user.projectsUsers.first(where: { $0.project.id == scaleProjectId }) {
+                    projects[scaleProjectId] = project.project.name
+                }
+                else {
+                    let project = try? await Api.Client.shared.request(for: .fetchProject(id: scaleProjectId)) as Api.Types.User.Projects.Details
+                    
+                    if let project = project {
+                        projects[scaleProjectId] = project.name
+                    }
+                }
+            }
+            
+            loadingState = .succeded
         }
         
     }

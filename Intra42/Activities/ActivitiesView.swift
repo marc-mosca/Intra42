@@ -39,6 +39,9 @@ struct ActivitiesView: View {
                     }
                 }
             }
+            .task {
+                await viewModel.fetchProjectsName(store: store, for: store.userScales)
+            }
         }
     }
 }
@@ -66,8 +69,10 @@ extension ActivitiesView {
     @ViewBuilder
     var Corrections: some View {
         if !store.userScales.isEmpty {
-            List(store.userScales, rowContent: ScaleRow.init)
-                .listStyle(.plain)
+            List(store.userScales) { scale in
+                ScaleRow(scale: scale, projects: viewModel.projects)
+            }
+            .listStyle(.plain)
         }
         else
         {
